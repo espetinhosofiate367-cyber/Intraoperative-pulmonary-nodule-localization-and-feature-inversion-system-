@@ -16,3 +16,6 @@ It is organized into:
 - an archive folder for deprecated drafts and exploratory scripts
 
 Use `FOLDER_MAP.md` first if you want a quick orientation.
+
+If you prefer a detailed Chinese navigation document, open:
+- `README_CN_PROJECT_GUIDE.md`
