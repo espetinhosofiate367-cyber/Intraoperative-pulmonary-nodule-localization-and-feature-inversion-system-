@@ -2,6 +2,9 @@
 
 This workspace is a cleaned, publication-oriented package extracted from the larger development archive.
 
+Recommended GitHub repository name:
+- `Intraoperative-pulmonary-nodule-localization-and-feature-inversion-system`
+
 It is organized into:
 - manuscript drafts and figure/table notes
 - final paper figures
