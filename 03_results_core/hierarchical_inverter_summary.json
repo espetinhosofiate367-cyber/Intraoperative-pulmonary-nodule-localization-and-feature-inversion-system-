@@ -1,0 +1,245 @@
+{
+  "protocol_v1": {
+    "input_shape": [
+      10,
+      1,
+      12,
+      8
+    ],
+    "window_stride": 2,
+    "size_values_cm": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75
+    ],
+    "depth_values_cm": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "coarse_depth_to_values": {
+      "shallow": [
+        0.5,
+        1.0
+      ],
+      "middle": [
+        1.5,
+        2.0
+      ],
+      "deep": [
+        2.5,
+        3.0
+      ]
+    },
+    "outputs": [
+      "y_det_prob",
+      "y_size_cls",
+      "y_size_reg",
+      "y_depth_cls_coarse"
+    ],
+    "task_priority": [
+      "detection",
+      "size_inversion",
+      "coarse_depth_training_and_interpretation"
+    ],
+    "runtime_policy": {
+      "always_visible": [
+        "y_det_prob"
+      ],
+      "gated": [
+        "y_size_cls",
+        "y_size_reg",
+        "y_depth_cls_coarse"
+      ]
+    }
+  },
+  "model_name": "HierarchicalPositiveInverter",
+  "validation_protocol": "file1_train_file2_val_file3_test_positive_windows",
+  "best_epoch": 83,
+  "selected_features": [
+    "center_border_contrast_max",
+    "meanframe_norm_center_border_contrast",
+    "raw_max_max",
+    "anisotropy_ratio_min",
+    "deltaframe_centroid_col",
+    "maxframe_raw_center_border_contrast",
+    "spatial_entropy_max",
+    "window_norm_global_std",
+    "centroid_row_last",
+    "centroid_row_min",
+    "maxframe_raw_centroid_col",
+    "hotspot_radius_min",
+    "window_raw_global_std",
+    "raw_p95_max",
+    "meanframe_norm_raw_p95",
+    "maxframe_raw_hotspot_radius",
+    "maxframe_raw_raw_p95",
+    "deltaframe_hotspot_radius",
+    "deltaframe_spatial_entropy",
+    "meanframe_norm_center_mean"
+  ],
+  "val_metrics": {
+    "loss": 3.7063372919169484,
+    "count": 593,
+    "size_top1": 0.6306913996627319,
+    "size_top2": 0.7858347386172007,
+    "size_mae": 0.1771185323721643,
+    "size_median_ae": 0.11763191223144531,
+    "depth_gt_accuracy": 0.6070826306913997,
+    "depth_gt_balanced_accuracy": 0.604307807045136,
+    "depth_gt_confusion_matrix": [
+      [
+        154,
+        15,
+        42
+      ],
+      [
+        72,
+        97,
+        30
+      ],
+      [
+        60,
+        14,
+        109
+      ]
+    ],
+    "depth_soft_accuracy": 0.5092748735244519,
+    "depth_soft_balanced_accuracy": 0.5080070194461981,
+    "depth_soft_confusion_matrix": [
+      [
+        122,
+        22,
+        67
+      ],
+      [
+        69,
+        86,
+        44
+      ],
+      [
+        72,
+        17,
+        94
+      ]
+    ],
+    "depth_hard_accuracy": 0.5598650927487352,
+    "depth_hard_balanced_accuracy": 0.55685067313796,
+    "depth_hard_confusion_matrix": [
+      [
+        146,
+        14,
+        51
+      ],
+      [
+        70,
+        86,
+        43
+      ],
+      [
+        68,
+        15,
+        100
+      ]
+    ]
+  },
+  "test_metrics": {
+    "loss": 3.9961464307490826,
+    "count": 953,
+    "size_top1": 0.6180482686253935,
+    "size_top2": 0.7859391395592865,
+    "size_mae": 0.15654307463111558,
+    "size_median_ae": 0.08264172077178955,
+    "depth_gt_accuracy": 0.534102833158447,
+    "depth_gt_balanced_accuracy": 0.5406739274730089,
+    "depth_gt_confusion_matrix": [
+      [
+        232,
+        8,
+        59
+      ],
+      [
+        212,
+        85,
+        29
+      ],
+      [
+        94,
+        42,
+        192
+      ]
+    ],
+    "depth_soft_accuracy": 0.5183630640083945,
+    "depth_soft_balanced_accuracy": 0.5173810785648739,
+    "depth_soft_confusion_matrix": [
+      [
+        148,
+        56,
+        95
+      ],
+      [
+        140,
+        122,
+        64
+      ],
+      [
+        85,
+        19,
+        224
+      ]
+    ],
+    "depth_hard_accuracy": 0.5299055613850997,
+    "depth_hard_balanced_accuracy": 0.5337255037866258,
+    "depth_hard_confusion_matrix": [
+      [
+        203,
+        28,
+        68
+      ],
+      [
+        195,
+        81,
+        50
+      ],
+      [
+        83,
+        24,
+        221
+      ]
+    ]
+  },
+  "xgboost_reference_gt_positive_test": {
+    "count": 961,
+    "size_top1": 0.6701352757544224,
+    "size_top2": 0.8022892819979188,
+    "size_mae": 0.14715115187939695,
+    "size_median_ae": 0.10541725158691406,
+    "depth_accuracy": 0.5150884495317378,
+    "depth_balanced_accuracy": 0.5137746367587025,
+    "depth_confusion_matrix": [
+      [
+        144,
+        98,
+        62
+      ],
+      [
+        96,
+        207,
+        27
+      ],
+      [
+        57,
+        126,
+        144
+      ]
+    ]
+  },
+  "curve_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_hierarchical_positive_inverter_run1\\paper_hierarchical_positive_inverter_curves.png"
+}

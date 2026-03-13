@@ -1,0 +1,108 @@
+{
+  "checkpoint": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_hierarchical_positive_inverter_run1\\paper_hierarchical_positive_inverter_best.pth",
+  "selected_features": [
+    "center_border_contrast_max",
+    "meanframe_norm_center_border_contrast",
+    "raw_max_max",
+    "anisotropy_ratio_min",
+    "deltaframe_centroid_col",
+    "maxframe_raw_center_border_contrast",
+    "spatial_entropy_max",
+    "window_norm_global_std",
+    "centroid_row_last",
+    "centroid_row_min",
+    "maxframe_raw_centroid_col",
+    "hotspot_radius_min",
+    "window_raw_global_std",
+    "raw_p95_max",
+    "meanframe_norm_raw_p95",
+    "maxframe_raw_hotspot_radius",
+    "maxframe_raw_raw_p95",
+    "deltaframe_hotspot_radius",
+    "deltaframe_spatial_entropy",
+    "meanframe_norm_center_mean"
+  ],
+  "probe_summary": {
+    "mean_hybrid_r2": 0.5511661905898697,
+    "mean_trunk_r2": 0.42260767653512177,
+    "mean_size_only_r2": 0.2984716883545568,
+    "mean_hybrid_pearson_r": 0.7750379524119634,
+    "mean_trunk_pearson_r": 0.6720912549966357,
+    "mean_size_only_pearson_r": 0.5461986952763305
+  },
+  "branch_ablation": [
+    {
+      "variant": "full",
+      "size_top1": 0.6180482686253935,
+      "size_mae": 0.15655040740966797,
+      "depth_accuracy": 0.5299055613850997,
+      "depth_hard_balanced_accuracy": 0.5337255037866258
+    },
+    {
+      "variant": "no_raw",
+      "size_top1": 0.5487932843651626,
+      "size_mae": 0.21239352226257324,
+      "depth_accuracy": 0.4176285414480588,
+      "depth_hard_balanced_accuracy": 0.4164661545768052
+    },
+    {
+      "variant": "no_shape",
+      "size_top1": 0.1689401888772298,
+      "size_mae": 0.3587002158164978,
+      "depth_accuracy": 0.372507869884575,
+      "depth_hard_balanced_accuracy": 0.38110210669478506
+    },
+    {
+      "variant": "no_delta",
+      "size_top1": 0.602308499475341,
+      "size_mae": 0.16877540946006775,
+      "depth_accuracy": 0.47114375655823715,
+      "depth_hard_balanced_accuracy": 0.4704941747234326
+    },
+    {
+      "variant": "no_tabular",
+      "size_top1": 0.3934942287513116,
+      "size_mae": 0.3567188084125519,
+      "depth_accuracy": 0.3809024134312697,
+      "depth_hard_balanced_accuracy": 0.37421586344225877
+    }
+  ],
+  "hard_pair_summary": {
+    "pair_count": 11,
+    "pairwise_pdeep_success_rate": 1.0,
+    "mean_raw_max_gap": 13.33818192915483,
+    "mean_total_pair_score": 21.197351797739767,
+    "mean_entropy_gap": 0.027030341304566486,
+    "mean_radius_gap": 0.18950661517211287
+  },
+  "phase_occlusion_summary": [
+    {
+      "index": 0,
+      "phase": "loading_early",
+      "mean_drop": 0.01848640761232117,
+      "median_drop": 0.0018527507781982422,
+      "count": 399
+    },
+    {
+      "index": 1,
+      "phase": "loading_late",
+      "mean_drop": 0.007302435288970035,
+      "median_drop": 0.00013144779950380325,
+      "count": 138
+    },
+    {
+      "index": 2,
+      "phase": "peak_neighborhood",
+      "mean_drop": 0.08018671993430158,
+      "median_drop": 0.013798117637634277,
+      "count": 953
+    },
+    {
+      "index": 3,
+      "phase": "release",
+      "mean_drop": 6.767378678334128e-06,
+      "median_drop": 0.001896776258945465,
+      "count": 97
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "detection_test": {
+    "xgboost_auc": 0.81985107640178,
+    "xgboost_ap": 0.5062520940771763,
+    "xgboost_f1": 0.6185170956588552,
+    "stage1_auc": 0.838309467659391,
+    "stage1_ap": 0.5356707813314584,
+    "stage1_f1": 0.6216113020236732
+  },
+  "size_test_gt_positive": {
+    "xgboost_top1": 0.6701352757544224,
+    "xgboost_top2": 0.8022892819979188,
+    "xgboost_mae": 0.14715115187939695,
+    "size_only_top1": 0.6600209863588667,
+    "size_only_top2": 0.8405036726128017,
+    "size_only_mae": 0.29071152596837074,
+    "unified_top1": 0.6180482686253935,
+    "unified_top2": 0.7859391395592865,
+    "unified_mae": 0.15654307463111558
+  },
+  "depth_test": {
+    "majority_bacc": 0.3333333333333333,
+    "xgboost_bacc": 0.5137746367587025,
+    "stage3_gt_route_bacc": 0.5237574297486209,
+    "stage3_pred_route_bacc": 0.4821638282195244,
+    "unified_hard_route_bacc": 0.5337255037866258
+  }
+}

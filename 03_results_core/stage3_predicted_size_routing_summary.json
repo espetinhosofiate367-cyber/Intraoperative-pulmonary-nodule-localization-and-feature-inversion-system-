@@ -1,0 +1,274 @@
+{
+  "protocol_v1": {
+    "input_shape": [
+      10,
+      1,
+      12,
+      8
+    ],
+    "window_stride": 2,
+    "size_values_cm": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75
+    ],
+    "depth_values_cm": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "coarse_depth_to_values": {
+      "shallow": [
+        0.5,
+        1.0
+      ],
+      "middle": [
+        1.5,
+        2.0
+      ],
+      "deep": [
+        2.5,
+        3.0
+      ]
+    },
+    "outputs": [
+      "y_det_prob",
+      "y_size_cls",
+      "y_size_reg",
+      "y_depth_cls_coarse"
+    ],
+    "task_priority": [
+      "detection",
+      "size_inversion",
+      "coarse_depth_training_and_interpretation"
+    ],
+    "runtime_policy": {
+      "always_visible": [
+        "y_det_prob"
+      ],
+      "gated": [
+        "y_size_cls",
+        "y_size_reg",
+        "y_depth_cls_coarse"
+      ]
+    }
+  },
+  "validation_protocol": "file1_train_file2_val_file3_test_positive_windows",
+  "stage2_ckpt": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage2_raw_positive_size\\paper_stage2_raw_positive_size_best.pth",
+  "stage2_mode": "raw_positive_size",
+  "stage3_ckpt": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage3_raw_size_routed_depth_run1\\paper_stage3_raw_size_routed_depth_best.pth",
+  "sample_count": 953,
+  "size_prediction_on_stage3_test_windows": {
+    "top1": 0.6421825813221406,
+    "top2": 0.8289611752360966,
+    "route_match_count": 612,
+    "route_match_rate": 0.6421825813221406
+  },
+  "depth_metrics": {
+    "gt_size_route": {
+      "count": 953,
+      "accuracy": 0.5257082896117523,
+      "balanced_accuracy": 0.5237574297486209,
+      "confusion_matrix": [
+        [
+          139,
+          75,
+          85
+        ],
+        [
+          68,
+          146,
+          112
+        ],
+        [
+          52,
+          60,
+          216
+        ]
+      ]
+    },
+    "hard_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.4858342077649528,
+      "balanced_accuracy": 0.4821638282195244,
+      "confusion_matrix": [
+        [
+          109,
+          94,
+          96
+        ],
+        [
+          90,
+          143,
+          93
+        ],
+        [
+          86,
+          31,
+          211
+        ]
+      ]
+    },
+    "soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.4795383001049318,
+      "balanced_accuracy": 0.47578927030114015,
+      "confusion_matrix": [
+        [
+          106,
+          95,
+          98
+        ],
+        [
+          92,
+          146,
+          88
+        ],
+        [
+          89,
+          34,
+          205
+        ]
+      ]
+    },
+    "top2_soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.4805876180482686,
+      "balanced_accuracy": 0.4766944939747118,
+      "confusion_matrix": [
+        [
+          105,
+          95,
+          99
+        ],
+        [
+          93,
+          144,
+          89
+        ],
+        [
+          85,
+          34,
+          209
+        ]
+      ]
+    },
+    "temp05_soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.4879328436516264,
+      "balanced_accuracy": 0.4842212874444234,
+      "confusion_matrix": [
+        [
+          109,
+          94,
+          96
+        ],
+        [
+          89,
+          147,
+          90
+        ],
+        [
+          85,
+          34,
+          209
+        ]
+      ]
+    },
+    "temp07_soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.4837355718782791,
+      "balanced_accuracy": 0.47995911271565267,
+      "confusion_matrix": [
+        [
+          107,
+          94,
+          98
+        ],
+        [
+          90,
+          147,
+          89
+        ],
+        [
+          86,
+          35,
+          207
+        ]
+      ]
+    },
+    "temp03_soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.4858342077649528,
+      "balanced_accuracy": 0.48207149590526627,
+      "confusion_matrix": [
+        [
+          108,
+          96,
+          95
+        ],
+        [
+          91,
+          144,
+          91
+        ],
+        [
+          84,
+          33,
+          211
+        ]
+      ]
+    },
+    "hard_route_when_size_correct": {
+      "count": 612,
+      "accuracy": 0.576797385620915,
+      "balanced_accuracy": 0.5674984306340239,
+      "confusion_matrix": [
+        [
+          96,
+          65,
+          55
+        ],
+        [
+          43,
+          84,
+          33
+        ],
+        [
+          43,
+          20,
+          173
+        ]
+      ]
+    },
+    "hard_route_when_size_wrong": {
+      "count": 341,
+      "accuracy": 0.3225806451612903,
+      "balanced_accuracy": 0.30836389034398465,
+      "confusion_matrix": [
+        [
+          13,
+          29,
+          41
+        ],
+        [
+          47,
+          59,
+          60
+        ],
+        [
+          43,
+          11,
+          38
+        ]
+      ]
+    }
+  }
+}

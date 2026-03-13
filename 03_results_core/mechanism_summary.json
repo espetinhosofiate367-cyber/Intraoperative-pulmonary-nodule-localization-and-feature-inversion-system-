@@ -1,0 +1,1436 @@
+{
+  "config": {
+    "seed": 2026,
+    "seq_len": 10,
+    "stride": 2,
+    "bootstrap_iters": 500,
+    "hotspot_threshold": 0.7
+  },
+  "coverage": {
+    "common_group_count": 42,
+    "repeat_count": 3,
+    "record_count": 126,
+    "all_groups_present_across_repeats": true,
+    "positive_frames_per_record": [
+      {
+        "record_key": "0.25cm大|0.5cm深|1.CSV",
+        "base_group": "0.25cm大|0.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 128,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.5cm大|0.5cm深|1.CSV",
+        "base_group": "0.5cm大|0.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 128,
+        "segment_count": 4
+      },
+      {
+        "record_key": "0.75cm大|0.5cm深|1.CSV",
+        "base_group": "0.75cm大|0.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 152,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1cm大|0.5cm深|1.CSV",
+        "base_group": "1cm大|0.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 145,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.25cm大|0.5cm深|1.CSV",
+        "base_group": "1.25cm大|0.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 121,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|0.5cm深|1.CSV",
+        "base_group": "1.5cm大|0.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 156,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.75cm大|0.5cm深|1.CSV",
+        "base_group": "1.75cm大|0.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 31,
+        "segment_count": 1
+      },
+      {
+        "record_key": "0.25cm大|1.0cm深|1.CSV",
+        "base_group": "0.25cm大|1.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 99,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.5cm大|1.0cm深|1.CSV",
+        "base_group": "0.5cm大|1.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 58,
+        "segment_count": 1
+      },
+      {
+        "record_key": "0.75cm大|1.0cm深|1.CSV",
+        "base_group": "0.75cm大|1.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 96,
+        "segment_count": 5
+      },
+      {
+        "record_key": "1cm大|1.0cm深|1.CSV",
+        "base_group": "1cm大|1.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 26,
+        "segment_count": 1
+      },
+      {
+        "record_key": "1.25cm大|1cm深|1.CSV",
+        "base_group": "1.25cm大|1cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 198,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.5cm大|1.0cm深|1.CSV",
+        "base_group": "1.5cm大|1.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 261,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|1cm深|1.CSV",
+        "base_group": "1.75cm大|1cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 105,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.25cm大|1.5cm深|1.CSV",
+        "base_group": "0.25cm大|1.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 227,
+        "segment_count": 4
+      },
+      {
+        "record_key": "0.5cm大|1.5cm深|1.CSV",
+        "base_group": "0.5cm大|1.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 243,
+        "segment_count": 5
+      },
+      {
+        "record_key": "0.75cm大|1.5cm深|1.CSV",
+        "base_group": "0.75cm大|1.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 52,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1cm大|1.5cm深|1.CSV",
+        "base_group": "1cm大|1.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 185,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.25cm大|1.5cm深|1.CSV",
+        "base_group": "1.25cm大|1.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 89,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|1.5cm深|1.CSV",
+        "base_group": "1.5cm大|1.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 148,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|1.5cm深|1.CSV",
+        "base_group": "1.75cm大|1.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 133,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.25cm大|2.0cm深|1.CSV",
+        "base_group": "0.25cm大|2.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 96,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.5cm大|2.0cm深|1.CSV",
+        "base_group": "0.5cm大|2.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 307,
+        "segment_count": 4
+      },
+      {
+        "record_key": "0.75cm大|2cm深|1.CSV",
+        "base_group": "0.75cm大|2cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 36,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1cm大|2.0cm深|1.CSV",
+        "base_group": "1cm大|2.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 217,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.25cm大|2cm深|1.CSV",
+        "base_group": "1.25cm大|2cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 146,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|2.0cm深|1.CSV",
+        "base_group": "1.5cm大|2.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 125,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|2cm深|1.CSV",
+        "base_group": "1.75cm大|2cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 37,
+        "segment_count": 1
+      },
+      {
+        "record_key": "0.25cm大|2.5cm深|1.CSV",
+        "base_group": "0.25cm大|2.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 184,
+        "segment_count": 4
+      },
+      {
+        "record_key": "0.5cm大|2.5cm深|1.CSV",
+        "base_group": "0.5cm大|2.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 139,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.75cm大|2.5cm深|1.CSV",
+        "base_group": "0.75cm大|2.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 79,
+        "segment_count": 5
+      },
+      {
+        "record_key": "1cm大|2.5cm深|1.CSV",
+        "base_group": "1cm大|2.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 133,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.25cm大|2.5cm深|1.CSV",
+        "base_group": "1.25cm大|2.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 129,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.5cm大|2.5cm深|1.CSV",
+        "base_group": "1.5cm大|2.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 76,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|2.5cm深|1.CSV",
+        "base_group": "1.75cm大|2.5cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 174,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.25cm大|3.0cm深|1.CSV",
+        "base_group": "0.25cm大|3.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 65,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.5cm大|3.0cm深|1.CSV",
+        "base_group": "0.5cm大|3.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 134,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.75cm大|3.0cm深|1.CSV",
+        "base_group": "0.75cm大|3.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 50,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1cm大|3.0cm深|1.CSV",
+        "base_group": "1cm大|3.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 215,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.25cm大|3cm深|1.CSV",
+        "base_group": "1.25cm大|3cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 89,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|3.0cm深|1.CSV",
+        "base_group": "1.5cm大|3.0cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 114,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|3cm深|1.CSV",
+        "base_group": "1.75cm大|3cm深",
+        "file_name": "1.CSV",
+        "positive_frames": 264,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.25cm大|0.5cm深|2.CSV",
+        "base_group": "0.25cm大|0.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 186,
+        "segment_count": 4
+      },
+      {
+        "record_key": "0.5cm大|0.5cm深|2.CSV",
+        "base_group": "0.5cm大|0.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 83,
+        "segment_count": 4
+      },
+      {
+        "record_key": "0.75cm大|0.5cm深|2.CSV",
+        "base_group": "0.75cm大|0.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 39,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1cm大|0.5cm深|2.CSV",
+        "base_group": "1cm大|0.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 123,
+        "segment_count": 6
+      },
+      {
+        "record_key": "1.25cm大|0.5cm深|2.CSV",
+        "base_group": "1.25cm大|0.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 34,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|0.5cm深|2.CSV",
+        "base_group": "1.5cm大|0.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 91,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.75cm大|0.5cm深|2.CSV",
+        "base_group": "1.75cm大|0.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 17,
+        "segment_count": 1
+      },
+      {
+        "record_key": "0.25cm大|1.0cm深|2.CSV",
+        "base_group": "0.25cm大|1.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 51,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.5cm大|1.0cm深|2.CSV",
+        "base_group": "0.5cm大|1.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 89,
+        "segment_count": 5
+      },
+      {
+        "record_key": "0.75cm大|1.0cm深|2.CSV",
+        "base_group": "0.75cm大|1.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 178,
+        "segment_count": 5
+      },
+      {
+        "record_key": "1cm大|1.0cm深|2.CSV",
+        "base_group": "1cm大|1.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 107,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.25cm大|1cm深|2.CSV",
+        "base_group": "1.25cm大|1cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 71,
+        "segment_count": 5
+      },
+      {
+        "record_key": "1.5cm大|1.0cm深|2.CSV",
+        "base_group": "1.5cm大|1.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 112,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.75cm大|1cm深|2.CSV",
+        "base_group": "1.75cm大|1cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 17,
+        "segment_count": 1
+      },
+      {
+        "record_key": "0.25cm大|1.5cm深|2.CSV",
+        "base_group": "0.25cm大|1.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 85,
+        "segment_count": 5
+      },
+      {
+        "record_key": "0.5cm大|1.5cm深|2.CSV",
+        "base_group": "0.5cm大|1.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 94,
+        "segment_count": 6
+      },
+      {
+        "record_key": "0.75cm大|1.5cm深|2.CSV",
+        "base_group": "0.75cm大|1.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 34,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1cm大|1.5cm深|2.CSV",
+        "base_group": "1cm大|1.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 58,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.25cm大|1.5cm深|2.CSV",
+        "base_group": "1.25cm大|1.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 120,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.5cm大|1.5cm深|2.CSV",
+        "base_group": "1.5cm大|1.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 127,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.75cm大|1.5cm深|2.CSV",
+        "base_group": "1.75cm大|1.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 17,
+        "segment_count": 1
+      },
+      {
+        "record_key": "0.25cm大|2.0cm深|2.CSV",
+        "base_group": "0.25cm大|2.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 68,
+        "segment_count": 4
+      },
+      {
+        "record_key": "0.5cm大|2.0cm深|2.CSV",
+        "base_group": "0.5cm大|2.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 135,
+        "segment_count": 7
+      },
+      {
+        "record_key": "0.75cm大|2cm深|2.CSV",
+        "base_group": "0.75cm大|2cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 51,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1cm大|2.0cm深|2.CSV",
+        "base_group": "1cm大|2.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 51,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.25cm大|2cm深|2.CSV",
+        "base_group": "1.25cm大|2cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 155,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.5cm大|2.0cm深|2.CSV",
+        "base_group": "1.5cm大|2.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 51,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.75cm大|2cm深|2.CSV",
+        "base_group": "1.75cm大|2cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 85,
+        "segment_count": 5
+      },
+      {
+        "record_key": "0.25cm大|2.5cm深|2.CSV",
+        "base_group": "0.25cm大|2.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 185,
+        "segment_count": 6
+      },
+      {
+        "record_key": "0.5cm大|2.5cm深|2.CSV",
+        "base_group": "0.5cm大|2.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 34,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.75cm大|2.5cm深|2.CSV",
+        "base_group": "0.75cm大|2.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 51,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1cm大|2.5cm深|2.CSV",
+        "base_group": "1cm大|2.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 34,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.25cm大|2.5cm深|2.CSV",
+        "base_group": "1.25cm大|2.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 94,
+        "segment_count": 5
+      },
+      {
+        "record_key": "1.5cm大|2.5cm深|2.CSV",
+        "base_group": "1.5cm大|2.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 68,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.75cm大|2.5cm深|2.CSV",
+        "base_group": "1.75cm大|2.5cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 34,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.25cm大|3.0cm深|2.CSV",
+        "base_group": "0.25cm大|3.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 85,
+        "segment_count": 5
+      },
+      {
+        "record_key": "0.5cm大|3.0cm深|2.CSV",
+        "base_group": "0.5cm大|3.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 231,
+        "segment_count": 5
+      },
+      {
+        "record_key": "0.75cm大|3.0cm深|2.CSV",
+        "base_group": "0.75cm大|3.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 64,
+        "segment_count": 1
+      },
+      {
+        "record_key": "1cm大|3.0cm深|2.CSV",
+        "base_group": "1cm大|3.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 17,
+        "segment_count": 1
+      },
+      {
+        "record_key": "1.25cm大|3cm深|2.CSV",
+        "base_group": "1.25cm大|3cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 34,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|3.0cm深|2.CSV",
+        "base_group": "1.5cm大|3.0cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 82,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.75cm大|3cm深|2.CSV",
+        "base_group": "1.75cm大|3cm深",
+        "file_name": "2.CSV",
+        "positive_frames": 40,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.25cm大|0.5cm深|3.CSV",
+        "base_group": "0.25cm大|0.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 102,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.5cm大|0.5cm深|3.CSV",
+        "base_group": "0.5cm大|0.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 177,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.75cm大|0.5cm深|3.CSV",
+        "base_group": "0.75cm大|0.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 164,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1cm大|0.5cm深|3.CSV",
+        "base_group": "1cm大|0.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 115,
+        "segment_count": 4
+      },
+      {
+        "record_key": "1.25cm大|0.5cm深|3.CSV",
+        "base_group": "1.25cm大|0.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 81,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.5cm大|0.5cm深|3.CSV",
+        "base_group": "1.5cm大|0.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 196,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.75cm大|0.5cm深|3.CSV",
+        "base_group": "1.75cm大|0.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 141,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.25cm大|1.0cm深|3.CSV",
+        "base_group": "0.25cm大|1.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 105,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.5cm大|1.0cm深|3.CSV",
+        "base_group": "0.5cm大|1.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 211,
+        "segment_count": 6
+      },
+      {
+        "record_key": "0.75cm大|1.0cm深|3.CSV",
+        "base_group": "0.75cm大|1.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 128,
+        "segment_count": 6
+      },
+      {
+        "record_key": "1cm大|1.0cm深|3.CSV",
+        "base_group": "1cm大|1.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 50,
+        "segment_count": 1
+      },
+      {
+        "record_key": "1.25cm大|1cm深|3.CSV",
+        "base_group": "1.25cm大|1cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 112,
+        "segment_count": 1
+      },
+      {
+        "record_key": "1.5cm大|1.0cm深|3.CSV",
+        "base_group": "1.5cm大|1.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 34,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|1cm深|3.CSV",
+        "base_group": "1.75cm大|1cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 138,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.25cm大|1.5cm深|3.CSV",
+        "base_group": "0.25cm大|1.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 108,
+        "segment_count": 4
+      },
+      {
+        "record_key": "0.5cm大|1.5cm深|3.CSV",
+        "base_group": "0.5cm大|1.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 247,
+        "segment_count": 7
+      },
+      {
+        "record_key": "0.75cm大|1.5cm深|3.CSV",
+        "base_group": "0.75cm大|1.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 57,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1cm大|1.5cm深|3.CSV",
+        "base_group": "1cm大|1.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 89,
+        "segment_count": 1
+      },
+      {
+        "record_key": "1.25cm大|1.5cm深|3.CSV",
+        "base_group": "1.25cm大|1.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 57,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|1.5cm深|3.CSV",
+        "base_group": "1.5cm大|1.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 108,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|1.5cm深|3.CSV",
+        "base_group": "1.75cm大|1.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 156,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.25cm大|2.0cm深|3.CSV",
+        "base_group": "0.25cm大|2.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 149,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.5cm大|2.0cm深|3.CSV",
+        "base_group": "0.5cm大|2.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 138,
+        "segment_count": 7
+      },
+      {
+        "record_key": "0.75cm大|2cm深|3.CSV",
+        "base_group": "0.75cm大|2cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 187,
+        "segment_count": 6
+      },
+      {
+        "record_key": "1cm大|2.0cm深|3.CSV",
+        "base_group": "1cm大|2.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 114,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.25cm大|2cm深|3.CSV",
+        "base_group": "1.25cm大|2cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 146,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|2.0cm深|3.CSV",
+        "base_group": "1.5cm大|2.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 201,
+        "segment_count": 5
+      },
+      {
+        "record_key": "1.75cm大|2cm深|3.CSV",
+        "base_group": "1.75cm大|2cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 147,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.25cm大|2.5cm深|3.CSV",
+        "base_group": "0.25cm大|2.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 105,
+        "segment_count": 2
+      },
+      {
+        "record_key": "0.5cm大|2.5cm深|3.CSV",
+        "base_group": "0.5cm大|2.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 209,
+        "segment_count": 5
+      },
+      {
+        "record_key": "0.75cm大|2.5cm深|3.CSV",
+        "base_group": "0.75cm大|2.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 60,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1cm大|2.5cm深|3.CSV",
+        "base_group": "1cm大|2.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 86,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.25cm大|2.5cm深|3.CSV",
+        "base_group": "1.25cm大|2.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 127,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|2.5cm深|3.CSV",
+        "base_group": "1.5cm大|2.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 109,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|2.5cm深|3.CSV",
+        "base_group": "1.75cm大|2.5cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 137,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.25cm大|3.0cm深|3.CSV",
+        "base_group": "0.25cm大|3.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 98,
+        "segment_count": 1
+      },
+      {
+        "record_key": "0.5cm大|3.0cm深|3.CSV",
+        "base_group": "0.5cm大|3.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 205,
+        "segment_count": 3
+      },
+      {
+        "record_key": "0.75cm大|3.0cm深|3.CSV",
+        "base_group": "0.75cm大|3.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 108,
+        "segment_count": 5
+      },
+      {
+        "record_key": "1cm大|3.0cm深|3.CSV",
+        "base_group": "1cm大|3.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 209,
+        "segment_count": 3
+      },
+      {
+        "record_key": "1.25cm大|3cm深|3.CSV",
+        "base_group": "1.25cm大|3cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 122,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.5cm大|3.0cm深|3.CSV",
+        "base_group": "1.5cm大|3.0cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 182,
+        "segment_count": 2
+      },
+      {
+        "record_key": "1.75cm大|3cm深|3.CSV",
+        "base_group": "1.75cm大|3cm深",
+        "file_name": "3.CSV",
+        "positive_frames": 159,
+        "segment_count": 2
+      }
+    ],
+    "window_center_label_traceable": true
+  },
+  "frame_summary": {
+    "balanced_counts": {
+      "positive": 14546,
+      "negative": 14067
+    },
+    "feature_summary": {
+      "raw_mean": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 29.431312561035156,
+        "positive_median": 27.098957061767578,
+        "positive_std": 16.44540786743164,
+        "negative_mean_balanced": 11.727580070495605,
+        "negative_median_balanced": 2.53125,
+        "negative_std_balanced": 17.17344856262207,
+        "negative_mean_full": 12.827771186828613,
+        "hedges_g": 1.0532729081318821,
+        "mean_diff": 17.703731536865234,
+        "ci_low": 17.315230989456175,
+        "ci_high": 18.141274309158327
+      },
+      "raw_max": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 93.04390716552734,
+        "positive_median": 95.0,
+        "positive_std": 36.62117004394531,
+        "negative_mean_balanced": 40.10737609863281,
+        "negative_median_balanced": 17.0,
+        "negative_std_balanced": 44.17049026489258,
+        "negative_mean_full": 41.39015579223633,
+        "hedges_g": 1.3067098017268548,
+        "mean_diff": 52.93653106689453,
+        "ci_low": 52.034291648864745,
+        "ci_high": 53.76257066726684
+      },
+      "raw_std": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 27.258636474609375,
+        "positive_median": 26.70580291748047,
+        "positive_std": 14.232243537902832,
+        "negative_mean_balanced": 10.743423461914062,
+        "negative_median_balanced": 3.8665761947631836,
+        "negative_std_balanced": 13.76811695098877,
+        "negative_mean_full": 11.27098560333252,
+        "hedges_g": 1.179081682275547,
+        "mean_diff": 16.515213012695312,
+        "ci_low": 16.20148754119873,
+        "ci_high": 16.849970054626464
+      },
+      "raw_sum": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 2825.406005859375,
+        "positive_median": 2601.5,
+        "positive_std": 1578.7591552734375,
+        "negative_mean_balanced": 1125.84765625,
+        "negative_median_balanced": 243.0,
+        "negative_std_balanced": 1648.6512451171875,
+        "negative_mean_full": 1231.466064453125,
+        "hedges_g": 1.0532729837829256,
+        "mean_diff": 1699.558349609375,
+        "ci_low": 1663.339501953125,
+        "ci_high": 1737.702359008789
+      },
+      "raw_p95": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 80.37989807128906,
+        "positive_median": 82.0,
+        "positive_std": 39.08485412597656,
+        "negative_mean_balanced": 31.862947463989258,
+        "negative_median_balanced": 10.5,
+        "negative_std_balanced": 40.76011276245117,
+        "negative_mean_full": 33.41585922241211,
+        "hedges_g": 1.2153639740834972,
+        "mean_diff": 48.51695251464844,
+        "ci_low": 47.60796337127685,
+        "ci_high": 49.35382022857666
+      },
+      "center_mean": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 55.645477294921875,
+        "positive_median": 48.875,
+        "positive_std": 33.989707946777344,
+        "negative_mean_balanced": 20.569400787353516,
+        "negative_median_balanced": 4.108666896820068,
+        "negative_std_balanced": 31.213937759399414,
+        "negative_mean_full": 22.04347038269043,
+        "hedges_g": 1.0740899476188468,
+        "mean_diff": 35.07607650756836,
+        "ci_low": 34.30321865081787,
+        "ci_high": 35.84911708831787
+      },
+      "border_mean": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 20.69325828552246,
+        "positive_median": 18.44444465637207,
+        "positive_std": 12.330229759216309,
+        "negative_mean_balanced": 8.780306816101074,
+        "negative_median_balanced": 1.8055555820465088,
+        "negative_std_balanced": 13.180655479431152,
+        "negative_mean_full": 9.755871772766113,
+        "hedges_g": 0.9338955900593375,
+        "mean_diff": 11.912951469421387,
+        "ci_low": 11.605278921127319,
+        "ci_high": 12.215734505653382
+      },
+      "center_border_contrast": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 34.95222473144531,
+        "positive_median": 29.28472137451172,
+        "positive_std": 26.57312774658203,
+        "negative_mean_balanced": 11.78909683227539,
+        "negative_median_balanced": 1.7777777910232544,
+        "negative_std_balanced": 20.519563674926758,
+        "negative_mean_full": 12.28759765625,
+        "hedges_g": 0.9735782633109825,
+        "mean_diff": 23.163127899169922,
+        "ci_low": 22.664416074752808,
+        "ci_high": 23.67670555114746
+      },
+      "norm_gradient": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 0.1971893310546875,
+        "positive_median": 0.1984385848045349,
+        "positive_std": 0.033503010869026184,
+        "negative_mean_balanced": 0.16051822900772095,
+        "negative_median_balanced": 0.1652618646621704,
+        "negative_std_balanced": 0.06328294426202774,
+        "negative_mean_full": 0.16221073269844055,
+        "hedges_g": 0.7276561479361431,
+        "mean_diff": 0.03667110204696655,
+        "ci_low": 0.0354402519762516,
+        "ci_high": 0.037933236733078954
+      },
+      "norm_hotspot_area": {
+        "positive_n": 14546,
+        "negative_n_balanced": 14067,
+        "negative_n_full": 51027,
+        "positive_mean": 0.1380441039800644,
+        "positive_median": 0.1145833358168602,
+        "positive_std": 0.08751610666513443,
+        "negative_mean_balanced": 0.08058532327413559,
+        "negative_median_balanced": 0.0520833320915699,
+        "negative_std_balanced": 0.0820414125919342,
+        "negative_mean_full": 0.08913153409957886,
+        "hedges_g": 0.6769898363596315,
+        "mean_diff": 0.0574587807059288,
+        "ci_low": 0.055304836481809616,
+        "ci_high": 0.05931523907929659
+      }
+    }
+  },
+  "window_summary": {
+    "balanced_counts": {
+      "positive": 7301,
+      "negative": 7047
+    },
+    "feature_summary": {
+      "window_mean_raw_mean": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 29.299179077148438,
+        "positive_median": 26.841665267944336,
+        "positive_std": 16.235567092895508,
+        "negative_mean_balanced": 11.985685348510742,
+        "negative_median_balanced": 2.836458206176758,
+        "negative_std_balanced": 17.252365112304688,
+        "negative_mean_full": 12.991162300109863,
+        "hedges_g": 1.0339668674691473,
+        "mean_diff": 17.313493728637695,
+        "ci_low": 16.78983235359192,
+        "ci_high": 17.846168994903564
+      },
+      "window_mean_raw_max": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 92.73028564453125,
+        "positive_median": 94.9000015258789,
+        "positive_std": 36.38209533691406,
+        "negative_mean_balanced": 40.828704833984375,
+        "negative_median_balanced": 18.700000762939453,
+        "negative_std_balanced": 44.1496696472168,
+        "negative_mean_full": 41.81924819946289,
+        "hedges_g": 1.285036672082244,
+        "mean_diff": 51.901580810546875,
+        "ci_low": 50.6466347694397,
+        "ci_high": 53.26561918258667
+      },
+      "window_mean_raw_std": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 27.15132713317871,
+        "positive_median": 26.467449188232422,
+        "positive_std": 14.12303638458252,
+        "negative_mean_balanced": 10.981141090393066,
+        "negative_median_balanced": 4.260798454284668,
+        "negative_std_balanced": 13.816004753112793,
+        "negative_mean_full": 11.406498908996582,
+        "hedges_g": 1.1570971342068839,
+        "mean_diff": 16.170185089111328,
+        "ci_low": 15.721583604812622,
+        "ci_high": 16.659494829177856
+      },
+      "window_mean_contrast": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 34.78017044067383,
+        "positive_median": 29.048608779907227,
+        "positive_std": 26.394561767578125,
+        "negative_mean_balanced": 12.142827033996582,
+        "negative_median_balanced": 2.1194443702697754,
+        "negative_std_balanced": 20.621416091918945,
+        "negative_mean_full": 12.470869064331055,
+        "hedges_g": 0.9536287763057651,
+        "mean_diff": 22.637344360351562,
+        "ci_low": 21.841573333740236,
+        "ci_high": 23.42132658958435
+      },
+      "window_mean_hotspot_area": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 0.1376102864742279,
+        "positive_median": 0.11874999105930328,
+        "positive_std": 0.08629786223173141,
+        "negative_mean_balanced": 0.0819268450140953,
+        "negative_median_balanced": 0.05104167014360428,
+        "negative_std_balanced": 0.08020192384719849,
+        "negative_mean_full": 0.0898745208978653,
+        "hedges_g": 0.6679094743349578,
+        "mean_diff": 0.0556834414601326,
+        "ci_low": 0.053135096840560433,
+        "ci_high": 0.05847105346620083
+      },
+      "temporal_raw_max_slope": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 0.2910303473472595,
+        "positive_median": 0.4060606062412262,
+        "positive_std": 1.8116687536239624,
+        "negative_mean_balanced": -0.19234377145767212,
+        "negative_median_balanced": 0.0,
+        "negative_std_balanced": 2.3006653785705566,
+        "negative_mean_full": -0.10779532790184021,
+        "hedges_g": 0.23389800524818447,
+        "mean_diff": 0.48337411880493164,
+        "ci_low": 0.4141040325164795,
+        "ci_high": 0.5482109546661377
+      },
+      "temporal_raw_mean_slope": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 0.1565207988023758,
+        "positive_median": 0.2864268124103546,
+        "positive_std": 0.86379075050354,
+        "negative_mean_balanced": -0.09298467636108398,
+        "negative_median_balanced": 0.002715275390073657,
+        "negative_std_balanced": 0.8235910534858704,
+        "negative_mean_full": -0.05017320439219475,
+        "hedges_g": 0.2954864333201049,
+        "mean_diff": 0.24950547516345978,
+        "ci_low": 0.22546797692775727,
+        "ci_high": 0.27588817998766896
+      },
+      "temporal_raw_std_slope": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 0.11227372288703918,
+        "positive_median": 0.13800139725208282,
+        "positive_std": 0.6314365267753601,
+        "negative_mean_balanced": -0.07115340232849121,
+        "negative_median_balanced": 0.0010894607985392213,
+        "negative_std_balanced": 0.7288913726806641,
+        "negative_mean_full": -0.03765975683927536,
+        "hedges_g": 0.26929855155788124,
+        "mean_diff": 0.1834271252155304,
+        "ci_low": 0.16184083335101604,
+        "ci_high": 0.20595269612967967
+      },
+      "temporal_contrast_slope": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 0.17528343200683594,
+        "positive_median": 0.1129799485206604,
+        "positive_std": 1.0694208145141602,
+        "negative_mean_balanced": -0.10921666026115417,
+        "negative_median_balanced": 0.0035353400744497776,
+        "negative_std_balanced": 1.161454677581787,
+        "negative_mean_full": -0.054122135043144226,
+        "hedges_g": 0.25499502205100205,
+        "mean_diff": 0.2845000922679901,
+        "ci_low": 0.24811975061893463,
+        "ci_high": 0.3234661020338535
+      },
+      "temporal_hotspot_slope": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 0.0006966753280721605,
+        "positive_median": 0.0007575755589641631,
+        "positive_std": 0.004247655626386404,
+        "negative_mean_balanced": -0.00038978009251877666,
+        "negative_median_balanced": 0.0,
+        "negative_std_balanced": 0.005141486879438162,
+        "negative_mean_full": -0.00018615020962897688,
+        "hedges_g": 0.23074401627842173,
+        "mean_diff": 0.0010864554205909371,
+        "ci_low": 0.0009423986979527399,
+        "ci_high": 0.0012239154108101501
+      },
+      "peak_persistence_ratio": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 0.8386796712875366,
+        "positive_median": 1.0,
+        "positive_std": 0.257759153842926,
+        "negative_mean_balanced": 0.6722293496131897,
+        "negative_median_balanced": 0.8999999761581421,
+        "negative_std_balanced": 0.36219361424446106,
+        "negative_mean_full": 0.6894073486328125,
+        "hedges_g": 0.5309943399210085,
+        "mean_diff": 0.16645032167434692,
+        "ci_low": 0.15631475746631623,
+        "ci_high": 0.17557898312807083
+      },
+      "peak_timing_norm": {
+        "positive_n": 7301,
+        "negative_n_balanced": 7047,
+        "negative_n_full": 24951,
+        "positive_mean": 0.633124828338623,
+        "positive_median": 0.8888888955116272,
+        "positive_std": 0.42394527792930603,
+        "negative_mean_balanced": 0.37834858894348145,
+        "negative_median_balanced": 0.0,
+        "negative_std_balanced": 0.4462507367134094,
+        "negative_mean_full": 0.3999617397785187,
+        "hedges_g": 0.5855624962852244,
+        "mean_diff": 0.2547762393951416,
+        "ci_low": 0.24136993214488028,
+        "ci_high": 0.26929918229579924
+      }
+    }
+  },
+  "size_depth_trends": {
+    "global_positive_correlations": {
+      "size": {
+        "raw_max": 0.8900083414365533,
+        "raw_sum": 0.7433439862458718,
+        "center_border_contrast": 0.8970686107797234,
+        "norm_hotspot_area": 0.7978783548985604
+      },
+      "depth": {
+        "raw_max": -0.03972541097836587,
+        "raw_sum": 0.1596498280920918,
+        "center_border_contrast": -0.03367795669844258,
+        "norm_hotspot_area": 0.1201784122910933
+      }
+    },
+    "fixed_depth_size_correlations": {
+      "0.5": {
+        "raw_max": 0.9520658445767324,
+        "raw_sum": 0.717141099217815,
+        "center_border_contrast": 0.9619714175091062,
+        "norm_hotspot_area": 0.863898148984198
+      },
+      "1.0": {
+        "raw_max": 0.8640842078600015,
+        "raw_sum": 0.5447604429242346,
+        "center_border_contrast": 0.7855989422609028,
+        "norm_hotspot_area": 0.6971374657958225
+      },
+      "1.5": {
+        "raw_max": 0.9700761540748188,
+        "raw_sum": 0.7544471576840674,
+        "center_border_contrast": 0.8081858403111084,
+        "norm_hotspot_area": 0.7684503501595027
+      },
+      "2.0": {
+        "raw_max": 0.9203698833541627,
+        "raw_sum": 0.8944507775247349,
+        "center_border_contrast": 0.9952444354158745,
+        "norm_hotspot_area": 0.9129282049973934
+      },
+      "2.5": {
+        "raw_max": 0.9543212448312509,
+        "raw_sum": 0.9512619036921526,
+        "center_border_contrast": 0.9373827586892336,
+        "norm_hotspot_area": 0.8627041149175192
+      },
+      "3.0": {
+        "raw_max": 0.8490336345206816,
+        "raw_sum": 0.7797731607054046,
+        "center_border_contrast": 0.9529601734854314,
+        "norm_hotspot_area": 0.7672348774389307
+      }
+    },
+    "fixed_size_depth_correlations": {
+      "0.25": {
+        "raw_max": -0.8313651989905758,
+        "raw_sum": -0.9017391703050828,
+        "center_border_contrast": -0.8681562096422965,
+        "norm_hotspot_area": -0.19317565932369632
+      },
+      "0.5": {
+        "raw_max": -0.46688943538954353,
+        "raw_sum": -0.025901010840680545,
+        "center_border_contrast": -0.2550700821108952,
+        "norm_hotspot_area": 0.6406031165038382
+      },
+      "0.75": {
+        "raw_max": 0.6492950287645972,
+        "raw_sum": 0.15914380102214412,
+        "center_border_contrast": -0.18727931747420762,
+        "norm_hotspot_area": 0.19693873927869204
+      },
+      "1.0": {
+        "raw_max": 0.3599863999584301,
+        "raw_sum": 0.6129898707636653,
+        "center_border_contrast": 0.5149096857522496,
+        "norm_hotspot_area": -0.060076800360313876
+      },
+      "1.25": {
+        "raw_max": -0.4885785142548757,
+        "raw_sum": 0.6595073381729997,
+        "center_border_contrast": -0.20267186985672533,
+        "norm_hotspot_area": 0.34964986110297896
+      },
+      "1.5": {
+        "raw_max": 0.7147259112768394,
+        "raw_sum": 0.7516058896614173,
+        "center_border_contrast": -0.48959162355102365,
+        "norm_hotspot_area": 0.7544106811372447
+      },
+      "1.75": {
+        "raw_max": -0.31519486188933404,
+        "raw_sum": 0.5142190469401757,
+        "center_border_contrast": 0.07346205348437286,
+        "norm_hotspot_area": 0.406044621419729
+      }
+    },
+    "condition_models": {
+      "raw_max": {
+        "intercept": 59.202796936035156,
+        "size_coef": 37.60615921020508,
+        "depth_coef": -8.418506622314453,
+        "interaction_coef": 7.110439777374268,
+        "r2": 0.8053505799314644,
+        "n_conditions": 42
+      },
+      "raw_sum": {
+        "intercept": 2171.532470703125,
+        "size_coef": 351.071533203125,
+        "depth_coef": -473.57666015625,
+        "interaction_coef": 663.8170776367188,
+        "r2": 0.6556316017934425,
+        "n_conditions": 42
+      },
+      "center_border_contrast": {
+        "intercept": 1.1495683193206787,
+        "size_coef": 36.35942077636719,
+        "depth_coef": -1.8053399324417114,
+        "interaction_coef": 0.9688006639480591,
+        "r2": 0.8062466096340968,
+        "n_conditions": 42
+      },
+      "norm_hotspot_area": {
+        "intercept": 0.04059896990656853,
+        "size_coef": 0.08531353622674942,
+        "depth_coef": -0.0012270051520317793,
+        "interaction_coef": 0.010348480194807053,
+        "r2": 0.6557001957093278,
+        "n_conditions": 42
+      }
+    }
+  },
+  "repeat_consistency": {
+    "pairwise_correlations": {
+      "raw_max": {
+        "1_vs_2": 0.7349503820700473,
+        "1_vs_3": 0.8232489008260253,
+        "2_vs_3": 0.7595784782119097
+      },
+      "raw_sum": {
+        "1_vs_2": 0.6667340044857751,
+        "1_vs_3": 0.6911263924043528,
+        "2_vs_3": 0.5593976395860892
+      },
+      "center_border_contrast": {
+        "1_vs_2": 0.6731089848755242,
+        "1_vs_3": 0.7568613085787985,
+        "2_vs_3": 0.7819316905539886
+      },
+      "norm_hotspot_area": {
+        "1_vs_2": 0.6812284795681744,
+        "1_vs_3": 0.8110574403656671,
+        "2_vs_3": 0.7546082695594243
+      }
+    },
+    "mean_cv": {
+      "raw_max": 0.13612628100458837,
+      "raw_sum": 0.22469736264627044,
+      "center_border_contrast": 0.3146997309479295,
+      "norm_hotspot_area": 0.21320146722947358
+    }
+  },
+  "report_takeaways": [
+    "Positive frames show substantially higher raw_max, raw_sum, and center-border contrast than negative frames.",
+    "Size effect is stronger and more monotonic than depth effect across the pooled positive-frame statistics.",
+    "Depth effect is weaker and often non-monotonic, so depth conclusions should be written cautiously.",
+    "A two-stage model design is more justified than forcing equal-weight joint learning of detection and inversion."
+  ]
+}

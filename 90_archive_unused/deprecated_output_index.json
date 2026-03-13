@@ -1,0 +1,20 @@
+{
+  "note": "These experiment directories were useful during model iteration but are not part of the final TBME submission core package.",
+  "deprecated_experiment_dirs": [
+    "experiments/outputs_stage2_raw_hybrid_positive_size",
+    "experiments/outputs_stage2_raw_hybrid_positive_size_clsheavy",
+    "experiments/outputs_stage2_raw_hybrid_positive_size_softroute",
+    "experiments/outputs_stage3_concept_depth_run1",
+    "experiments/outputs_stage3_raw_size_conditioned_depth_run1",
+    "experiments/outputs_stage3_raw_soft_routed_depth",
+    "experiments/outputs_stage3_size_conditioned_mlp_depth_run1",
+    "experiments/outputs_stage3_size_specialist_depth",
+    "experiments/outputs_stage3_predicted_size_routing_hybrid_clsheavy_v1",
+    "experiments/outputs_stage3_predicted_size_routing_hybrid_softroute_v1",
+    "experiments/outputs_stage3_predicted_size_routing_hybrid_v1",
+    "experiments/outputs_stage3_predicted_size_routing_hybrid_v2",
+    "experiments/outputs_stage3_raw_size_routed_depth_run1",
+    "experiments/outputs_stage3_raw_size_routed_depth_explainability_v1",
+    "experiments/outputs_stage3_raw_size_routed_explainability_v2"
+  ]
+}

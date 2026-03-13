@@ -1,0 +1,83 @@
+{
+  "protocol_v1": {
+    "input_shape": [
+      10,
+      1,
+      12,
+      8
+    ],
+    "window_stride": 2,
+    "size_values_cm": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75
+    ],
+    "depth_values_cm": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "coarse_depth_to_values": {
+      "shallow": [
+        0.5,
+        1.0
+      ],
+      "middle": [
+        1.5,
+        2.0
+      ],
+      "deep": [
+        2.5,
+        3.0
+      ]
+    },
+    "outputs": [
+      "y_det_prob",
+      "y_size_cls",
+      "y_size_reg",
+      "y_depth_cls_coarse"
+    ],
+    "task_priority": [
+      "detection",
+      "size_inversion",
+      "coarse_depth_training_and_interpretation"
+    ],
+    "runtime_policy": {
+      "always_visible": [
+        "y_det_prob"
+      ],
+      "gated": [
+        "y_size_cls",
+        "y_size_reg",
+        "y_depth_cls_coarse"
+      ]
+    }
+  },
+  "model_name": "RawPositiveSizeModel",
+  "validation_protocol": "file1_train_file2_val_file3_test_positive_windows",
+  "best_epoch": 47,
+  "val_metrics": {
+    "loss": 1.3362431104026395,
+    "top1": 0.7082630691399663,
+    "top2": 0.8431703204047217,
+    "mae": 0.31800623530832955,
+    "median_ae": 0.20516061782836914,
+    "count": 593
+  },
+  "test_metrics": {
+    "loss": 1.4744296499214293,
+    "top1": 0.6600209863588667,
+    "top2": 0.8405036726128017,
+    "mae": 0.29071152596837074,
+    "median_ae": 0.2015138864517212,
+    "count": 953
+  },
+  "curve_path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage2_raw_positive_size\\paper_stage2_raw_positive_size_curves.png"
+}

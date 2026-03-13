@@ -1,0 +1,262 @@
+{
+  "coverage": {
+    "common_group_count": 42,
+    "record_count": 126,
+    "positive_frame_count": 14546,
+    "positive_window_count": 7301
+  },
+  "overall_depth_correlations": {
+    "raw_max": -0.03972541097836586,
+    "raw_p95": -0.00889109933342379,
+    "raw_sum": 0.15964982809209177,
+    "raw_mean": 0.15964984485455436,
+    "hotspot_area": 0.12017841229109327,
+    "second_moment_spread": 0.19402751819500652,
+    "hotspot_radius": 0.2055143632375928,
+    "spatial_entropy": 0.22524268899988983,
+    "center_border_contrast": -0.03367795669844258,
+    "center_mean": 0.046455428204101375,
+    "anisotropy_ratio": -0.10024736544115452,
+    "peak_count": 0.026922016102856477,
+    "rise_time_to_peak": -0.23795378188194036,
+    "peak_persistence_ratio": 0.049824419904072534,
+    "decay_after_peak": 0.2139748581689135,
+    "centroid_drift": 0.40163144904768844
+  },
+  "phase_depth_sensitivity": {
+    "loading_early": {
+      "mean_abs_depth_corr": 0.44973912090063095,
+      "feature_scores": {
+        "raw_max": 0.5353670120239258,
+        "raw_p95": 0.5188288688659668,
+        "raw_sum": 0.5345264077186584,
+        "raw_mean": 0.5345264077186584,
+        "hotspot_area": 0.30898571014404297,
+        "second_moment_spread": 0.4926292896270752,
+        "hotspot_radius": 0.502265214920044,
+        "spatial_entropy": 0.4222411811351776,
+        "center_border_contrast": 0.3942618668079376,
+        "center_mean": 0.4678281843662262,
+        "anisotropy_ratio": 0.3997174799442291,
+        "peak_count": 0.2856918275356293
+      }
+    },
+    "loading_late": {
+      "mean_abs_depth_corr": 0.3881315464774768,
+      "feature_scores": {
+        "raw_max": 0.4066825211048126,
+        "raw_p95": 0.23407647013664246,
+        "raw_sum": 0.42612549662590027,
+        "raw_mean": 0.4261253774166107,
+        "hotspot_area": 0.36208266019821167,
+        "second_moment_spread": 0.41688939929008484,
+        "hotspot_radius": 0.42168575525283813,
+        "spatial_entropy": 0.5216304063796997,
+        "center_border_contrast": 0.376285582780838,
+        "center_mean": 0.3216971755027771,
+        "anisotropy_ratio": 0.2643895149230957,
+        "peak_count": 0.47990819811820984
+      }
+    },
+    "peak_neighborhood": {
+      "mean_abs_depth_corr": 0.4132886230945587,
+      "feature_scores": {
+        "raw_max": 0.41524526476860046,
+        "raw_p95": 0.33230066299438477,
+        "raw_sum": 0.40706682205200195,
+        "raw_mean": 0.40706685185432434,
+        "hotspot_area": 0.3009243905544281,
+        "second_moment_spread": 0.5343673825263977,
+        "hotspot_radius": 0.5400474667549133,
+        "spatial_entropy": 0.5809358954429626,
+        "center_border_contrast": 0.32481691241264343,
+        "center_mean": 0.3492240309715271,
+        "anisotropy_ratio": 0.3279072344303131,
+        "peak_count": 0.43956056237220764
+      }
+    },
+    "release": {
+      "mean_abs_depth_corr": 0.44193415840466815,
+      "feature_scores": {
+        "raw_max": 0.3960043489933014,
+        "raw_p95": 0.36736878752708435,
+        "raw_sum": 0.5725846886634827,
+        "raw_mean": 0.5725847482681274,
+        "hotspot_area": 0.4562414586544037,
+        "second_moment_spread": 0.3567253649234772,
+        "hotspot_radius": 0.33787232637405396,
+        "spatial_entropy": 0.4208168685436249,
+        "center_border_contrast": 0.506473958492279,
+        "center_mean": 0.5281168818473816,
+        "anisotropy_ratio": 0.3244914710521698,
+        "peak_count": 0.4639289975166321
+      }
+    }
+  },
+  "stable_feature_flags": {
+    "raw_max": {
+      "median_abs_corr": 0.48857852816581726,
+      "direction": "mixed",
+      "repeat_cv": 0.13612628100458837,
+      "stable": false
+    },
+    "raw_p95": {
+      "median_abs_corr": 0.40294745564460754,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "raw_sum": {
+      "median_abs_corr": 0.6129898428916931,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "raw_mean": {
+      "median_abs_corr": 0.6129899621009827,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "hotspot_area": {
+      "median_abs_corr": 0.3496498465538025,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "second_moment_spread": {
+      "median_abs_corr": 0.44206002354621887,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "hotspot_radius": {
+      "median_abs_corr": 0.4623608887195587,
+      "direction": "mixed",
+      "repeat_cv": 0.049402481139297204,
+      "stable": false
+    },
+    "spatial_entropy": {
+      "median_abs_corr": 0.6893116235733032,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "center_border_contrast": {
+      "median_abs_corr": 0.2550700902938843,
+      "direction": "mixed",
+      "repeat_cv": 0.3146997309479295,
+      "stable": false
+    },
+    "center_mean": {
+      "median_abs_corr": 0.31802135705947876,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "anisotropy_ratio": {
+      "median_abs_corr": 0.39306411147117615,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "peak_count": {
+      "median_abs_corr": 0.2810095250606537,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "rise_time_to_peak": {
+      "median_abs_corr": 0.48599734902381897,
+      "direction": "mixed",
+      "repeat_cv": 0.2593653777225108,
+      "stable": false
+    },
+    "peak_persistence_ratio": {
+      "median_abs_corr": 0.2914557456970215,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "decay_after_peak": {
+      "median_abs_corr": 0.1614086627960205,
+      "direction": "mixed",
+      "repeat_cv": NaN,
+      "stable": false
+    },
+    "centroid_drift": {
+      "median_abs_corr": 0.45309922099113464,
+      "direction": "mixed",
+      "repeat_cv": 0.4990642258386024,
+      "stable": false
+    }
+  },
+  "repeat_consistency": {
+    "pairwise_correlations": {
+      "raw_max": {
+        "1_vs_2": 0.7349503820700473,
+        "1_vs_3": 0.8232489008260253,
+        "2_vs_3": 0.7595784782119097
+      },
+      "hotspot_radius": {
+        "1_vs_2": 0.8207770560282542,
+        "1_vs_3": 0.8521571605505253,
+        "2_vs_3": 0.8930210180246816
+      },
+      "center_border_contrast": {
+        "1_vs_2": 0.6731089848755242,
+        "1_vs_3": 0.7568613085787985,
+        "2_vs_3": 0.7819316905539886
+      },
+      "rise_time_to_peak": {
+        "1_vs_2": 0.18475662424928546,
+        "1_vs_3": 0.5026715422117188,
+        "2_vs_3": 0.24672443322318788
+      },
+      "centroid_drift": {
+        "1_vs_2": 0.4318198203427615,
+        "1_vs_3": 0.48124119166021806,
+        "2_vs_3": 0.4165902454639582
+      }
+    },
+    "mean_cv": {
+      "raw_max": 0.13612628100458837,
+      "hotspot_radius": 0.049402481139297204,
+      "center_border_contrast": 0.3146997309479295,
+      "rise_time_to_peak": 0.2593653777225108,
+      "centroid_drift": 0.4990642258386024
+    }
+  },
+  "assumptions": {
+    "phase_reconstruction": "normalized raw_sum trajectory",
+    "depth_main_axis": "fixed-size depth analysis",
+    "pooled_depth_only_auxiliary": true,
+    "no_external_force_metadata": true
+  },
+  "figure_manifest": [
+    {
+      "name": "D1",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\depth_physics_v1\\D1_fixed_size_depth_amplitude_trends.png"
+    },
+    {
+      "name": "D2",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\depth_physics_v1\\D2_fixed_size_depth_spread_trends.png"
+    },
+    {
+      "name": "D3",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\depth_physics_v1\\D3_fixed_size_depth_temporal_trends.png"
+    },
+    {
+      "name": "D4",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\depth_physics_v1\\D4_phase_resolved_depth_heatmap_grid.png"
+    },
+    {
+      "name": "D5",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\depth_physics_v1\\D5_shallow_vs_deep_representative_heatmaps.png"
+    },
+    {
+      "name": "D6",
+      "path": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\depth_physics_v1\\D6_repeat_consistency.png"
+    }
+  ]
+}

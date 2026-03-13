@@ -1,0 +1,469 @@
+{
+  "release_name": "tbme_submission_release_v1",
+  "source_root": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization",
+  "file_count": 77,
+  "items": [
+    {
+      "category": "manuscript",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\MANUSCRIPT_DRAFT_V4_CN.md",
+      "dest": "01_manuscript\\MANUSCRIPT_DRAFT_V4_CN.md",
+      "size_bytes": 28049
+    },
+    {
+      "category": "manuscript",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\RESULTS_DRAFT_V3_CN.md",
+      "dest": "01_manuscript\\RESULTS_DRAFT_V3_CN.md",
+      "size_bytes": 6702
+    },
+    {
+      "category": "manuscript",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\FIGURE_AND_TABLE_DRAFT_V1_CN.md",
+      "dest": "01_manuscript\\FIGURE_AND_TABLE_DRAFT_V1_CN.md",
+      "size_bytes": 8905
+    },
+    {
+      "category": "manuscript",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md",
+      "dest": "01_manuscript\\TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md",
+      "size_bytes": 7817
+    },
+    {
+      "category": "manuscript",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\TASK_DEFINITION_AND_LABEL_PROTOCOL.md",
+      "dest": "01_manuscript\\TASK_DEFINITION_AND_LABEL_PROTOCOL.md",
+      "size_bytes": 5609
+    },
+    {
+      "category": "manuscript",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\MODEL_AND_SYSTEM_BLUEPRINT.md",
+      "dest": "01_manuscript\\MODEL_AND_SYSTEM_BLUEPRINT.md",
+      "size_bytes": 3899
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R10_system_overview.png",
+      "dest": "02_figures_final\\Fig_R10_system_overview.png",
+      "size_bytes": 1170633
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R11_final_pipeline.png",
+      "dest": "02_figures_final\\Fig_R11_final_pipeline.png",
+      "size_bytes": 422143
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R12_mechanism_xgboost_summary.png",
+      "dest": "02_figures_final\\Fig_R12_mechanism_xgboost_summary.png",
+      "size_bytes": 1022028
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R13_hierarchical_explainability_summary.png",
+      "dest": "02_figures_final\\Fig_R13_hierarchical_explainability_summary.png",
+      "size_bytes": 716012
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R1_detection_compare.png",
+      "dest": "02_figures_final\\Fig_R1_detection_compare.png",
+      "size_bytes": 60636
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R2_size_compare.png",
+      "dest": "02_figures_final\\Fig_R2_size_compare.png",
+      "size_bytes": 136896
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R3_depth_compare.png",
+      "dest": "02_figures_final\\Fig_R3_depth_compare.png",
+      "size_bytes": 96506
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R4_depth_confusion_hard.png",
+      "dest": "02_figures_final\\Fig_R4_depth_confusion_hard.png",
+      "size_bytes": 98274
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R5_depth_confusion_gt.png",
+      "dest": "02_figures_final\\Fig_R5_depth_confusion_gt.png",
+      "size_bytes": 96335
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R6_hierarchical_probe_family.png",
+      "dest": "02_figures_final\\Fig_R6_hierarchical_probe_family.png",
+      "size_bytes": 92369
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R7_hierarchical_branch_ablation.png",
+      "dest": "02_figures_final\\Fig_R7_hierarchical_branch_ablation.png",
+      "size_bytes": 60764
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\Fig_R8_hierarchical_phase_occlusion.png",
+      "dest": "02_figures_final\\Fig_R8_hierarchical_phase_occlusion.png",
+      "size_bytes": 89715
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_hierarchical_positive_inverter_explainability_v1\\hierarchical_hard_pair_examples.png",
+      "dest": "02_figures_final\\Fig_R9_hierarchical_hard_pairs.png",
+      "size_bytes": 944263
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_xgboost_explainability_v1\\Fig_XGB_depth_explainability_tbme.png",
+      "dest": "02_figures_final\\Fig_XGB_depth_explainability_tbme.png",
+      "size_bytes": 402262
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\app\\replay_snapshot_output\\testset_best_grid_hierarchical.png",
+      "dest": "02_figures_final\\testset_best_grid_hierarchical.png",
+      "size_bytes": 2872030
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\app\\replay_snapshot_output\\replay_snapshot_hierarchical.png",
+      "dest": "02_figures_final\\replay_snapshot_hierarchical.png",
+      "size_bytes": 566655
+    },
+    {
+      "category": "figures",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\app\\replay_snapshot_output\\best_prediction_overview_hierarchical.png",
+      "dest": "02_figures_final\\best_prediction_overview_hierarchical.png",
+      "size_bytes": 1081494
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\paper_figures_v2\\paper_metrics_summary_v2.json",
+      "dest": "03_results_core\\paper_metrics_summary_v2.json",
+      "size_bytes": 930
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\mechanism_exploration_v1\\mechanism_summary.json",
+      "dest": "03_results_core\\mechanism_summary.json",
+      "size_bytes": 46662
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\mechanism_exploration_v1\\MECHANISM_EXPLORATION_REPORT.md",
+      "dest": "03_results_core\\MECHANISM_EXPLORATION_REPORT.md",
+      "size_bytes": 4980
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\depth_physics_v1\\depth_physics_summary.json",
+      "dest": "03_results_core\\depth_physics_summary.json",
+      "size_bytes": 8940
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\depth_physics_v1\\DEPTH_PHYSICS_REPORT.md",
+      "dest": "03_results_core\\DEPTH_PHYSICS_REPORT.md",
+      "size_bytes": 3597
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_xgboost_baselines_v1\\xgboost_baseline_summary.json",
+      "dest": "03_results_core\\xgboost_baseline_summary.json",
+      "size_bytes": 5850
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_xgboost_baselines_v1\\XGBOOST_BASELINE_REPORT.md",
+      "dest": "03_results_core\\XGBOOST_BASELINE_REPORT.md",
+      "size_bytes": 804
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_xgboost_explainability_v1\\xgboost_explainability_summary.json",
+      "dest": "03_results_core\\xgboost_explainability_summary.json",
+      "size_bytes": 7042
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_xgboost_explainability_v1\\XGBOOST_EXPLAINABILITY_REPORT.md",
+      "dest": "03_results_core\\XGBOOST_EXPLAINABILITY_REPORT.md",
+      "size_bytes": 4846
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage1_dualstream_mstcn_detection_raw_delta\\paper_stage1_dualstream_mstcn_summary.json",
+      "dest": "03_results_core\\stage1_detection_summary.json",
+      "size_bytes": 26117
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage2_raw_positive_size\\paper_stage2_raw_positive_size_summary.json",
+      "dest": "03_results_core\\stage2_size_router_summary.json",
+      "size_bytes": 1783
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_hierarchical_positive_inverter_run1\\paper_hierarchical_positive_inverter_summary.json",
+      "dest": "03_results_core\\hierarchical_inverter_summary.json",
+      "size_bytes": 4965
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_hierarchical_positive_inverter_explainability_v1\\hierarchical_explainability_summary.json",
+      "dest": "03_results_core\\hierarchical_explainability_summary.json",
+      "size_bytes": 3376
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_hierarchical_positive_inverter_explainability_v1\\HIERARCHICAL_EXPLAINABILITY_REPORT.md",
+      "dest": "03_results_core\\HIERARCHICAL_EXPLAINABILITY_REPORT.md",
+      "size_bytes": 894
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage3_predicted_size_routing_v1\\stage3_predicted_size_routing_summary.json",
+      "dest": "03_results_core\\stage3_predicted_size_routing_summary.json",
+      "size_bytes": 5357
+    },
+    {
+      "category": "results",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage3_predicted_size_routing_v1\\STAGE3_PREDICTED_SIZE_ROUTING_REPORT.md",
+      "dest": "03_results_core\\STAGE3_PREDICTED_SIZE_ROUTING_REPORT.md",
+      "size_bytes": 758
+    },
+    {
+      "category": "weights",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage1_dualstream_mstcn_detection_raw_delta\\paper_stage1_dualstream_mstcn_best.pth",
+      "dest": "04_core_models\\paper_stage1_dualstream_mstcn_best.pth",
+      "size_bytes": 816960
+    },
+    {
+      "category": "weights",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage2_raw_positive_size\\paper_stage2_raw_positive_size_best.pth",
+      "dest": "04_core_models\\paper_stage2_raw_positive_size_best.pth",
+      "size_bytes": 594098
+    },
+    {
+      "category": "weights",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_hierarchical_positive_inverter_run1\\paper_hierarchical_positive_inverter_best.pth",
+      "dest": "04_core_models\\paper_hierarchical_positive_inverter_best.pth",
+      "size_bytes": 1359610
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\dual_stream_mstcn_detection.py",
+      "dest": "05_core_code\\models\\dual_stream_mstcn_detection.py",
+      "size_bytes": 6080
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\hierarchical_positive_inverter.py",
+      "dest": "05_core_code\\models\\hierarchical_positive_inverter.py",
+      "size_bytes": 9032
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\raw_positive_size_model.py",
+      "dest": "05_core_code\\models\\raw_positive_size_model.py",
+      "size_bytes": 4588
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\task_protocol_v1.py",
+      "dest": "05_core_code\\models\\task_protocol_v1.py",
+      "size_bytes": 9196
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage1_dualstream_mstcn.py",
+      "dest": "05_core_code\\models\\train_stage1_dualstream_mstcn.py",
+      "size_bytes": 21344
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage2_raw_positive_size.py",
+      "dest": "05_core_code\\models\\train_stage2_raw_positive_size.py",
+      "size_bytes": 15321
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_hierarchical_positive_inverter.py",
+      "dest": "05_core_code\\models\\train_hierarchical_positive_inverter.py",
+      "size_bytes": 33712
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\train_xgboost_baselines.py",
+      "dest": "05_core_code\\experiments\\train_xgboost_baselines.py",
+      "size_bytes": 35656
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\explain_xgboost_baselines.py",
+      "dest": "05_core_code\\experiments\\explain_xgboost_baselines.py",
+      "size_bytes": 46985
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\explain_hierarchical_positive_inverter.py",
+      "dest": "05_core_code\\experiments\\explain_hierarchical_positive_inverter.py",
+      "size_bytes": 38378
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\generate_composite_result_figures.py",
+      "dest": "05_core_code\\experiments\\generate_composite_result_figures.py",
+      "size_bytes": 3240
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\generate_system_overview_figures.py",
+      "dest": "05_core_code\\experiments\\generate_system_overview_figures.py",
+      "size_bytes": 9013
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\app\\two_stage_inference.py",
+      "dest": "05_core_code\\app\\two_stage_inference.py",
+      "size_bytes": 13825
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\app\\generate_replay_snapshots.py",
+      "dest": "05_core_code\\app\\generate_replay_snapshots.py",
+      "size_bytes": 12324
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\app\\generate_testset_best_grid.py",
+      "dest": "05_core_code\\app\\generate_testset_best_grid.py",
+      "size_bytes": 8191
+    },
+    {
+      "category": "code",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\modern_detection_gui_optimized.py",
+      "dest": "05_core_code\\app\\modern_detection_gui_optimized.py",
+      "size_bytes": 121729
+    },
+    {
+      "category": "prompts",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\AI_FIGURE_PROMPTS_CN.md",
+      "dest": "06_ai_figure_prompts\\AI_FIGURE_PROMPTS_CN.md",
+      "size_bytes": 10807
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\MANUSCRIPT_DRAFT_V1.md",
+      "dest": "90_archive_unused\\deprecated_docs\\MANUSCRIPT_DRAFT_V1.md",
+      "size_bytes": 23223
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\MANUSCRIPT_DRAFT_V2_CN.md",
+      "dest": "90_archive_unused\\deprecated_docs\\MANUSCRIPT_DRAFT_V2_CN.md",
+      "size_bytes": 6508
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\MANUSCRIPT_DRAFT_V3_CN.md",
+      "dest": "90_archive_unused\\deprecated_docs\\MANUSCRIPT_DRAFT_V3_CN.md",
+      "size_bytes": 20694
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\RESULTS_DRAFT_V1.md",
+      "dest": "90_archive_unused\\deprecated_docs\\RESULTS_DRAFT_V1.md",
+      "size_bytes": 8440
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\RESULTS_DRAFT_V2_CN.md",
+      "dest": "90_archive_unused\\deprecated_docs\\RESULTS_DRAFT_V2_CN.md",
+      "size_bytes": 2327
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\NEXT_STEPS_CHECKLIST_CN.md",
+      "dest": "90_archive_unused\\deprecated_docs\\NEXT_STEPS_CHECKLIST_CN.md",
+      "size_bytes": 2234
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\docs\\HMIL_REFERENCE_AND_ADAPTATION_CN.md",
+      "dest": "90_archive_unused\\deprecated_docs\\HMIL_REFERENCE_AND_ADAPTATION_CN.md",
+      "size_bytes": 6869
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\concept_guided_depth_model.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\concept_guided_depth_model.py",
+      "size_bytes": 7952
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\dual_stream_mstcn_multitask.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\dual_stream_mstcn_multitask.py",
+      "size_bytes": 2024
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\raw_hybrid_positive_size_model.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\raw_hybrid_positive_size_model.py",
+      "size_bytes": 6628
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\raw_size_routed_depth_model.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\raw_size_routed_depth_model.py",
+      "size_bytes": 6810
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage2_raw_hybrid_positive_size.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\train_stage2_raw_hybrid_positive_size.py",
+      "size_bytes": 26166
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage3_concept_depth.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\train_stage3_concept_depth.py",
+      "size_bytes": 31017
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage3_raw_size_conditioned_depth.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\train_stage3_raw_size_conditioned_depth.py",
+      "size_bytes": 31109
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage3_raw_size_routed_depth.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\train_stage3_raw_size_routed_depth.py",
+      "size_bytes": 15813
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage3_raw_soft_routed_depth.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\train_stage3_raw_soft_routed_depth.py",
+      "size_bytes": 17714
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage3_size_conditioned_mlp_depth.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\train_stage3_size_conditioned_mlp_depth.py",
+      "size_bytes": 15019
+    },
+    {
+      "category": "archive",
+      "source": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\models\\train_stage3_size_specialist_depth.py",
+      "dest": "90_archive_unused\\deprecated_model_scripts\\train_stage3_size_specialist_depth.py",
+      "size_bytes": 14217
+    }
+  ]
+}
