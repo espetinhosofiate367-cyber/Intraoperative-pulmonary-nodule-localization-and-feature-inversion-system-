@@ -18,5 +18,8 @@ Core training, explainability, figure-generation, and GUI inference code used by
 ## 06_ai_figure_prompts
 Prompt pack for AI-assisted concept drawings such as system overview, mechanism schematics, and method diagrams.
 
+## 07_overleaf_figure_pack
+Overleaf-ready asset pack with renamed figure files, PNG and PDF exports, figure captions, and manuscript tables.
+
 ## 90_archive_unused
 Deprecated drafts, exploratory scripts, and an index of non-final experiment output directories kept for traceability.

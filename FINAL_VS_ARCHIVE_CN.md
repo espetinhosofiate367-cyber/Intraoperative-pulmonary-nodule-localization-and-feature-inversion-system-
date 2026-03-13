@@ -21,6 +21,8 @@ These folders are considered actively useful for the TBME paper and system relea
   - Minimal code needed to reproduce training, explainability, and GUI inference.
 - `06_ai_figure_prompts/`
   - Ready-to-use prompts for AI-assisted figure generation.
+- `07_overleaf_figure_pack/`
+  - Overleaf-ready figure package with standardized names, PNG/PDF exports, figure captions, and table CSV files.
 
 ## Archive folder
 - `90_archive_unused/`

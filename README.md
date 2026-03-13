@@ -9,6 +9,7 @@ It is organized into:
 - compact model checkpoints
 - core code needed to understand or reproduce the final pipeline
 - AI prompts for drawing method and concept figures
+- an Overleaf-ready figure and table pack
 - an archive folder for deprecated drafts and exploratory scripts
 
 Use `FOLDER_MAP.md` first if you want a quick orientation.

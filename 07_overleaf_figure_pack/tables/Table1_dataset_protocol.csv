@@ -1,0 +1,10 @@
+﻿Item,Value
+Size conditions,"7 (0.25 to 1.75 cm, step 0.25 cm)"
+Depth conditions,"6 (0.5 to 3.0 cm, step 0.5 cm)"
+Condition count,42
+Repetitions,3
+Frame grid,12 x 8
+Window length,10
+Stride,2
+Detection split,File1+File2 dev / File3 test
+Inversion split,File1 train / File2 val / File3 test

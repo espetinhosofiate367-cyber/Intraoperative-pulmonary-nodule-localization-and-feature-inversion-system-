@@ -1,0 +1,6 @@
+﻿Model,Route Mode,Balanced Accuracy
+Majority baseline,N/A,0.3333333333333333
+XGBoost,Structured feature baseline,0.5137746367587025
+Stage3 raw size-routed,GT size route,0.5237574297486209
+Stage3 raw size-routed,Predicted size route,0.4821638282195244
+Unified hierarchical inverter,Predicted hard route,0.5337255037866258

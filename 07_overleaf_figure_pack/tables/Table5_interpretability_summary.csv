@@ -1,0 +1,7 @@
+﻿Analysis,Main finding,Interpretation,Limitation
+Mechanism analysis,"Depth mainly affects spread, complexity, deformation position, and phase",Depth is weaker than size and condition-dependent,Not a deployed model
+XGBoost explainability,Depth classification relies more on deformation-position / shape-contrast / spread than amplitude,Structured cues exist in tactile data,Feature-engineered baseline
+Latent probe,Unified model latent features recover depth-related concepts better than size-only probe,Model encodes depth-related structure beyond size identity,Probe is linear and post hoc
+Branch ablation,Shape and tabular branches are critical,Final model is not relying on a single cue,Ablation is still architecture-specific
+Phase occlusion,Model still depends most on peak neighborhood,Temporal strategy does not fully match the hypothesized loading/release dominance,Phase use remains incomplete
+Hard-pair analysis,Deeper sample receives higher p_deep in most matched pairs,Model is not only using peak amplitude,Evidence is moderate rather than absolute
