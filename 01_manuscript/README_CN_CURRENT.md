@@ -57,6 +57,7 @@
 
 ### 5. 画图 Prompt 与施工资料
 - [NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md)
+- [GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md)
 - [INTRODUCTION_OVERVIEW_SINGLE_PROMPT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/INTRODUCTION_OVERVIEW_SINGLE_PROMPT_CN.md)
 - [METHODS_OVERVIEW_SINGLE_PROMPT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/METHODS_OVERVIEW_SINGLE_PROMPT_CN.md)
 
@@ -64,6 +65,9 @@
 - 神经网络架构图、XGBoost 图、主结果数据图的 prompt
 - 引言总图 prompt
 - 方法总图 prompt
+
+如果你现在准备直接用 Gemini 生图，优先看：
+- `GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md`
 
 ### 6. 支撑文稿写作的辅助文件
 - [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
@@ -108,15 +112,16 @@
 6. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`
 7. `DEEP_MODEL_ARCHITECTURE_OVERVIEW_CN.md`
 8. `NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md`
-9. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
-10. `REFERENCE_VERIFICATION_TBME_CN.md`
-11. `FIGURE_CAPTIONS_TBME_V1_CN.md`
-12. `TABLES_TBME_READY_V3_CN.md`
-13. `FIGURE_DRAWING_STUDY_TBME_CN.md`
-14. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
-15. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
-16. `RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
-17. `03_results_core/raw_size_v2/`
-18. `03_results_core/raw_routeaware_depth_v2/`
-19. `03_results_core/latency_benchmark_v1/`
-20. `08_overleaf_draft_v1/`
+9. `GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md`
+10. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
+11. `REFERENCE_VERIFICATION_TBME_CN.md`
+12. `FIGURE_CAPTIONS_TBME_V1_CN.md`
+13. `TABLES_TBME_READY_V3_CN.md`
+14. `FIGURE_DRAWING_STUDY_TBME_CN.md`
+15. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
+16. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
+17. `RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
+18. `03_results_core/raw_size_v2/`
+19. `03_results_core/raw_routeaware_depth_v2/`
+20. `03_results_core/latency_benchmark_v1/`
+21. `08_overleaf_draft_v1/`
