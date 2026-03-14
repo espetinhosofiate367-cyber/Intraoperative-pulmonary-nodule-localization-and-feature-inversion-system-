@@ -3,7 +3,7 @@
 ## 当前应优先使用的文件
 
 ### 1. 当前主稿
-- [MANUSCRIPT_DRAFT_V9_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V9_CN.md)
+- [MANUSCRIPT_DRAFT_V10_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V10_CN.md)
 
 这是目前最新、最贴近 `TBME` 投稿口径的一版中文主稿。
 当前定位是：
@@ -35,10 +35,16 @@
 ### 4. TBME 冲刊文档
 - [TBME_GAP_AND_ACTION_PLAN_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_GAP_AND_ACTION_PLAN_CN.md)
 - [TBME_COVER_LETTER_DRAFT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_COVER_LETTER_DRAFT_CN.md)
+- [RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md)
+- [FIGURE_CAPTIONS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_CAPTIONS_TBME_V1_CN.md)
+- [TABLES_TBME_READY_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V1_CN.md)
 
 其中：
 - `TBME_GAP_AND_ACTION_PLAN_CN.md` 用于判断当前稿件离 TBME 还差什么
 - `TBME_COVER_LETTER_DRAFT_CN.md` 用于后续生成正式投稿信
+- `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md` 用于把相关工作直接嵌入正文
+- `FIGURE_CAPTIONS_TBME_V1_CN.md` 用于主文图注
+- `TABLES_TBME_READY_V1_CN.md` 用于主文关键表格
 
 ### 5. 支撑文稿写作的辅助文件
 - [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
@@ -55,6 +61,7 @@
 - `MANUSCRIPT_DRAFT_V6_CN.md`
 - `MANUSCRIPT_DRAFT_V7_CN.md`
 - `MANUSCRIPT_DRAFT_V8_CN.md`
+- `MANUSCRIPT_DRAFT_V9_CN.md`
 - `FIGURE_AND_TABLE_DRAFT_V1_CN.md`
 - `FIGURE_AND_TABLE_DRAFT_V2_CN.md`
 - `RESULTS_DRAFT_V3_CN.md`
@@ -62,6 +69,9 @@
 ## 最推荐的阅读顺序
 1. `MODEL_ROLE_MAP_CN.md`
 2. `TBME_GAP_AND_ACTION_PLAN_CN.md`
-3. `MANUSCRIPT_DRAFT_V9_CN.md`
+3. `MANUSCRIPT_DRAFT_V10_CN.md`
 4. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
-5. `03_results_core/latency_benchmark_v1/`
+5. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
+6. `FIGURE_CAPTIONS_TBME_V1_CN.md`
+7. `TABLES_TBME_READY_V1_CN.md`
+8. `03_results_core/latency_benchmark_v1/`
