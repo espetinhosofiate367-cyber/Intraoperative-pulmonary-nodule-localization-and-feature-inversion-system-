@@ -6,12 +6,15 @@
 \toprule
 Pipeline & Scope & Median (ms) \\
 \midrule
-XGBoost detection & Model-only CPU & 0.5740 \\
+\multicolumn{3}{l}{\textit{Detection path}} \\
+XGBoost detection & Model-only CPU & \textbf{0.5740} \\
 NN detection & Model-only CPU & 6.9379 \\
 XGBoost detection & End-to-end CPU & 27.3447 \\
-NN detection & End-to-end CPU & 7.1143 \\
-NN detection & End-to-end GPU & 2.8131 \\
-XGBoost cascade & End-to-end CPU & 9.4641 \\
+NN detection & End-to-end CPU & \textbf{7.1143} \\
+NN detection & End-to-end GPU & \textbf{2.8131} \\
+\midrule
+\multicolumn{3}{l}{\textit{Full chain}} \\
+XGBoost cascade & End-to-end CPU & \textbf{9.4641} \\
 NN two-stage & End-to-end CPU & 14.6890 \\
 NN two-stage & End-to-end GPU & 14.5371 \\
 \bottomrule

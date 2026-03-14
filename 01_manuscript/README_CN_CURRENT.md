@@ -40,6 +40,9 @@
 - [FIGURE_CAPTIONS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_CAPTIONS_TBME_V1_CN.md)
 - [TABLES_TBME_READY_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V1_CN.md)
 - [FIGURE_REDRAW_BRIEFS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_REDRAW_BRIEFS_TBME_CN.md)
+- [FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md)
+- [TABLES_TBME_READY_V2_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V2_CN.md)
+- [FORMULAS_AND_PARAMETERS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FORMULAS_AND_PARAMETERS_TBME_V1_CN.md)
 
 其中：
 - `TBME_GAP_AND_ACTION_PLAN_CN.md` 用于判断当前稿件离 TBME 还差什么
@@ -47,8 +50,12 @@
 - `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md` 用于把相关工作直接嵌入正文
 - `REFERENCE_VERIFICATION_TBME_CN.md` 用于确认当前参考文献没有假条目并追踪链接
 - `FIGURE_CAPTIONS_TBME_V1_CN.md` 用于主文图注
-- `TABLES_TBME_READY_V1_CN.md` 用于主文关键表格
-- `FIGURE_REDRAW_BRIEFS_TBME_CN.md` 用于指导主文图如何重画
+- `TABLES_TBME_READY_V1_CN.md` 是旧版表格草稿
+- `FIGURE_REDRAW_BRIEFS_TBME_CN.md` 是旧版图重画提示
+- `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md` 是当前正式图纸蓝图
+- `TABLES_TBME_READY_V2_CN.md` 是当前更严谨、关键数值加粗的表格版
+- `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md` 用于 Methods 中的公式与参数书写
+- `03_results_core/visualization_gallery_v1/` 是当前候选数据可视化画廊（t-SNE / PCA / 热图 / 分布图）
 
 ### 5. 支撑文稿写作的辅助文件
 - [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
@@ -90,5 +97,9 @@
 7. `FIGURE_CAPTIONS_TBME_V1_CN.md`
 8. `TABLES_TBME_READY_V1_CN.md`
 9. `FIGURE_REDRAW_BRIEFS_TBME_CN.md`
-10. `03_results_core/latency_benchmark_v1/`
-11. `08_overleaf_draft_v1/`
+10. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`
+11. `TABLES_TBME_READY_V2_CN.md`
+12. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
+13. `03_results_core/visualization_gallery_v1/`
+14. `03_results_core/latency_benchmark_v1/`
+15. `08_overleaf_draft_v1/`

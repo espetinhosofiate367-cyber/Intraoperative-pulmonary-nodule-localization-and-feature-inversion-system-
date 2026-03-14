@@ -6,12 +6,14 @@
 \toprule
 Model / Path & Evaluation mode & BAcc \\
 \midrule
+\multicolumn{3}{l}{\textit{Scientific main line}} \\
 Majority baseline & GT-positive & 0.3333 \\
 XGBoost structured baseline & GT-positive & 0.5138 \\
-Raw size-routed depth model & GT route & 0.5238 \\
+Raw size-routed depth model & GT route & \textbf{0.5238} \\
+\midrule
+\multicolumn{3}{l}{\textit{Deployment enhancement}} \\
 Raw size-routed depth model & Predicted route & 0.4822 \\
-Unified hierarchical inverter & GT route & 0.5407 \\
-Unified hierarchical inverter & Predicted hard route & 0.5337 \\
+Unified hierarchical inverter & Predicted hard route & \textbf{0.5337} \\
 \bottomrule
 \end{tabular}
 \end{table}
