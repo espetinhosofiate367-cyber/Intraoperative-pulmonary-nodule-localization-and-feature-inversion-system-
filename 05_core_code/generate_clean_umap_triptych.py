@@ -202,6 +202,103 @@ def main():
         "\n".join(summary_lines), encoding="utf-8"
     )
 
+    selected_sizes = [0.25, 1.0, 1.75]
+    fig2, axes2 = plt.subplots(1, 3, figsize=(16.6, 5.2))
+    panel_summaries = []
+    for ax, size_cm in zip(axes2, selected_sizes):
+        part = meta[np.isclose(meta["size_cm"], size_cm)].copy()
+        z_part = StandardScaler().fit_transform(features[part["sample_idx"].to_numpy()])
+        reducer = umap.UMAP(
+            n_components=2,
+            n_neighbors=24,
+            min_dist=0.18,
+            metric="euclidean",
+            random_state=2026,
+        )
+        emb_part = reducer.fit_transform(z_part)
+        part["ux"] = emb_part[:, 0]
+        part["uy"] = emb_part[:, 1]
+        y_part = pd.Categorical(part["coarse_depth"], categories=DEPTH_ORDER, ordered=True).codes
+        pred_part = cross_val_predict(
+            LogisticRegression(max_iter=3000),
+            z_part,
+            y_part,
+            cv=StratifiedKFold(n_splits=3, shuffle=True, random_state=2026),
+            method="predict",
+        )
+        acc_part = float(np.mean(pred_part == y_part))
+        panel_summaries.append((size_cm, len(part), acc_part))
+        part["correct"] = pred_part == y_part
+        for depth_name in DEPTH_ORDER:
+            cls = part[part["coarse_depth"] == depth_name]
+            ax.scatter(
+                cls["ux"],
+                cls["uy"],
+                s=28,
+                alpha=0.78,
+                color=DEPTH_COLORS[depth_name],
+                linewidths=0.0,
+                label=depth_name,
+            )
+        wrong = part[~part["correct"]]
+        if not wrong.empty:
+            ax.scatter(
+                wrong["ux"],
+                wrong["uy"],
+                s=64,
+                facecolors="none",
+                edgecolors="#111111",
+                linewidths=0.85,
+                alpha=0.95,
+            )
+        ax.set_title(f"Size = {size_cm:.2f} cm\nOOF probe acc = {acc_part:.3f}")
+        ax.set_xticks([])
+        ax.set_yticks([])
+        ax.set_xlabel("")
+        ax.set_ylabel("")
+        ax.grid(False)
+
+    axes2[0].legend(frameon=False, loc="best", title="Depth")
+    for idx, ax in enumerate(axes2):
+        ax.text(
+            -0.12,
+            1.04,
+            chr(ord("A") + idx),
+            transform=ax.transAxes,
+            fontsize=14,
+            fontweight="bold",
+            ha="left",
+            va="bottom",
+        )
+    fig2.suptitle(
+        "Size-controlled UMAP views reveal clearer depth structure than the global embedding",
+        y=1.03,
+        fontweight="bold",
+    )
+    fig2.tight_layout()
+    fig2.savefig(OUT_DIR / "G1C_size_controlled_umap_depth.png", dpi=280, bbox_inches="tight")
+    fig2.savefig(OUT_DIR / "G1C_size_controlled_umap_depth.pdf", dpi=280, bbox_inches="tight")
+    plt.close(fig2)
+
+    size_lines = [
+        "# Size-Controlled UMAP Summary",
+        "",
+        "Global UMAP was intentionally demoted because the full latent space mixes strong size and weaker depth effects.",
+        "The figure below controls the size condition and visualizes depth structure within selected size bands.",
+        "",
+    ]
+    for size_cm, n_count, acc_part in panel_summaries:
+        size_lines.append(f"- Size `{size_cm:.2f} cm`: `n={n_count}`, out-of-fold probe accuracy `{acc_part:.4f}`")
+    size_lines += [
+        "",
+        "Interpretation boundary:",
+        "- This figure is more defensible than the global UMAP because it respects the known size-depth coupling.",
+        "- It still serves as representation evidence rather than a replacement for confusion matrices or balanced accuracy.",
+    ]
+    (OUT_DIR / "G1C_size_controlled_umap_depth.md").write_text(
+        "\n".join(size_lines), encoding="utf-8"
+    )
+
     print("Saved:", OUT_DIR / "G1B_clean_umap_triptych_raw_scientific.png")
 
 
