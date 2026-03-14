@@ -17,6 +17,44 @@
 
 ---
 
+## Prompt I-0：引言总图（推荐优先生成）
+
+### 用途
+作为引言里的**一张大图**，把临床痛点、现有方法局限、病态逆问题以及本文研究路径放在同一画面中，帮助读者在进入方法和结果之前先理解整篇文章的逻辑。
+
+### 推荐版式
+- 横向大图，建议 `16:9` 或 `1.8:1`
+- 采用 `A-B-C-D` 四分区布局
+- 从左到右阅读，形成完整叙事链
+
+### 中文提示词
+请绘制一张适用于 IEEE TBME 论文引言部分的**大型总览概念图**，主题为“基于柔性阵列触觉传感与层级时空神经网络的术中肺结节定位与特征反演问题背景与研究路径”。整张图采用从左到右的四分区叙事结构，白色背景，简洁医学工程矢量图风格，蓝绿灰为主色，橙色只用于高亮结节、风险点和关键路径。
+
+第一区（A，临床痛点）：展示开放手术与胸腔镜/机器人微创手术的对照。开放手术中医生可以直接触摸肺组织定位结节；微创手术中医生只能通过细长刚性器械操作，触觉反馈缺失。肺内标出一个“小而深”的结节，并突出“看不见、摸不准”的术中困难。
+
+第二区（B，现有方法局限）：用横向并列的小模块展示术前 CT 引导钩线/染料定位、术中超声、数字触诊三种常见方案，并在每个模块下方用短标签标出主要局限，如气胸和移位风险、空气干扰与操作者依赖、主观性强与不可量化。最右侧加入柔性触觉阵列方案，标注其优势为“dynamic tactile sensing”与“quantitative feedback”。
+
+第三区（C，病态逆问题）：展示一个浅层小结节与一个深层大结节在某一单帧按压时刻可能产生相似的表面伪彩应力热点，形成“single-frame ambiguity”或“ill-posed inverse problem”。请包含简化肺组织剖面、埋藏结节、贴附表面的柔性触觉阵列和表面应力热图。再用时间箭头展示动态按压后，两者在热点扩散、形态对比、时间滞后和阶段响应上出现差异。
+
+第四区（D，本文研究路径）：展示本文的完整逻辑链：柔性阵列数据采集 -> 非深度学习机制分析 -> XGBoost 结构化基线 -> 原始输入层级神经网络 -> 可解释性验证。请明确标出最终层级推理流程为“Detection -> Size -> Depth”，并在右下角用简洁图标显示实时输出的结节概率、大小和深度。强调本文不是简单用神经网络替换传统方法，而是在机制与结构化解释基础上实现原始输入学习与系统部署。
+
+请在整张图中预留清晰的英文标题、A/B/C/D 面板标签和图注空间。整体风格必须是学术期刊信息图，避免海报化、广告化、科幻化，不要黑底、不要霓虹发光、不要复杂背景纹理、不要人物面部特写、不要夸张 3D 效果。
+
+### English prompt
+Create a **large introductory overview figure** for an IEEE TBME paper, with the theme: “Problem background and research roadmap for an intraoperative pulmonary nodule localization and feature inversion system based on flexible tactile sensing and hierarchical spatiotemporal neural networks.” Use a left-to-right four-panel narrative layout on a white background, in a clean biomedical engineering vector infographic style. Use restrained blue/teal/gray colors, with orange only to highlight lesions, risk points, and key pathways.
+
+Panel A (clinical problem): compare open thoracic surgery versus minimally invasive thoracoscopic or robot-assisted surgery. In open surgery, the surgeon can directly palpate the lung and localize a nodule; in minimally invasive surgery, the surgeon uses long rigid instruments and loses tactile feedback. Include a small deep pulmonary nodule inside the lung and emphasize the difficulty of localization.
+
+Panel B (limitations of current methods): show preoperative CT-guided hook-wire or dye localization, intraoperative ultrasound, and digital palpation as three existing strategies, each with a short limitation label such as pneumothorax/displacement risk, air interference and operator dependence, or strong subjectivity and lack of quantification. Add a flexible tactile-array strategy on the right, labeled with advantages such as “dynamic tactile sensing” and “quantitative feedback.”
+
+Panel C (ill-posed inverse problem): show that a small shallow nodule and a large deep nodule may generate similar pseudo-color surface tactile stress hotspots at a single pressing frame, creating “single-frame ambiguity” and an “ill-posed inverse problem.” Include simplified lung cross-sections, embedded nodules, a conformal tactile array on the surface, and tactile heatmaps. Then add a temporal arrow and a short dynamic pressing sequence to show that the two cases diverge in spread extent, shape contrast, temporal lag, and phase-dependent response.
+
+Panel D (our study roadmap): illustrate the full logic of the study: flexible tactile data acquisition -> non-deep-learning mechanism analysis -> structured XGBoost baseline -> raw-input hierarchical neural networks -> interpretability validation. Clearly show the final hierarchical task flow as “Detection -> Size -> Depth,” and place compact output icons for nodule probability, size, and depth in the lower right. Emphasize that the study does not simply replace a traditional method with a neural network; instead, it first establishes mechanistic and structured interpretability, then learns from raw tactile sequences and deploys the system in a real-time interface.
+
+Leave clear space for an English title, A/B/C/D panel letters, and a journal-style caption. The figure must look publication-ready for IEEE TBME, not like a commercial poster: no dark background, no neon glow, no sci-fi HUD, no glossy 3D style, no busy background texture, and no human face close-ups.
+
+---
+
 ## Prompt I-1：术中肺结节定位的临床痛点图
 
 ### 用途
