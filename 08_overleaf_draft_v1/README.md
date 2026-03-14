@@ -3,7 +3,7 @@
 This folder is an Overleaf-ready English draft skeleton for the TBME-target manuscript.
 
 ## Goal
-- Provide a clean English paper structure based on `MANUSCRIPT_DRAFT_V10_CN.md`
+- Provide a clean English paper structure based on `MANUSCRIPT_DRAFT_V12_CN.md`
 - Show how figures, tables, and references can be organized in Overleaf
 - Make it easier to start formal TBME writing without rebuilding the project layout from scratch
 

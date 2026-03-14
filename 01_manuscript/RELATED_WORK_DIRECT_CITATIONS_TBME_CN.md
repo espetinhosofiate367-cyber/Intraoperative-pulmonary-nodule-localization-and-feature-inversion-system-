@@ -1,7 +1,7 @@
 ﻿# 相关工作与直接引用建议（TBME 版）
 
 ## 用法说明
-- 本文件用于给 `MANUSCRIPT_DRAFT_V10_CN.md` 提供可直接替换到 Overleaf 的参考文献候选。
+- 本文件用于给 `MANUSCRIPT_DRAFT_V12_CN.md` 提供可直接替换到 Overleaf 的参考文献候选。
 - 当前正文中使用临时占位符 `R1-R8`。
 - 后续写英文稿时，可把这些条目整理成 BibTeX，并将 `R1-R8` 替换为正式编号。
 

@@ -4,6 +4,9 @@ This repository is a reviewer-oriented release package for the paper on tactile 
 
 ## Start Here
 
+If you are coordinating the project itself, start with:
+- `00_project_management/PROJECT_STATUS_BOARD.md`
+
 If you only want the fastest route to understand or verify the paper, open:
 - `REVIEWER_QUICKSTART.md`
 
@@ -16,6 +19,7 @@ If you want the detailed Chinese project navigation:
 ## Minimal Review Path
 
 For most reviewers, only these folders matter:
+- `00_project_management/` : active deliverables, status board, and archive policy
 - `01_manuscript/` : current manuscript draft, figure plan, and paper-facing notes
 - `03_results_core/` : final result summaries used in the paper
 - `04_core_models/` : released checkpoints for the final pipeline

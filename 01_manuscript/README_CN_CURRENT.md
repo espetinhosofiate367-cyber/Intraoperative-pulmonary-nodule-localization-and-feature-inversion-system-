@@ -57,17 +57,17 @@
 - [STYLE_REFERENCE_PAPERS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/STYLE_REFERENCE_PAPERS_TBME_CN.md)
 
 ### 5. 画图 Prompt 与施工资料
+- [README_ACTIVE_PROMPTS_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/README_ACTIVE_PROMPTS_CN.md)
 - [NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md)
 - [GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md)
 - [FIG1_INTRO_CONCEPT_GEMINI_PROMPTS_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/FIG1_INTRO_CONCEPT_GEMINI_PROMPTS_V1_CN.md)
-- [INTRODUCTION_OVERVIEW_SINGLE_PROMPT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/INTRODUCTION_OVERVIEW_SINGLE_PROMPT_CN.md)
-- [METHODS_OVERVIEW_SINGLE_PROMPT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/METHODS_OVERVIEW_SINGLE_PROMPT_CN.md)
+- [HMIL_FIGURE_STYLE_REFERENCE_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/HMIL_FIGURE_STYLE_REFERENCE_CN.md)
 
-这三份文件分别负责：
+当前活跃 prompt 体系分别负责：
+- 当前 prompt 总入口与使用顺序
 - 神经网络架构图、XGBoost 图、主结果数据图的 prompt
 - `Fig.1` 引言概念总图的 Gemini 定稿 prompt
-- 引言总图 prompt
-- 方法总图 prompt
+- 方法图与整体版式风格参考
 
 如果你现在准备直接用 Gemini 生图，优先看：
 - `FIG1_INTRO_CONCEPT_GEMINI_PROMPTS_V1_CN.md`
@@ -105,6 +105,17 @@
 说明：
 - 由于个别文件正在被本地程序占用，原目录下可能还残留少量同组图片。
 - 这些残留文件同样视为已弃用，不再进入当前主线。
+
+## 已归档的本轮替代文件
+以下文件已从当前活跃区移出：
+- `MANUSCRIPT_DRAFT_V10_CN.md`
+- `MANUSCRIPT_DRAFT_V11_CN.md`
+- `TABLES_TBME_READY_V1_CN.md`
+- `FIGURE_REDRAW_BRIEFS_TBME_CN.md`
+
+归档位置：
+- [manuscript_history](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/90_archive_unused/manuscript_history)
+- [deprecated_docs](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/90_archive_unused/deprecated_docs)
 
 ## 最推荐的阅读顺序
 1. `MODEL_ROLE_MAP_CN.md`

@@ -1,5 +1,11 @@
 # 项目中文总览与导航说明
 
+> 注：本文件保留为“项目全貌与历史脉络”说明。  
+> 如果你当前要继续写稿、画图、复现实验或整理投稿材料，请优先使用：
+> - `00_project_management/PROJECT_STATUS_BOARD.md`
+> - `01_manuscript/README_CN_CURRENT.md`
+> - `REVIEWER_QUICKSTART.md`
+
 ## 1. 这个项目现在到底是什么
 这个仓库不是一个普通的“只放代码”的项目，而是一个已经被整理成**论文投稿 + 复现实验 + 演示系统**三位一体的发布包。
 
@@ -313,16 +319,18 @@
 
 主要文件：
 
-- `AI_FIGURE_PROMPTS_CN.md`
+- `README_ACTIVE_PROMPTS_CN.md`
+- `GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md`
+- `FIG1_INTRO_CONCEPT_GEMINI_PROMPTS_V1_CN.md`
 
 里面已经整理了：
 
-- 系统总览图 prompt
-- 方法流程图 prompt
-- 生物力学概念图 prompt
-- XGBoost explainability 图 prompt
-- 统一层级网络结构图 prompt
-- GUI/graphical abstract prompt
+- 当前活跃 prompt 的使用顺序
+- 引言总图和方法总图 prompt
+- 神经网络架构图 prompt
+- XGBoost / 主结果数据图版式 prompt
+- GUI / 系统原型图 prompt
+- 已归档旧 prompt 的说明
 
 一句话：
 **如果你要让图像生成模型画方法图、概念图，就看这里。**

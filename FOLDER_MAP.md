@@ -2,10 +2,15 @@
 
 For reviewers, the fastest useful path is:
 1. `REVIEWER_QUICKSTART.md`
-2. `01_manuscript/`
-3. `03_results_core/`
-4. `04_core_models/`
-5. `05_core_code/`
+2. `00_project_management/PROJECT_STATUS_BOARD.md`
+3. `01_manuscript/`
+4. `03_results_core/`
+5. `04_core_models/`
+6. `05_core_code/`
+
+## 00_project_management
+Project-facing management entry for the current release.
+Contains the active status board, deliverable register, and archive rules for maintainers.
 
 ## 01_manuscript
 Current paper draft, figure/table plan, model-role notes, and protocol-level writing materials.
@@ -26,6 +31,7 @@ Use `05_core_code/README_REPRODUCTION.md` as the reproduction entry point.
 
 ## 06_ai_figure_prompts
 Prompt pack for AI-assisted concept drawings such as system overview, mechanism schematics, and method diagrams.
+Use `06_ai_figure_prompts/README_ACTIVE_PROMPTS_CN.md` as the active prompt entry point.
 
 ## 07_overleaf_figure_pack
 Overleaf-ready asset pack with renamed figure files, PNG and PDF exports, figure captions, and manuscript tables.
