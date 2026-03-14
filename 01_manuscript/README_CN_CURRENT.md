@@ -1,4 +1,4 @@
-﻿# 文稿区当前使用说明
+# 文稿区当前使用说明
 
 ## 当前应优先使用的文件
 
@@ -16,13 +16,15 @@
 
 ### 2. 当前图表组织方案（TBME 目标版）
 - [FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md)
+- [FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md)
+- [FIGURE_STRATEGY_RESET_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_STRATEGY_RESET_TBME_V1_CN.md)
 
-这份文件定义：
+这三份文件共同定义：
 - 主文图放哪些
 - 补充材料放哪些
 - 哪些图服务 raw scientific line
 - 哪些图服务 deployment enhancement line
-- 哪些图最适合 TBME 主文节奏
+- 当前明确不再采用哪些图
 
 ### 3. 模型角色说明
 - [MODEL_ROLE_MAP_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_ROLE_MAP_CN.md)
@@ -38,24 +40,8 @@
 - [RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md)
 - [REFERENCE_VERIFICATION_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/REFERENCE_VERIFICATION_TBME_CN.md)
 - [FIGURE_CAPTIONS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_CAPTIONS_TBME_V1_CN.md)
-- [TABLES_TBME_READY_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V1_CN.md)
-- [FIGURE_REDRAW_BRIEFS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_REDRAW_BRIEFS_TBME_CN.md)
-- [FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md)
 - [TABLES_TBME_READY_V2_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V2_CN.md)
 - [FORMULAS_AND_PARAMETERS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FORMULAS_AND_PARAMETERS_TBME_V1_CN.md)
-
-其中：
-- `TBME_GAP_AND_ACTION_PLAN_CN.md` 用于判断当前稿件离 TBME 还差什么
-- `TBME_COVER_LETTER_DRAFT_CN.md` 用于后续生成正式投稿信
-- `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md` 用于把相关工作直接嵌入正文
-- `REFERENCE_VERIFICATION_TBME_CN.md` 用于确认当前参考文献没有假条目并追踪链接
-- `FIGURE_CAPTIONS_TBME_V1_CN.md` 用于主文图注
-- `TABLES_TBME_READY_V1_CN.md` 是旧版表格草稿
-- `FIGURE_REDRAW_BRIEFS_TBME_CN.md` 是旧版图重画提示
-- `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md` 是当前正式图纸蓝图
-- `TABLES_TBME_READY_V2_CN.md` 是当前更严谨、关键数值加粗的表格版
-- `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md` 用于 Methods 中的公式与参数书写
-- `03_results_core/visualization_gallery_v1/` 是当前候选数据可视化画廊（t-SNE / PCA / 热图 / 分布图）
 
 ### 5. 支撑文稿写作的辅助文件
 - [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
@@ -76,30 +62,30 @@
 旧版本已经移到：
 - [90_archive_unused/manuscript_history](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/90_archive_unused/manuscript_history)
 
-包括：
-- `MANUSCRIPT_DRAFT_V4_CN.md`
-- `MANUSCRIPT_DRAFT_V5_CN.md`
-- `MANUSCRIPT_DRAFT_V6_CN.md`
-- `MANUSCRIPT_DRAFT_V7_CN.md`
-- `MANUSCRIPT_DRAFT_V8_CN.md`
-- `MANUSCRIPT_DRAFT_V9_CN.md`
-- `FIGURE_AND_TABLE_DRAFT_V1_CN.md`
-- `FIGURE_AND_TABLE_DRAFT_V2_CN.md`
-- `RESULTS_DRAFT_V3_CN.md`
+## 已归档的探索性可视化
+以下图组已经明确退出当前论文主线：
+- [rejected_visualization_gallery_v1_20260314_133856](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/90_archive_unused/rejected_visualization_gallery_v1_20260314_133856)
+
+归档原因：
+- 视觉说服力不稳定
+- 对主文论证帮助有限
+- 容易分散审稿人注意力
+
+说明：
+- 由于个别文件正在被本地程序占用，原目录下可能还残留少量同组图片。
+- 这些残留文件同样视为已弃用，不再进入当前主线。
 
 ## 最推荐的阅读顺序
 1. `MODEL_ROLE_MAP_CN.md`
 2. `TBME_GAP_AND_ACTION_PLAN_CN.md`
 3. `MANUSCRIPT_DRAFT_V10_CN.md`
-4. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
-5. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
-6. `REFERENCE_VERIFICATION_TBME_CN.md`
-7. `FIGURE_CAPTIONS_TBME_V1_CN.md`
-8. `TABLES_TBME_READY_V1_CN.md`
-9. `FIGURE_REDRAW_BRIEFS_TBME_CN.md`
-10. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`
-11. `TABLES_TBME_READY_V2_CN.md`
-12. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
-13. `03_results_core/visualization_gallery_v1/`
-14. `03_results_core/latency_benchmark_v1/`
-15. `08_overleaf_draft_v1/`
+4. `FIGURE_STRATEGY_RESET_TBME_V1_CN.md`
+5. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
+6. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`
+7. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
+8. `REFERENCE_VERIFICATION_TBME_CN.md`
+9. `FIGURE_CAPTIONS_TBME_V1_CN.md`
+10. `TABLES_TBME_READY_V2_CN.md`
+11. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
+12. `03_results_core/latency_benchmark_v1/`
+13. `08_overleaf_draft_v1/`
