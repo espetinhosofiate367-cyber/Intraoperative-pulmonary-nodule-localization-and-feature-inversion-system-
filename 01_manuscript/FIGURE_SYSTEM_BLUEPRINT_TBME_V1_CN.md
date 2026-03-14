@@ -92,6 +92,10 @@
 - `10-frame window, stride = 2`
 - `Detection -> Size -> Depth`
 - raw scientific line 和 deployment enhancement 的角色区别
+- raw scientific line 内部建议明确标出：
+  - `Stage I raw detector`
+  - `Stage II raw size-only router v2`
+  - `Stage III raw route-aware size-routed depth v2`
 
 ### 画法建议
 - 主路径粗箭头
@@ -134,7 +138,7 @@
 
 ## Fig.5 Size 结果
 ### 核心问题
-大小是否能从 raw-input 学出来，以及不同模型之间的权衡是什么。
+大小是否能从 raw-input 学出来，以及 pure raw v2 是否已经超过 XGBoost。
 
 ### 推荐 panel
 - `A` Top-1 / Top-2 grouped bars
@@ -143,29 +147,33 @@
 
 ### 图要传达的结论
 - size 是强主效应
-- raw-input classification 已接近 structured baseline
-- standalone regression 最优仍由 structured baseline 保持
+- 优化后的 pure raw size v2 已在 `Top-1 / Top-2 / MAE` 上全面超过 XGBoost
+- unified model 在这张图里不是主角，它主要服务部署增强
 
 ---
 
 ## Fig.6 Raw-input depth 主结果
 ### 核心问题
-为什么 depth 不能靠普通共享 head 学出来，以及为什么必须 size-aware。
+为什么 depth 不能靠普通共享 head 学出来，以及为什么必须 `size-aware + route-aware`。
 
 ### 推荐 panel
 - `A` balanced accuracy comparison
 - `B` GT-route confusion matrix
+- `C` predicted-route comparison or confusion
 
 ### 必须比较的对象
 - majority baseline
 - XGBoost structured baseline
 - raw shared-head failure
-- raw size-routed success
+- raw size-routed v1
+- raw route-aware v2
 
 ### 必须标出的数值
 - majority `0.3333`
 - XGBoost `0.5138`
-- raw size-routed GT-route `0.5238`
+- raw size-routed GT-route v1 `0.5238`
+- raw route-aware GT-route v2 `0.6066`
+- raw route-aware predicted-route v2 `0.5240`
 
 ---
 
@@ -199,8 +207,9 @@ raw-input scientific main model 是否自动编码了与大小和深度相关的
 - `C` optional route-robustness comparison
 
 ### 图要传达的结论
-- 这张图讲的是系统级 predicted-route robustness
-- 不是讲“纯 raw 自动学习”
+- pure raw scientific line 已经在 predicted-route 上超过 XGBoost
+- unified hybrid model 进一步把部署口径推到当前最优
+- 这张图讲的是系统级 predicted-route robustness，而不是讲“纯 raw 自动学习”
 
 ---
 

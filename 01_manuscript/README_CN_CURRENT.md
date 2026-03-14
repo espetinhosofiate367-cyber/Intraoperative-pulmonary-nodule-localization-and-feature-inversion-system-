@@ -31,11 +31,18 @@
 
 ### 3. 模型角色说明
 - [MODEL_ROLE_MAP_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_ROLE_MAP_CN.md)
+- [DEEP_MODEL_ARCHITECTURE_OVERVIEW_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/DEEP_MODEL_ARCHITECTURE_OVERVIEW_CN.md)
 
 如果你担心论文叙事混乱，先看这份。它专门回答：
 - XGBoost 在论文里是什么角色
 - raw-input 神经网络是什么角色
 - hybrid 模型是什么角色
+
+如果你现在最关心的是“当前深度学习架构到底长什么样”，直接看：
+- `Stage I raw detector`
+- `Stage II raw size-only router v2`
+- `Stage III raw route-aware size-routed depth model v2`
+- `Unified hierarchical inverter`
 
 ### 4. TBME 冲刊文档
 - [TBME_GAP_AND_ACTION_PLAN_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_GAP_AND_ACTION_PLAN_CN.md)
@@ -46,14 +53,24 @@
 - [TABLES_TBME_READY_V2_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V2_CN.md)
 - [FORMULAS_AND_PARAMETERS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FORMULAS_AND_PARAMETERS_TBME_V1_CN.md)
 
-### 5. 支撑文稿写作的辅助文件
+### 5. 画图 Prompt 与施工资料
+- [NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md)
+- [INTRODUCTION_OVERVIEW_SINGLE_PROMPT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/INTRODUCTION_OVERVIEW_SINGLE_PROMPT_CN.md)
+- [METHODS_OVERVIEW_SINGLE_PROMPT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/METHODS_OVERVIEW_SINGLE_PROMPT_CN.md)
+
+这三份文件分别负责：
+- 神经网络架构图、XGBoost 图、主结果数据图的 prompt
+- 引言总图 prompt
+- 方法总图 prompt
+
+### 6. 支撑文稿写作的辅助文件
 - [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
 - [TASK_DEFINITION_AND_LABEL_PROTOCOL.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TASK_DEFINITION_AND_LABEL_PROTOCOL.md)
 - [TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md)
 - [RAW_SIZE_MODEL_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RAW_SIZE_MODEL_OPTIMIZATION_CN.md)
 - [RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md)
 
-### 6. Overleaf 英文骨架
+### 7. Overleaf 英文骨架
 - [08_overleaf_draft_v1](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/08_overleaf_draft_v1)
 
 这个目录包含：
@@ -87,14 +104,16 @@
 4. `FIGURE_STRATEGY_RESET_TBME_V1_CN.md`
 5. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
 6. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`
-7. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
-8. `REFERENCE_VERIFICATION_TBME_CN.md`
-9. `FIGURE_CAPTIONS_TBME_V1_CN.md`
-10. `TABLES_TBME_READY_V2_CN.md`
-11. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
-12. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
-13. `RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
-14. `03_results_core/raw_size_v2/`
-15. `03_results_core/raw_routeaware_depth_v2/`
-16. `03_results_core/latency_benchmark_v1/`
-17. `08_overleaf_draft_v1/`
+7. `DEEP_MODEL_ARCHITECTURE_OVERVIEW_CN.md`
+8. `NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md`
+9. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
+10. `REFERENCE_VERIFICATION_TBME_CN.md`
+11. `FIGURE_CAPTIONS_TBME_V1_CN.md`
+12. `TABLES_TBME_READY_V2_CN.md`
+13. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
+14. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
+15. `RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
+16. `03_results_core/raw_size_v2/`
+17. `03_results_core/raw_routeaware_depth_v2/`
+18. `03_results_core/latency_benchmark_v1/`
+19. `08_overleaf_draft_v1/`
