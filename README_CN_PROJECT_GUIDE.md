@@ -118,6 +118,11 @@
 ## 3. 推荐你现在怎么阅读这个项目
 如果你现在觉得项目复杂，最稳妥的阅读顺序是：
 
+1. 先看 `01_manuscript/README_CN_CURRENT.md`
+2. 再看当前主稿 `01_manuscript/MANUSCRIPT_DRAFT_V8_CN.md`
+3. 然后看 `01_manuscript/MODEL_ROLE_MAP_CN.md`
+4. 最后再回到图表和结果目录
+
 ### 第一步：先看整篇文章主稿
 先看：
 
@@ -428,4 +433,3 @@
 4. 看 `02_figures_final/`
 5. 看 `03_results_core/paper_metrics_summary_v2.json`
 6. 写作时直接用 `07_overleaf_figure_pack/`
-

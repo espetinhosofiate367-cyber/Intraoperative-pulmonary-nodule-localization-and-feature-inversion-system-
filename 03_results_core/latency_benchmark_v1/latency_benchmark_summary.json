@@ -1,0 +1,191 @@
+{
+  "config": {
+    "seed": 2026,
+    "max_detection_samples": 64,
+    "max_positive_samples": 64,
+    "warmup": 8,
+    "repeat": 3,
+    "cuda_available": true
+  },
+  "sample_counts": {
+    "detection_windows": 64,
+    "positive_windows": 64
+  },
+  "benchmarks": {
+    "model_only": {
+      "xgb_detection_cpu": {
+        "count": 192,
+        "mean_ms": 0.5937687499997976,
+        "median_ms": 0.5740000000002965,
+        "p95_ms": 0.7913999999985322,
+        "min_ms": 0.4692999999988956,
+        "max_ms": 1.1210000000048126,
+        "throughput_hz_mean": 1684.157342400288
+      },
+      "nn_detection_cpu": {
+        "count": 192,
+        "mean_ms": 7.117531770833445,
+        "median_ms": 6.937850000003465,
+        "p95_ms": 8.309465000003158,
+        "min_ms": 5.788900000005981,
+        "max_ms": 10.101099999999974,
+        "throughput_hz_mean": 140.4981434853367
+      },
+      "nn_detection_gpu": {
+        "count": 192,
+        "mean_ms": 7.516524479166804,
+        "median_ms": 6.987799999997435,
+        "p95_ms": 10.628050000002174,
+        "min_ms": 5.009699999995121,
+        "max_ms": 15.810000000001878,
+        "throughput_hz_mean": 133.0402106414544
+      },
+      "xgb_size_cpu": {
+        "count": 192,
+        "mean_ms": 1.3426156250001913,
+        "median_ms": 1.2774499999999023,
+        "p95_ms": 1.7077049999993932,
+        "min_ms": 0.99549999999482,
+        "max_ms": 1.9530000000003156,
+        "throughput_hz_mean": 744.8148087803295
+      },
+      "nn_size_cpu": {
+        "count": 192,
+        "mean_ms": 9.294277083333375,
+        "median_ms": 8.982150000001354,
+        "p95_ms": 10.726715000000908,
+        "min_ms": 8.09120000000263,
+        "max_ms": 12.978300000000331,
+        "throughput_hz_mean": 107.5930909993219
+      },
+      "nn_size_gpu": {
+        "count": 192,
+        "mean_ms": 11.406333854166819,
+        "median_ms": 10.948249999998438,
+        "p95_ms": 15.706239999996182,
+        "min_ms": 8.281699999997727,
+        "max_ms": 19.806699999996624,
+        "throughput_hz_mean": 87.67058835777391
+      },
+      "xgb_depth_cpu": {
+        "count": 192,
+        "mean_ms": 0.7456223958331268,
+        "median_ms": 0.688399999997813,
+        "p95_ms": 1.184464999999335,
+        "min_ms": 0.4708000000022139,
+        "max_ms": 1.473900000000583,
+        "throughput_hz_mean": 1341.1614318299041
+      },
+      "nn_depth_cpu": {
+        "count": 192,
+        "mean_ms": 9.652790624999685,
+        "median_ms": 9.341699999996678,
+        "p95_ms": 11.303425000001965,
+        "min_ms": 8.368900000000679,
+        "max_ms": 12.684600000000046,
+        "throughput_hz_mean": 103.59698442128311
+      },
+      "nn_depth_gpu": {
+        "count": 192,
+        "mean_ms": 14.093390104166696,
+        "median_ms": 12.94264999999939,
+        "p95_ms": 21.07406499999768,
+        "min_ms": 10.128500000000429,
+        "max_ms": 29.65979999999746,
+        "throughput_hz_mean": 70.95524870941811
+      },
+      "unified_cpu": {
+        "count": 192,
+        "mean_ms": 10.492852604166806,
+        "median_ms": 10.147699999997428,
+        "p95_ms": 12.61492000000004,
+        "min_ms": 8.562399999995307,
+        "max_ms": 13.794400000001872,
+        "throughput_hz_mean": 95.30296838467844
+      },
+      "unified_gpu": {
+        "count": 192,
+        "mean_ms": 13.881043229166721,
+        "median_ms": 13.130200000002645,
+        "p95_ms": 19.09760000000133,
+        "min_ms": 10.360300000002098,
+        "max_ms": 24.616200000004085,
+        "throughput_hz_mean": 72.04069488803329
+      }
+    },
+    "end_to_end": {
+      "xgb_detection_cpu": {
+        "count": 192,
+        "mean_ms": 27.824691666667274,
+        "median_ms": 27.344650000003412,
+        "p95_ms": 37.77152500000156,
+        "min_ms": 17.586100000002602,
+        "max_ms": 46.64579999999319,
+        "throughput_hz_mean": 35.93930211266114
+      },
+      "nn_detection_cpu": {
+        "count": 192,
+        "mean_ms": 7.497897916666292,
+        "median_ms": 7.114250000000766,
+        "p95_ms": 11.840784999998986,
+        "min_ms": 4.620000000002733,
+        "max_ms": 14.456600000002595,
+        "throughput_hz_mean": 133.3707141807312
+      },
+      "nn_detection_gpu": {
+        "count": 192,
+        "mean_ms": 3.874421354167712,
+        "median_ms": 2.8130500000003167,
+        "p95_ms": 8.22466500000445,
+        "min_ms": 2.45800000000429,
+        "max_ms": 11.038600000006227,
+        "throughput_hz_mean": 258.10305813132607
+      },
+      "xgb_size_depth_cpu": {
+        "count": 192,
+        "mean_ms": 8.872928125000326,
+        "median_ms": 8.863849999997342,
+        "p95_ms": 9.69896999999591,
+        "min_ms": 7.633100000006721,
+        "max_ms": 13.706100000007382,
+        "throughput_hz_mean": 112.70236678491783
+      },
+      "xgb_cascade_cpu": {
+        "count": 192,
+        "mean_ms": 9.436409895833423,
+        "median_ms": 9.464050000005386,
+        "p95_ms": 10.103349999996425,
+        "min_ms": 8.47899999999413,
+        "max_ms": 11.130600000001323,
+        "throughput_hz_mean": 105.97250554382367
+      },
+      "nn_two_stage_cpu": {
+        "count": 192,
+        "mean_ms": 10.642173437499883,
+        "median_ms": 14.689000000004171,
+        "p95_ms": 17.47441500000093,
+        "min_ms": 3.1175000000018827,
+        "max_ms": 23.534200000000283,
+        "throughput_hz_mean": 93.96576797708396
+      },
+      "nn_two_stage_gpu": {
+        "count": 192,
+        "mean_ms": 10.671817187500137,
+        "median_ms": 14.537050000008378,
+        "p95_ms": 17.16611499999629,
+        "min_ms": 2.4145999999944934,
+        "max_ms": 39.080400000003124,
+        "throughput_hz_mean": 93.70475359822473
+      }
+    }
+  },
+  "advantages": {
+    "detection_auc_gain_vs_xgb": 0.01845839125761095,
+    "detection_ap_gain_vs_xgb": 0.029418687254282094,
+    "detection_f1_gain_vs_xgb": 0.003094206364818053,
+    "raw_depth_gt_route_bacc_gain_vs_xgb": 0.009982792989918443,
+    "unified_predicted_route_bacc_gain_vs_xgb": 0.019950867027923258,
+    "raw_size_top2_gain_vs_xgb": 0.038214390614882854,
+    "unified_size_mae_gap_to_xgb": 0.009391922751718629
+  }
+}

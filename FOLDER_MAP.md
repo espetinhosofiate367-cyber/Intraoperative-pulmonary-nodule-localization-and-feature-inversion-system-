@@ -1,13 +1,14 @@
 # Folder Map
 
 ## 01_manuscript
-Current paper draft, result text, figure/table draft, and protocol-level writing materials.
+Current paper draft, figure/table plan, model-role notes, and protocol-level writing materials.
+Use `01_manuscript/README_CN_CURRENT.md` as the entry point.
 
 ## 02_figures_final
 Final or near-final figures intended for TBME manuscript use.
 
 ## 03_results_core
-Key summaries and reports that support the paper's main claims.
+Key summaries and reports that support the paper's main claims, including the new latency benchmark pack.
 
 ## 04_core_models
 Small final checkpoints required to reproduce the main system pipeline.
@@ -23,3 +24,4 @@ Overleaf-ready asset pack with renamed figure files, PNG and PDF exports, figure
 
 ## 90_archive_unused
 Deprecated drafts, exploratory scripts, and an index of non-final experiment output directories kept for traceability.
+The manuscript history subfolder stores older paper drafts that are no longer the active writing target.
