@@ -1,0 +1,75 @@
+\section{Results}
+
+\subsection{Mechanism Analysis and XGBoost First Established an Information Hierarchy}
+Mechanism-guided feature analysis indicated a clear hierarchy in the tactile data: detection-related differences were strongest, size acted as a dominant main effect, and depth appeared as a weaker signal that was easily masked by size. XGBoost converted this into learnability evidence by achieving detection AUC 0.8199, size top-1/top-2 of 0.6701/0.8023 with MAE 0.1472 cm, and coarse depth balanced accuracy 0.5138.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Fig9_mechanism_xgboost_summary.pdf}
+    \caption{Mechanism-guided feature analysis and XGBoost explainability jointly show that the tactile data contain learnable detection, size, and coarse depth information. Depth discrimination is driven more by spread, shape, deformation-position, and phase-related features than by peak amplitude alone.}
+    \label{fig:xgb_mechanism}
+\end{figure*}
+
+\subsection{Raw-Input Detection Outperformed the Structured Baseline}
+On the independent test set, the raw+delta detector reached AUC 0.8383, AP 0.5357, and F1 0.6216, exceeding the XGBoost detection baseline (0.8199, 0.5063, and 0.6185, respectively). This result established that raw spatiotemporal tactile tensors alone were sufficient for reliable intraoperative detection.
+
+\input{tables/table2_detection}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{Fig4_detection_comparison.pdf}
+    \caption{Detection comparison between the structured XGBoost baseline and the raw-input detector. The raw-input detector performs better on the primary task of nodule detection.}
+    \label{fig:detection_compare}
+\end{figure}
+
+\subsection{Raw Tensors Already Carried Strong Size Information}
+For size, the raw size-only router achieved top-1 0.6600 and top-2 0.8405, demonstrating that the original tensors already carried strong size information. However, the best standalone size regression MAE remained with XGBoost (0.1472 cm), indicating that strong raw-input classification evidence did not necessarily imply the best isolated regression performance.
+
+\input{tables/table3_size}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{Fig5_size_inversion_comparison.pdf}
+    \caption{Size inversion comparison. The raw-input size-only model shows strong classification performance, while the structured baseline still retains the best standalone regression MAE.}
+    \label{fig:size_compare}
+\end{figure}
+
+\subsection{Depth Became Learnable Only Under a Size-Aware Architecture}
+When depth was modeled with an ordinary shared head, performance collapsed to near-majority level (balanced accuracy around 0.33). In contrast, a size-routed raw-input depth model improved the ground-truth-route balanced accuracy to 0.5238, slightly above the XGBoost depth baseline of 0.5138. This result showed that the failure of early raw-input depth models was primarily structural rather than informational.
+
+\input{tables/table4_depth}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{Fig6_depth_coarse_comparison.pdf}
+    \caption{Coarse depth comparison across majority baseline, XGBoost, and raw-input neural variants. Depth is not learned reliably by a generic shared head, but becomes learnable under a size-aware routed structure.}
+    \label{fig:depth_compare}
+\end{figure}
+
+\subsection{Interpretability Supported Automatic Encoding of Physical Structure}
+Latent probes showed that the raw-input depth model encoded part of the physically meaningful structure beyond size identity alone. Hard-pair analysis indicated that the model was not merely relying on peak amplitude, while phase occlusion revealed that the current time strategy still emphasized the peak neighborhood more than earlier loading or release phases. Together, these analyses supported the claim that raw-input learning had captured part---but not all---of the relevant physical structure.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{Fig10_hierarchical_explainability_summary.pdf}
+    \caption{Interpretability summary for the neural pipeline. The model encodes structure related to size and depth, although its temporal strategy remains partially biased toward the peak neighborhood.}
+    \label{fig:explainability}
+\end{figure}
+
+\subsection{The Main Deployment Bottleneck Was Routing Error Rather Than the Depth Trunk}
+Although the raw size-routed depth model performed well under oracle routing, predicted-size routing reduced depth balanced accuracy to 0.4822. This analysis demonstrated that the main bottleneck in deployment was not the depth trunk itself, but the propagation of routing errors from size prediction.
+
+\subsection{The Unified Hierarchical Inverter Improved Predicted-Route System Performance}
+The deployment-oriented unified hierarchical inverter directly optimized route-aware performance and improved predicted-route hard balanced accuracy to 0.5337. This exceeded both the previous predicted-route chain (0.4822) and the XGBoost depth baseline (0.5138), showing that structured deployment enhancement could improve the robustness of the full system.
+
+\subsection{Real-Time Display and Latency Supported Practical System Organization}
+The real-time interface continuously displayed tactile maps and detection probability, while size and depth outputs were released only under high-confidence conditions. Latency results further showed that although the XGBoost model-only prediction was faster on CPU, explicit structured feature extraction increased the end-to-end burden of the detection pipeline. In contrast, the raw-input detector reached 7.1143 ms on CPU and 2.8131 ms on GPU in the end-to-end setting, making it more suitable for a detection-first online route.
+
+\input{tables/table5_latency}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{Fig12_gui_snapshot.pdf}
+    \caption{Real-time interface prototype. Detection remains continuously visible, whereas size and depth outputs are displayed under high-confidence conditions, matching the proposed detection-first system logic.}
+    \label{fig:gui}
+\end{figure}

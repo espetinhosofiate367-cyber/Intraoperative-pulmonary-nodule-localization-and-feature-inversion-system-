@@ -1,0 +1,40 @@
+\section{Materials and Methods}
+
+\subsection{Experimental Platform and Data Protocol}
+Dynamic pressing experiments were performed on ex vivo porcine lungs using a flexible tactile sensing system. Each frame contained 96 sensing channels and was reshaped into a $12 \times 8$ tactile stress matrix. The experimental matrix included seven nodule sizes (0.25 to 1.75 cm), six implantation depths (0.5 to 3.0 cm), and three repeated trials, resulting in 42 physical conditions and 126 full tactile sequences in total.
+
+We used a sliding window of 10 frames with a stride of 2 as the basic learning unit. Detection labels were defined by whether the center frame of a window lay inside the manually annotated positive interval. Size and depth labels were inherited from the corresponding physical condition. Detection used \texttt{1.CSV + 2.CSV} for development and \texttt{3.CSV} for independent testing, whereas size and depth tasks followed a stricter repeat split: \texttt{1.CSV} for training, \texttt{2.CSV} for validation, and \texttt{3.CSV} for testing, all restricted to true positive windows.
+
+\input{tables/table1_protocol}
+
+\subsection{Mechanism Analysis and Structured Physical Features}
+Before deep learning, we analyzed frame-level and window-level tactile descriptors, including peak amplitude, integrated response, center-to-border contrast, hotspot area, hotspot radius, second-moment spread, spatial entropy, centroid position, centroid drift, rise-to-peak timing, and post-peak decay. This analysis showed that nodule size was the strongest main effect, while depth acted as a weaker conditional signal expressed through spread extent, distribution complexity, deformation position, and phase-dependent response.
+
+\subsection{Structured Baseline with XGBoost}
+We trained XGBoost models for detection, size classification/regression, and coarse depth classification using the structured tactile feature table. XGBoost was not treated as the final deployment route. Instead, it served as a mechanistic baseline and interpretability anchor: first, to verify whether the data truly contained learnable information; second, to identify which physical feature families were most influential; and third, to provide a structured reference against which raw-input learning could be compared \cite{chen2016xgboost}.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Fig2_training_inference_pipeline.pdf}
+    \caption{Method overview, including the tactile sensing setup, experimental preparation, window-based preprocessing, and the hierarchical inference workflow. The pipeline is organized as Detection $\rightarrow$ Size $\rightarrow$ Depth rather than as parallel outputs.}
+    \label{fig:pipeline}
+\end{figure*}
+
+\subsection{Raw-Input Hierarchical Neural Pipeline}
+\subsubsection{Stage I: Nodule Detection}
+The first-stage detector consumed raw spatiotemporal tactile tensors and predicted whether a nodule was present under the current window. The architecture used dual streams for raw and delta inputs, lightweight frame-wise spatial encoding, multiscale temporal convolution, and temporal attention pooling.
+
+\subsubsection{Stage II: Size Inversion}
+On true positive windows, we trained a dedicated raw-input size-only router for seven-way size classification and continuous size regression. The purpose of this stage was not to produce the final deployment-optimal size regressor, but to test whether the original tactile tensors already contained strong size information.
+
+\subsubsection{Stage III: Size-Aware Coarse Depth Classification}
+Depth was modeled as a three-class coarse discrimination task (\emph{shallow}, \emph{middle}, \emph{deep}) rather than continuous depth regression. Instead of a shared depth head, we used size-routed depth experts. This design directly encoded the physical assumption that depth should be modeled under the size condition rather than as an independent parallel label.
+
+\subsubsection{Design Rationale}
+Three complementary tensor views were retained: raw amplitude to preserve absolute intensity and energy, normalized shape to emphasize morphology and spread, and delta sequences to represent local temporal change. The central architectural choice was not deeper stacking, but the explicit reformulation of depth as a size-aware routed task.
+
+\subsection{Interpretability Analysis for the Raw-Input Scientific Model}
+To test whether the raw-input depth model automatically encoded physically meaningful structure, we applied three types of analysis: latent linear probes, hard-pair analysis, and phase occlusion. These analyses were used to answer the scientific question of what the raw-input model learned, not to boost deployment performance.
+
+\subsection{Deployment-Oriented Unified Hierarchical Inverter}
+In addition to the scientific raw-input model, we built a deployment-oriented unified hierarchical inverter that fused raw amplitude, normalized shape, delta, and structured physical features. This model jointly optimized size classification, ordinal size prediction, size regression, and routed depth under multiple route conditions, including ground-truth route, hard predicted route, soft predicted route, and top-2 route. Its role was system enhancement rather than proof of raw-input automatic learning.

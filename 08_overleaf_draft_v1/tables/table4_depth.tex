@@ -1,0 +1,17 @@
+\begin{table}[t]
+\caption{Coarse depth results.}
+\label{tab:depth}
+\centering
+\begin{tabular}{p{0.43\columnwidth}p{0.24\columnwidth}c}
+\toprule
+Model / Path & Evaluation mode & BAcc \\
+\midrule
+Majority baseline & GT-positive & 0.3333 \\
+XGBoost structured baseline & GT-positive & 0.5138 \\
+Raw size-routed depth model & GT route & 0.5238 \\
+Raw size-routed depth model & Predicted route & 0.4822 \\
+Unified hierarchical inverter & GT route & 0.5407 \\
+Unified hierarchical inverter & Predicted hard route & 0.5337 \\
+\bottomrule
+\end{tabular}
+\end{table}

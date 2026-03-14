@@ -51,6 +51,16 @@
 - [TASK_DEFINITION_AND_LABEL_PROTOCOL.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TASK_DEFINITION_AND_LABEL_PROTOCOL.md)
 - [TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md)
 
+### 6. Overleaf 英文骨架
+- [08_overleaf_draft_v1](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/08_overleaf_draft_v1)
+
+这个目录包含：
+- `main.tex`
+- 英文章节草稿
+- 参考文献占位
+- 已复制进去的主文图 PDF
+- 可直接上传到 Overleaf 的基础工程
+
 ## 已归档的历史草稿
 旧版本已经移到：
 - [90_archive_unused/manuscript_history](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/90_archive_unused/manuscript_history)
@@ -75,3 +85,4 @@
 6. `FIGURE_CAPTIONS_TBME_V1_CN.md`
 7. `TABLES_TBME_READY_V1_CN.md`
 8. `03_results_core/latency_benchmark_v1/`
+9. `08_overleaf_draft_v1/`

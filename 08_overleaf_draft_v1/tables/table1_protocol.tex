@@ -1,0 +1,23 @@
+\begin{table}[t]
+\caption{Dataset protocol and task definition.}
+\label{tab:protocol}
+\centering
+\begin{tabular}{p{0.42\columnwidth}p{0.45\columnwidth}}
+\toprule
+Item & Value \\
+\midrule
+Frame size & $12 \times 8$ \\
+Channels per frame & 96 \\
+Nodule size levels & 7 (0.25--1.75 cm) \\
+Depth levels & 6 (0.5--3.0 cm) \\
+Repeated trials & 3 \\
+Total physical conditions & 42 \\
+Total recorded sequences & 126 \\
+Window length & 10 frames \\
+Window stride & 2 \\
+Detection split & 1.CSV + 2.CSV dev, 3.CSV test \\
+Size/Depth split & 1.CSV train, 2.CSV val, 3.CSV test \\
+Size/Depth training samples & true positive windows only \\
+\bottomrule
+\end{tabular}
+\end{table}

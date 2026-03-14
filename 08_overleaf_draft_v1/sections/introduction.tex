@@ -1,0 +1,39 @@
+\section{Introduction}
+
+Low-dose computed tomography has substantially increased the detection rate of small pulmonary nodules and ground-glass lesions. While video-assisted thoracoscopic surgery and robot-assisted surgery have become increasingly important because of reduced trauma and faster recovery, they also remove the direct tactile feedback available in open surgery. As a result, deeply embedded, small, or visually occult nodules become difficult to detect and localize intraoperatively.
+
+Existing clinical support strategies, including CT-guided hook-wire or dye localization, intraoperative ultrasound, and limited digital palpation, all have important limitations. Prior thoracic surgery studies and reviews have emphasized complication risk, marker displacement, operator dependency, and workflow burden as major obstacles to routine use of these approaches \cite{khereba2018preoperative,tang2022intraoperative,wang2025anchored}. Thus, what is missing is not simply another imaging aid, but a sensing pathway that can restore tactile information under minimally invasive conditions and convert it into quantitative guidance.
+
+Flexible tactile arrays offer a promising route toward this goal. By continuously recording the surface stress distribution of the lung during dynamic pressing, such arrays produce spatiotemporal tactile tensors rather than single-point measurements. When a stiff inclusion is embedded inside soft tissue, the mechanical mismatch perturbs peak amplitude, spread extent, shape contrast, deformation position, and temporal response. In principle, these signals may contain three levels of information: whether a nodule is present, how large it is, and how deeply it is buried.
+
+However, the inversion from surface tactile maps to internal nodule parameters is ill-posed. A small shallow nodule may produce a tactile hotspot similar to that of a large deep nodule at a specific pressing frame. Therefore, we do not treat detection, size, and depth as equally difficult parallel outputs. Instead, we formulate the problem hierarchically: \emph{detect the nodule first, estimate its size next, and only then discriminate coarse depth under the size condition}.
+
+Related work in minimally invasive tactile tumor localization, force-reflection integration, and emerging tactile sensing technologies has shown that mechanical differences can be exploited for hidden mass localization \cite{perri2009robot,trejos2013integration,ly2025acoustic,huang2020tactile,bewley2022tactile}. Yet, most prior studies have focused on single localization tasks, simplified phantoms, or hardware feasibility. Fewer studies have organized pulmonary tactile sensing into a full evidence chain spanning reliable detection, size inversion, coarse depth discrimination, raw-input learning, and interpretability verification in the same study.
+
+Motivated by this gap, we follow a five-step logic: mechanism analysis, structured baseline modeling, raw-input neural learning, interpretability validation, and deployment enhancement. First, we analyze whether the tactile data truly contain structured signals for detection, size, and depth. Second, we use XGBoost as a structured baseline to test whether these signals are learnable and to identify the most influential physical feature families. Third, we construct a raw-input hierarchical neural pipeline that learns directly from spatiotemporal tactile tensors without explicitly feeding handcrafted physical features into the scientific main model. Fourth, we examine whether the neural representation automatically encodes physically meaningful structure using latent probes, hard-pair analysis, and phase occlusion. Finally, for deployment purposes, we augment the system with a structured feature branch to improve route-aware robustness in real predicted-size conditions.
+
+The key point is that XGBoost and neural networks serve different purposes in this work. XGBoost is used as a structured mechanistic baseline and interpretability anchor rather than a final deployment model. The raw-input neural models are used to test whether the original tensors themselves are sufficient for learning. The unified hybrid model is then used as a deployment enhancement model rather than the sole proof of raw-input automatic learning.
+
+The main questions we aim to answer are therefore:
+\begin{enumerate}[leftmargin=18pt]
+\item Can flexible tactile spatiotemporal data support reliable intraoperative pulmonary nodule detection?
+\item Beyond detection, can the same data support size inversion and coarse depth discrimination?
+\item Without explicitly inputting handcrafted physical features, can a raw-input neural model learn these signals directly from tactile tensors?
+\item If so, does the neural representation encode physically meaningful structure consistent with the structured baseline?
+\end{enumerate}
+
+The main contributions of this exploratory study are summarized as follows:
+\begin{enumerate}[leftmargin=18pt]
+\item We establish a structured spatiotemporal tactile dataset and label protocol for intraoperative pulmonary nodule detection, size inversion, and coarse depth discrimination.
+\item We show through mechanism analysis and XGBoost that the tactile data contain stable detection information, strong size information, and learnable but weaker depth information.
+\item We demonstrate that a raw-input hierarchical neural network can support reliable detection, strong size learning, and size-aware coarse depth discrimination without explicitly feeding structured physical features into the scientific main model.
+\item We build an interpretability chain from mechanism-guided features to XGBoost explanations and then to neural latent representations.
+\item We further construct a deployment-oriented unified hierarchical inverter that improves predicted-route depth robustness for real-time system integration.
+\end{enumerate}
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Fig1_system_overview.pdf}
+    \caption{Overall system concept for intraoperative tactile pulmonary nodule localization. The figure summarizes the clinical problem, tactile sensing route, hierarchical model organization, and system-level decision support path.}
+    \label{fig:system_overview}
+\end{figure*}
