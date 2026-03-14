@@ -58,16 +58,18 @@
 ### 5. 画图 Prompt 与施工资料
 - [NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md)
 - [GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md)
+- [FIG1_INTRO_CONCEPT_GEMINI_PROMPTS_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/FIG1_INTRO_CONCEPT_GEMINI_PROMPTS_V1_CN.md)
 - [INTRODUCTION_OVERVIEW_SINGLE_PROMPT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/INTRODUCTION_OVERVIEW_SINGLE_PROMPT_CN.md)
 - [METHODS_OVERVIEW_SINGLE_PROMPT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/METHODS_OVERVIEW_SINGLE_PROMPT_CN.md)
 
 这三份文件分别负责：
 - 神经网络架构图、XGBoost 图、主结果数据图的 prompt
+- `Fig.1` 引言概念总图的 Gemini 定稿 prompt
 - 引言总图 prompt
 - 方法总图 prompt
 
 如果你现在准备直接用 Gemini 生图，优先看：
-- `GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md`
+- `FIG1_INTRO_CONCEPT_GEMINI_PROMPTS_V1_CN.md`
 
 ### 6. 支撑文稿写作的辅助文件
 - [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
