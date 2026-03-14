@@ -9,8 +9,8 @@
 
 ## 当前生成的候选图
 
-1. `G1_embedding_gallery_tsne_pca`
-   - 内容：raw scientific model 的 t-SNE / PCA 嵌入视图
+1. `G1_embedding_gallery_tsne_umap_pca`
+   - 内容：raw scientific model 的 t-SNE / UMAP / PCA 嵌入对照图
    - 用途：适合补充材料，服务“网络确实学到结构”这一句
 
 2. `G2_feature_distributions_by_depth`
@@ -31,6 +31,6 @@
 
 ## 使用建议
 
-- `G1` 更像 HMIL Fig.5 的角色：展示表征空间，而不是主结果。
+- `G1` 更像 HMIL Fig.5 的角色：展示表征空间，而不是主结果。若视觉上必须三选一，优先比较 `UMAP` 与 `PCA`，`t-SNE` 可作为参考而非唯一版本。
 - `G2` 和 `G3` 更适合主文，因为它们兼具物理可解释性和工程说服力。
 - `G4` 和 `G5` 更适合作为补充材料或 explainability 备选图。

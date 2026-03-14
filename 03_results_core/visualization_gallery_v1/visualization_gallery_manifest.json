@@ -1,7 +1,7 @@
 {
   "output_dir": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\tbme_submission_release_v1\\03_results_core\\visualization_gallery_v1",
   "figures": [
-    "G1_embedding_gallery_tsne_pca",
+    "G1_embedding_gallery_tsne_umap_pca",
     "G2_feature_distributions_by_depth",
     "G3_route_heatmaps",
     "G4_probability_structure_views",

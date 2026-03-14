@@ -12,6 +12,7 @@ import seaborn as sns
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 from sklearn.preprocessing import StandardScaler
+import umap.umap_ as umap
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -100,18 +101,27 @@ def build_embeddings(features: np.ndarray):
         perplexity=perplexity,
         random_state=2026,
     ).fit_transform(z_pca20)
-    return z_tsne, z_pca2
+    z_umap = umap.UMAP(
+        n_components=2,
+        n_neighbors=30,
+        min_dist=0.20,
+        metric="euclidean",
+        random_state=2026,
+    ).fit_transform(z_pca20)
+    return z_tsne, z_umap, z_pca2
 
 
 def plot_embedding_gallery(features: np.ndarray, meta: pd.DataFrame) -> None:
-    z_tsne, z_pca2 = build_embeddings(features)
+    z_tsne, z_umap, z_pca2 = build_embeddings(features)
     meta = meta.copy()
     meta["tsne_x"] = z_tsne[:, 0]
     meta["tsne_y"] = z_tsne[:, 1]
+    meta["umap_x"] = z_umap[:, 0]
+    meta["umap_y"] = z_umap[:, 1]
     meta["pca_x"] = z_pca2[:, 0]
     meta["pca_y"] = z_pca2[:, 1]
 
-    fig, axes = plt.subplots(2, 2, figsize=(13.8, 10.5))
+    fig, axes = plt.subplots(2, 3, figsize=(18.0, 10.0))
     depth_palette = [DEPTH_COLORS[d] for d in DEPTH_ORDER]
 
     sns.scatterplot(
@@ -129,18 +139,20 @@ def plot_embedding_gallery(features: np.ndarray, meta: pd.DataFrame) -> None:
     axes[0, 0].set_title("t-SNE colored by coarse depth")
     axes[0, 0].legend(title="Depth", frameon=False, loc="best")
 
-    sc1 = axes[0, 1].scatter(
-        meta["tsne_x"],
-        meta["tsne_y"],
-        c=meta["size_cm"],
-        cmap="viridis",
+    sns.scatterplot(
+        data=meta,
+        x="umap_x",
+        y="umap_y",
+        hue="coarse_depth",
+        hue_order=DEPTH_ORDER,
+        palette=depth_palette,
         s=24,
-        alpha=0.80,
-        linewidths=0.0,
+        linewidth=0.0,
+        alpha=0.78,
+        ax=axes[0, 1],
     )
-    axes[0, 1].set_title("t-SNE colored by nodule size")
-    cbar1 = fig.colorbar(sc1, ax=axes[0, 1], fraction=0.046, pad=0.04)
-    cbar1.set_label("Size (cm)")
+    axes[0, 1].set_title("UMAP colored by coarse depth")
+    axes[0, 1].legend(title="Depth", frameon=False, loc="best")
 
     sns.scatterplot(
         data=meta,
@@ -152,12 +164,38 @@ def plot_embedding_gallery(features: np.ndarray, meta: pd.DataFrame) -> None:
         s=24,
         linewidth=0.0,
         alpha=0.78,
-        ax=axes[1, 0],
+        ax=axes[0, 2],
     )
-    axes[1, 0].set_title("PCA colored by coarse depth")
-    axes[1, 0].legend(title="Depth", frameon=False, loc="best")
+    axes[0, 2].set_title("PCA colored by coarse depth")
+    axes[0, 2].legend(title="Depth", frameon=False, loc="best")
+
+    sc1 = axes[1, 0].scatter(
+        meta["tsne_x"],
+        meta["tsne_y"],
+        c=meta["size_cm"],
+        cmap="viridis",
+        s=24,
+        alpha=0.80,
+        linewidths=0.0,
+    )
+    axes[1, 0].set_title("t-SNE colored by nodule size")
+    cbar1 = fig.colorbar(sc1, ax=axes[1, 0], fraction=0.046, pad=0.04)
+    cbar1.set_label("Size (cm)")
 
     sc2 = axes[1, 1].scatter(
+        meta["umap_x"],
+        meta["umap_y"],
+        c=meta["size_cm"],
+        cmap="viridis",
+        s=24,
+        alpha=0.80,
+        linewidths=0.0,
+    )
+    axes[1, 1].set_title("UMAP colored by nodule size")
+    cbar2 = fig.colorbar(sc2, ax=axes[1, 1], fraction=0.046, pad=0.04)
+    cbar2.set_label("Size (cm)")
+
+    sc3 = axes[1, 2].scatter(
         meta["pca_x"],
         meta["pca_y"],
         c=meta["size_cm"],
@@ -166,16 +204,17 @@ def plot_embedding_gallery(features: np.ndarray, meta: pd.DataFrame) -> None:
         alpha=0.80,
         linewidths=0.0,
     )
-    axes[1, 1].set_title("PCA colored by nodule size")
-    cbar2 = fig.colorbar(sc2, ax=axes[1, 1], fraction=0.046, pad=0.04)
-    cbar2.set_label("Size (cm)")
+    axes[1, 2].set_title("PCA colored by nodule size")
+    cbar3 = fig.colorbar(sc3, ax=axes[1, 2], fraction=0.046, pad=0.04)
+    cbar3.set_label("Size (cm)")
 
     for depth_name in DEPTH_ORDER:
         subset = meta[meta["coarse_depth"] == depth_name]
         if subset.empty:
             continue
         axes[0, 0].text(subset["tsne_x"].mean(), subset["tsne_y"].mean(), depth_name, fontsize=9, fontweight="bold")
-        axes[1, 0].text(subset["pca_x"].mean(), subset["pca_y"].mean(), depth_name, fontsize=9, fontweight="bold")
+        axes[0, 1].text(subset["umap_x"].mean(), subset["umap_y"].mean(), depth_name, fontsize=9, fontweight="bold")
+        axes[0, 2].text(subset["pca_x"].mean(), subset["pca_y"].mean(), depth_name, fontsize=9, fontweight="bold")
 
     for ax in axes.ravel():
         ax.set_xlabel("")
@@ -183,8 +222,8 @@ def plot_embedding_gallery(features: np.ndarray, meta: pd.DataFrame) -> None:
         ax.grid(alpha=0.18)
 
     panel_labels(axes)
-    fig.suptitle("G1. Candidate embedding views for the raw-input scientific model", y=1.02, fontweight="bold")
-    save_dual(fig, "G1_embedding_gallery_tsne_pca")
+    fig.suptitle("G1. Candidate embedding views: t-SNE vs UMAP vs PCA", y=1.02, fontweight="bold")
+    save_dual(fig, "G1_embedding_gallery_tsne_umap_pca")
 
 
 def plot_feature_distributions(hier: pd.DataFrame) -> None:
@@ -365,8 +404,8 @@ def write_gallery_doc() -> None:
         "",
         "## 当前生成的候选图",
         "",
-        "1. `G1_embedding_gallery_tsne_pca`",
-        "   - 内容：raw scientific model 的 t-SNE / PCA 嵌入视图",
+        "1. `G1_embedding_gallery_tsne_umap_pca`",
+        "   - 内容：raw scientific model 的 t-SNE / UMAP / PCA 嵌入对照图",
         "   - 用途：适合补充材料，服务“网络确实学到结构”这一句",
         "",
         "2. `G2_feature_distributions_by_depth`",
@@ -387,7 +426,7 @@ def write_gallery_doc() -> None:
         "",
         "## 使用建议",
         "",
-        "- `G1` 更像 HMIL Fig.5 的角色：展示表征空间，而不是主结果。",
+        "- `G1` 更像 HMIL Fig.5 的角色：展示表征空间，而不是主结果。若视觉上必须三选一，优先比较 `UMAP` 与 `PCA`，`t-SNE` 可作为参考而非唯一版本。",
         "- `G2` 和 `G3` 更适合主文，因为它们兼具物理可解释性和工程说服力。",
         "- `G4` 和 `G5` 更适合作为补充材料或 explainability 备选图。",
     ]
@@ -398,7 +437,7 @@ def write_manifest() -> None:
     manifest = {
         "output_dir": str(OUTPUT_DIR),
         "figures": [
-            "G1_embedding_gallery_tsne_pca",
+            "G1_embedding_gallery_tsne_umap_pca",
             "G2_feature_distributions_by_depth",
             "G3_route_heatmaps",
             "G4_probability_structure_views",
