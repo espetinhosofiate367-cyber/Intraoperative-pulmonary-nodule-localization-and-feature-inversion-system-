@@ -47,6 +47,7 @@
 - [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
 - [TASK_DEFINITION_AND_LABEL_PROTOCOL.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TASK_DEFINITION_AND_LABEL_PROTOCOL.md)
 - [TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md)
+- [RAW_SIZE_MODEL_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RAW_SIZE_MODEL_OPTIMIZATION_CN.md)
 
 ### 6. Overleaf 英文骨架
 - [08_overleaf_draft_v1](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/08_overleaf_draft_v1)
@@ -87,5 +88,6 @@
 9. `FIGURE_CAPTIONS_TBME_V1_CN.md`
 10. `TABLES_TBME_READY_V2_CN.md`
 11. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
-12. `03_results_core/latency_benchmark_v1/`
-13. `08_overleaf_draft_v1/`
+12. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
+13. `03_results_core/latency_benchmark_v1/`
+14. `08_overleaf_draft_v1/`
