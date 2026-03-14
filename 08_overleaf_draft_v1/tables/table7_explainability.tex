@@ -1,0 +1,23 @@
+\begin{table}[t]
+\caption{Explainability summary for the raw scientific line and the unified deployment line.}
+\label{tab:explainability}
+\centering
+\begin{tabular}{p{0.40\columnwidth}p{0.24\columnwidth}c}
+\toprule
+Line & Metric & Value \\
+\midrule
+\multicolumn{3}{l}{\textit{Raw scientific line}} \\
+Raw scientific line & latent probe mean test $R^2$ & \textbf{0.3657} \\
+Raw scientific line & size-only probe mean test $R^2$ & 0.2356 \\
+Raw scientific line & hard-pair success rate & \textbf{0.7500} \\
+Raw scientific line & strongest occlusion phase & peak neighborhood \\
+\midrule
+\multicolumn{3}{l}{\textit{Unified deployment line}} \\
+Unified line & hybrid latent mean test $R^2$ & \textbf{0.5512} \\
+Unified line & trunk latent mean test $R^2$ & 0.4226 \\
+Unified line & size-only probe mean test $R^2$ & 0.2985 \\
+Unified line & hard-pair success rate & \textbf{1.0000} \\
+Unified line & peak-neighborhood mean drop & \textbf{0.0802} \\
+\bottomrule
+\end{tabular}
+\end{table}

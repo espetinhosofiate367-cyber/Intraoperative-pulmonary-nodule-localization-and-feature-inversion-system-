@@ -51,8 +51,9 @@
 - [RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md)
 - [REFERENCE_VERIFICATION_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/REFERENCE_VERIFICATION_TBME_CN.md)
 - [FIGURE_CAPTIONS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_CAPTIONS_TBME_V1_CN.md)
-- [TABLES_TBME_READY_V2_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V2_CN.md)
+- [TABLES_TBME_READY_V3_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V3_CN.md)
 - [FORMULAS_AND_PARAMETERS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FORMULAS_AND_PARAMETERS_TBME_V1_CN.md)
+- [FIGURE_DRAWING_STUDY_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_DRAWING_STUDY_TBME_CN.md)
 
 ### 5. 画图 Prompt 与施工资料
 - [NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md)
@@ -110,11 +111,12 @@
 9. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
 10. `REFERENCE_VERIFICATION_TBME_CN.md`
 11. `FIGURE_CAPTIONS_TBME_V1_CN.md`
-12. `TABLES_TBME_READY_V2_CN.md`
-13. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
-14. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
-15. `RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
-16. `03_results_core/raw_size_v2/`
-17. `03_results_core/raw_routeaware_depth_v2/`
-18. `03_results_core/latency_benchmark_v1/`
-19. `08_overleaf_draft_v1/`
+12. `TABLES_TBME_READY_V3_CN.md`
+13. `FIGURE_DRAWING_STUDY_TBME_CN.md`
+14. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
+15. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
+16. `RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
+17. `03_results_core/raw_size_v2/`
+18. `03_results_core/raw_routeaware_depth_v2/`
+19. `03_results_core/latency_benchmark_v1/`
+20. `08_overleaf_draft_v1/`
