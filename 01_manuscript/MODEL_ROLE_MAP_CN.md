@@ -63,8 +63,8 @@
 - size 学习能力证据
 
 **当前结论**
-- size 分类已接近/部分超过 XGBoost
-- size 回归 MAE 尚未全面超过结构化基线
+- 优化后的 `raw size-only router v2` 已在 `Top-1 / Top-2 / MAE` 三项上全面超过 XGBoost
+- 这条线现在不仅是“可学性证据”，也是 scientific line 中一条真正强的结果线
 
 ---
 
@@ -84,7 +84,8 @@
 
 **当前结论**
 - 普通共享 depth head 不成立
-- size-routed 后，GT-route depth 可达到/略超 XGBoost
+- 第一版 `size-routed` 后，GT-route depth 已达到/略超 XGBoost
+- 进一步加入 `route-aware` 训练后，pure raw predicted-route depth 也已超过 XGBoost
 - latent probe / hard-pair / phase occlusion 支持其内部自动编码了部分物理特征
 
 ---

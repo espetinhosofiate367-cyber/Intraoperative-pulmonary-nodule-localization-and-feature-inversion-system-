@@ -22,8 +22,8 @@ On the independent test set, the raw+delta detector reached AUC 0.8383, AP 0.535
     \label{fig:detection_compare}
 \end{figure}
 
-\subsection{Raw Tensors Already Carried Strong Size Information}
-For size, the raw size-only router achieved top-1 0.6600 and top-2 0.8405, demonstrating that the original tensors already carried strong size information. However, the best standalone size regression MAE remained with XGBoost (0.1472 cm), indicating that strong raw-input classification evidence did not necessarily imply the best isolated regression performance.
+\subsection{Optimized Raw Size Learning Surpassed the Structured Baseline}
+After restructuring the pure raw-input size head into a classification--ordinal--expectation--residual form, the raw size-only router reached top-1 0.7177, top-2 0.8195, and MAE 0.1242 cm. This exceeded the XGBoost size baseline (0.6701/0.8023/0.1472), showing that the original tactile tensors themselves were sufficient not only for strong size classification but also for competitive continuous size estimation.
 
 \input{tables/table3_size}
 
@@ -35,7 +35,7 @@ For size, the raw size-only router achieved top-1 0.6600 and top-2 0.8405, demon
 \end{figure}
 
 \subsection{Depth Became Learnable Only Under a Size-Aware Architecture}
-When depth was modeled with an ordinary shared head, performance collapsed to near-majority level (balanced accuracy around 0.33). In contrast, a size-routed raw-input depth model improved the ground-truth-route balanced accuracy to 0.5238, slightly above the XGBoost depth baseline of 0.5138. This result showed that the failure of early raw-input depth models was primarily structural rather than informational.
+When depth was modeled with an ordinary shared head, performance collapsed to near-majority level (balanced accuracy around 0.33). In contrast, a size-routed raw-input depth model improved the ground-truth-route balanced accuracy to 0.5238, slightly above the XGBoost depth baseline of 0.5138. After further introducing route-aware training with a frozen pure raw size router, the ground-truth-route balanced accuracy increased to 0.6066. This result showed that the failure of early raw-input depth models was primarily structural rather than informational.
 
 \input{tables/table4_depth}
 
@@ -57,10 +57,10 @@ Latent probes showed that the raw-input depth model encoded part of the physical
 \end{figure}
 
 \subsection{The Main Deployment Bottleneck Was Routing Error Rather Than the Depth Trunk}
-Although the raw size-routed depth model performed well under oracle routing, predicted-size routing reduced depth balanced accuracy to 0.4822. This analysis demonstrated that the main bottleneck in deployment was not the depth trunk itself, but the propagation of routing errors from size prediction.
+Although the first raw size-routed depth model performed well under oracle routing, predicted-size routing reduced depth balanced accuracy to 0.4822. After strengthening the pure raw size router and explicitly training the depth model under ground-truth, hard predicted, soft, and top-2 routing conditions, the pure raw predicted-route balanced accuracy improved to 0.5240. This exceeded the XGBoost depth baseline of 0.5138 and showed that routing robustness, rather than depth information scarcity alone, was the dominant deployment bottleneck.
 
-\subsection{The Unified Hierarchical Inverter Improved Predicted-Route System Performance}
-The deployment-oriented unified hierarchical inverter directly optimized route-aware performance and improved predicted-route hard balanced accuracy to 0.5337. This exceeded both the previous predicted-route chain (0.4822) and the XGBoost depth baseline (0.5138), showing that structured deployment enhancement could improve the robustness of the full system.
+\subsection{The Unified Hierarchical Inverter Further Improved Predicted-Route System Performance}
+The deployment-oriented unified hierarchical inverter directly optimized route-aware performance and improved predicted-route hard balanced accuracy to 0.5337. This exceeded the previous raw predicted-route chain (0.4822), the improved pure raw route-aware chain (0.5240), and the XGBoost depth baseline (0.5138), showing that structured deployment enhancement could further improve the robustness of the full system.
 
 \subsection{Real-Time Display and Latency Supported Practical System Organization}
 The real-time interface continuously displayed tactile maps and detection probability, while size and depth outputs were released only under high-confidence conditions. Latency results further showed that although the XGBoost model-only prediction was faster on CPU, explicit structured feature extraction increased the end-to-end burden of the detection pipeline. In contrast, the raw-input detector reached 7.1143 ms on CPU and 2.8131 ms on GPU in the end-to-end setting, making it more suitable for a detection-first online route.

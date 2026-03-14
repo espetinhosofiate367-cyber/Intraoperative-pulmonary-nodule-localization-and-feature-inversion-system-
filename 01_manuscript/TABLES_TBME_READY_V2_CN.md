@@ -46,11 +46,11 @@
 
 | 模型 | 角色 | Top-1 ↑ | Top-2 ↑ | MAE (cm) ↓ |
 |---|---|---:|---:|---:|
-| XGBoost structured baseline | 结构化机制基线 | **0.6701** | 0.8023 | **0.1472** |
-| Raw size-only router | raw scientific line | 0.6600 | **0.8405** | 0.2907 |
+| XGBoost structured baseline | 结构化机制基线 | 0.6701 | 0.8023 | 0.1472 |
+| Raw size-only router v2 | raw scientific line | **0.7177** | **0.8195** | **0.1242** |
 | Unified hierarchical inverter | deployment enhancement | 0.6180 | 0.7859 | 0.1565 |
 
-**建议正文要点**：raw-input 神经网络已能学习强大小信息，但 standalone size regression 最优仍由 structured baseline 保持。
+**建议正文要点**：优化后的 pure raw-input size router 已在 `Top-1 / Top-2 / MAE` 三个指标上全面超过 XGBoost，这使“原始张量本身可学且可超过结构化基线”的论点更扎实。
 
 ---
 
@@ -60,9 +60,10 @@
 |---|---|---:|
 | Majority baseline | GT-positive coarse depth | 0.3333 |
 | XGBoost structured baseline | GT-positive coarse depth | 0.5138 |
-| Raw size-routed depth model | GT route | **0.5238** |
+| Raw size-routed depth model v1 | GT route | 0.5238 |
+| Raw route-aware size-routed depth model v2 | GT route | **0.6066** |
 
-**建议正文要点**：raw-input 神经网络在显式 `size-aware` 组织下，已可在 scientific main line 上略超 XGBoost。
+**建议正文要点**：raw-input 神经网络在显式 `size-aware + route-aware` 组织下，不仅略超 XGBoost，而是将 GT-route coarse depth 明显推高到了 `0.6066`。
 
 ---
 
@@ -70,11 +71,12 @@
 
 | 模型 / 路径 | 评价口径 | Balanced Accuracy ↑ |
 |---|---|---:|
-| Raw size-routed depth model | Predicted route (old chain) | 0.4822 |
+| Raw size-routed depth model v1 | Predicted route (old chain) | 0.4822 |
 | XGBoost structured baseline | GT-positive coarse depth | 0.5138 |
+| Raw route-aware size-routed depth model v2 | Predicted hard route | 0.5240 |
 | Unified hierarchical inverter | Predicted hard route | **0.5337** |
 
-**建议正文要点**：deployment enhancement 的价值体现在真实 predicted-route 条件下，而不是替代 raw scientific line。
+**建议正文要点**：优化后的 pure raw route-aware 链路已经在真实 predicted-route 条件下超过 XGBoost，而 unified hierarchical inverter 进一步给出当前最强的部署结果。
 
 ---
 

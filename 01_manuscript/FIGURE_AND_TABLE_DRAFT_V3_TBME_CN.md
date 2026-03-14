@@ -32,8 +32,8 @@
 正文角色：scientific line 的第一条强证据。
 
 ### Fig. 5 Raw-input size 结果图
-用途：证明原始张量中存在强大小信息，同时诚实展示回归维度仍不全面超过结构化基线。
-正文角色：scientific line 的第二条证据。
+用途：证明优化后的 pure raw size v2 已在 `Top-1 / Top-2 / MAE` 上全面超过 XGBoost。
+正文角色：scientific line 的第二条强证据。
 
 ### Fig. 6 Raw-input depth 主结果图
 建议内容：普通共享 depth head 失败、size-routed depth 成立、XGBoost depth、majority baseline、GT-route confusion。
@@ -44,8 +44,8 @@
 正文角色：证明 raw-input 神经网络自动编码了部分与大小和深度相关的物理结构。
 
 ### Fig. 8 Deployment enhancement 图
-建议内容：旧 predicted-route 链路 vs unified hybrid model 的 predicted-route depth 提升，可附 hard confusion。
-正文角色：说明统一层级反演器的意义是系统增强，而不是再次证明 raw-input 自动学习。
+建议内容：旧 predicted-route 链路 vs pure raw route-aware v2 vs unified hybrid model 的 predicted-route depth 提升，可附 hard confusion。
+正文角色：先说明 pure raw 路线已经在真实链路中超过 XGBoost，再说明 unified hierarchical inverter 继续提供当前最强部署结果。
 
 ### Fig. 9 实时界面图
 用途：说明方案已走向系统原型。

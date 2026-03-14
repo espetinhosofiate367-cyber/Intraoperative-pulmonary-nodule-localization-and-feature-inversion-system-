@@ -1,0 +1,340 @@
+{
+  "protocol_v1": {
+    "input_shape": [
+      10,
+      1,
+      12,
+      8
+    ],
+    "window_stride": 2,
+    "size_values_cm": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75
+    ],
+    "depth_values_cm": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "coarse_depth_to_values": {
+      "shallow": [
+        0.5,
+        1.0
+      ],
+      "middle": [
+        1.5,
+        2.0
+      ],
+      "deep": [
+        2.5,
+        3.0
+      ]
+    },
+    "outputs": [
+      "y_det_prob",
+      "y_size_cls",
+      "y_size_reg",
+      "y_depth_cls_coarse"
+    ],
+    "task_priority": [
+      "detection",
+      "size_inversion",
+      "coarse_depth_training_and_interpretation"
+    ],
+    "runtime_policy": {
+      "always_visible": [
+        "y_det_prob"
+      ],
+      "gated": [
+        "y_size_cls",
+        "y_size_reg",
+        "y_depth_cls_coarse"
+      ]
+    }
+  },
+  "validation_protocol": "file1_train_file2_val_file3_test_positive_windows",
+  "stage2_ckpt": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage2_raw_positive_size_v2\\paper_stage2_raw_positive_size_v2_best.pth",
+  "stage2_mode": "raw_positive_size_v2",
+  "stage3_ckpt": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage3_raw_size_routed_depth_v2\\paper_stage3_raw_size_routed_depth_v2_best.pth",
+  "sample_count": 953,
+  "size_prediction_on_stage3_test_windows": {
+    "top1": 0.689401888772298,
+    "top2": 0.825813221406086,
+    "route_match_count": 657,
+    "route_match_rate": 0.689401888772298
+  },
+  "depth_metrics": {
+    "gt_size_route": {
+      "count": 953,
+      "accuracy": 0.608604407135362,
+      "balanced_accuracy": 0.606580975272789,
+      "confusion_matrix": [
+        [
+          164,
+          71,
+          64
+        ],
+        [
+          71,
+          158,
+          97
+        ],
+        [
+          12,
+          58,
+          258
+        ]
+      ]
+    },
+    "hard_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.5267576075550892,
+      "balanced_accuracy": 0.5239925768822905,
+      "confusion_matrix": [
+        [
+          130,
+          85,
+          84
+        ],
+        [
+          94,
+          163,
+          69
+        ],
+        [
+          57,
+          62,
+          209
+        ]
+      ]
+    },
+    "soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.5194123819517313,
+      "balanced_accuracy": 0.5168413473945356,
+      "confusion_matrix": [
+        [
+          130,
+          84,
+          85
+        ],
+        [
+          98,
+          157,
+          71
+        ],
+        [
+          60,
+          60,
+          208
+        ]
+      ]
+    },
+    "regression_sigma015_route": {
+      "count": 953,
+      "accuracy": 0.5120671563483735,
+      "balanced_accuracy": 0.5092284563354897,
+      "confusion_matrix": [
+        [
+          125,
+          88,
+          86
+        ],
+        [
+          101,
+          156,
+          69
+        ],
+        [
+          64,
+          57,
+          207
+        ]
+      ]
+    },
+    "regression_sigma020_route": {
+      "count": 953,
+      "accuracy": 0.5131164742917104,
+      "balanced_accuracy": 0.510398207501988,
+      "confusion_matrix": [
+        [
+          127,
+          78,
+          94
+        ],
+        [
+          101,
+          149,
+          76
+        ],
+        [
+          59,
+          56,
+          213
+        ]
+      ]
+    },
+    "regression_sigma025_route": {
+      "count": 953,
+      "accuracy": 0.4931794333683106,
+      "balanced_accuracy": 0.4906014753819697,
+      "confusion_matrix": [
+        [
+          123,
+          77,
+          99
+        ],
+        [
+          101,
+          134,
+          91
+        ],
+        [
+          62,
+          53,
+          213
+        ]
+      ]
+    },
+    "top2_soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.5225603357817419,
+      "balanced_accuracy": 0.519717932703672,
+      "confusion_matrix": [
+        [
+          128,
+          88,
+          83
+        ],
+        [
+          96,
+          161,
+          69
+        ],
+        [
+          59,
+          60,
+          209
+        ]
+      ]
+    },
+    "temp05_soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.521511017838405,
+      "balanced_accuracy": 0.5188863371695867,
+      "confusion_matrix": [
+        [
+          130,
+          85,
+          84
+        ],
+        [
+          97,
+          159,
+          70
+        ],
+        [
+          59,
+          61,
+          208
+        ]
+      ]
+    },
+    "temp07_soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.521511017838405,
+      "balanced_accuracy": 0.5188863371695867,
+      "confusion_matrix": [
+        [
+          130,
+          85,
+          84
+        ],
+        [
+          97,
+          159,
+          70
+        ],
+        [
+          60,
+          60,
+          208
+        ]
+      ]
+    },
+    "temp03_soft_predicted_size_route": {
+      "count": 953,
+      "accuracy": 0.5236096537250787,
+      "balanced_accuracy": 0.5209313269446377,
+      "confusion_matrix": [
+        [
+          130,
+          85,
+          84
+        ],
+        [
+          96,
+          161,
+          69
+        ],
+        [
+          58,
+          62,
+          208
+        ]
+      ]
+    },
+    "hard_route_when_size_correct": {
+      "count": 657,
+      "accuracy": 0.6468797564687976,
+      "balanced_accuracy": 0.6379777692356973,
+      "confusion_matrix": [
+        [
+          115,
+          48,
+          52
+        ],
+        [
+          45,
+          113,
+          42
+        ],
+        [
+          6,
+          39,
+          197
+        ]
+      ]
+    },
+    "hard_route_when_size_wrong": {
+      "count": 296,
+      "accuracy": 0.26013513513513514,
+      "balanced_accuracy": 0.23831056970591855,
+      "confusion_matrix": [
+        [
+          15,
+          37,
+          32
+        ],
+        [
+          49,
+          50,
+          27
+        ],
+        [
+          51,
+          23,
+          12
+        ]
+      ]
+    }
+  }
+}

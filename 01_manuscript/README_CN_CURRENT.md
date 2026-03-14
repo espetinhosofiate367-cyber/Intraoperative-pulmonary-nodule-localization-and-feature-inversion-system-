@@ -3,7 +3,7 @@
 ## 当前应优先使用的文件
 
 ### 1. 当前主稿
-- [MANUSCRIPT_DRAFT_V10_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V10_CN.md)
+- [MANUSCRIPT_DRAFT_V11_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V11_CN.md)
 
 这是目前最新、最贴近 `TBME` 投稿口径的一版中文主稿。
 当前定位是：
@@ -13,6 +13,9 @@
 - `raw-input` 神经网络负责科学主证据
 - `hybrid` 统一模型负责部署增强
 - 整体口径为“前沿性探索研究”，不过度写大
+- 最新结果已经补入：
+  - pure raw size v2 全面超过 XGBoost
+  - pure raw route-aware depth predicted-route 超过 XGBoost
 
 ### 2. 当前图表组织方案（TBME 目标版）
 - [FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md)
@@ -48,6 +51,7 @@
 - [TASK_DEFINITION_AND_LABEL_PROTOCOL.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TASK_DEFINITION_AND_LABEL_PROTOCOL.md)
 - [TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md)
 - [RAW_SIZE_MODEL_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RAW_SIZE_MODEL_OPTIMIZATION_CN.md)
+- [RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md)
 
 ### 6. Overleaf 英文骨架
 - [08_overleaf_draft_v1](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/08_overleaf_draft_v1)
@@ -79,7 +83,7 @@
 ## 最推荐的阅读顺序
 1. `MODEL_ROLE_MAP_CN.md`
 2. `TBME_GAP_AND_ACTION_PLAN_CN.md`
-3. `MANUSCRIPT_DRAFT_V10_CN.md`
+3. `MANUSCRIPT_DRAFT_V11_CN.md`
 4. `FIGURE_STRATEGY_RESET_TBME_V1_CN.md`
 5. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
 6. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`
@@ -89,5 +93,8 @@
 10. `TABLES_TBME_READY_V2_CN.md`
 11. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
 12. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
-13. `03_results_core/latency_benchmark_v1/`
-14. `08_overleaf_draft_v1/`
+13. `RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
+14. `03_results_core/raw_size_v2/`
+15. `03_results_core/raw_routeaware_depth_v2/`
+16. `03_results_core/latency_benchmark_v1/`
+17. `08_overleaf_draft_v1/`
