@@ -36,15 +36,19 @@
 - [TBME_GAP_AND_ACTION_PLAN_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_GAP_AND_ACTION_PLAN_CN.md)
 - [TBME_COVER_LETTER_DRAFT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_COVER_LETTER_DRAFT_CN.md)
 - [RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md)
+- [REFERENCE_VERIFICATION_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/REFERENCE_VERIFICATION_TBME_CN.md)
 - [FIGURE_CAPTIONS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_CAPTIONS_TBME_V1_CN.md)
 - [TABLES_TBME_READY_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V1_CN.md)
+- [FIGURE_REDRAW_BRIEFS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_REDRAW_BRIEFS_TBME_CN.md)
 
 其中：
 - `TBME_GAP_AND_ACTION_PLAN_CN.md` 用于判断当前稿件离 TBME 还差什么
 - `TBME_COVER_LETTER_DRAFT_CN.md` 用于后续生成正式投稿信
 - `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md` 用于把相关工作直接嵌入正文
+- `REFERENCE_VERIFICATION_TBME_CN.md` 用于确认当前参考文献没有假条目并追踪链接
 - `FIGURE_CAPTIONS_TBME_V1_CN.md` 用于主文图注
 - `TABLES_TBME_READY_V1_CN.md` 用于主文关键表格
+- `FIGURE_REDRAW_BRIEFS_TBME_CN.md` 用于指导主文图如何重画
 
 ### 5. 支撑文稿写作的辅助文件
 - [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
@@ -82,7 +86,9 @@
 3. `MANUSCRIPT_DRAFT_V10_CN.md`
 4. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
 5. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
-6. `FIGURE_CAPTIONS_TBME_V1_CN.md`
-7. `TABLES_TBME_READY_V1_CN.md`
-8. `03_results_core/latency_benchmark_v1/`
-9. `08_overleaf_draft_v1/`
+6. `REFERENCE_VERIFICATION_TBME_CN.md`
+7. `FIGURE_CAPTIONS_TBME_V1_CN.md`
+8. `TABLES_TBME_READY_V1_CN.md`
+9. `FIGURE_REDRAW_BRIEFS_TBME_CN.md`
+10. `03_results_core/latency_benchmark_v1/`
+11. `08_overleaf_draft_v1/`
