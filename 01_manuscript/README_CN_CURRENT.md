@@ -54,6 +54,7 @@
 - [TABLES_TBME_READY_V3_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V3_CN.md)
 - [FORMULAS_AND_PARAMETERS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FORMULAS_AND_PARAMETERS_TBME_V1_CN.md)
 - [FIGURE_DRAWING_STUDY_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_DRAWING_STUDY_TBME_CN.md)
+- [STYLE_REFERENCE_PAPERS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/STYLE_REFERENCE_PAPERS_TBME_CN.md)
 
 ### 5. 画图 Prompt 与施工资料
 - [NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md)
