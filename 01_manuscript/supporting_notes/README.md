@@ -25,6 +25,8 @@
   相关工作直接引用候选
 - `BREAST_TO_LUNG_TRANSFER_RATIONALE_CN.md`
   从乳腺/浅表触诊迁移到术中肺结节的相似性、差异性与前人不足
+- `SYSTEM_DESIGN_BASIS_AND_RESEARCH_LOGIC_CN.md`
+  从文献出发梳理系统设计依据、科学问题、解决方案与验证方案
 - `STYLE_REFERENCE_PAPERS_TBME_CN.md`
   图表风格参考论文清单
 - `TBME_GAP_AND_ACTION_PLAN_CN.md`
