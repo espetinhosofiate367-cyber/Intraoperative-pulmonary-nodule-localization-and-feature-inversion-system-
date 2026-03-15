@@ -1,5 +1,9 @@
 # 文稿区当前使用说明
 
+> 说明：本目录现在只保留 **当前活跃核心文稿**。  
+> 较少日常打开、但仍有价值的写作支撑资料，已整理到：
+> [supporting_notes](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes)
+
 ## 当前应优先使用的文件
 
 ### 1. 当前主稿
@@ -46,15 +50,15 @@
 - `Unified hierarchical inverter`
 
 ### 4. TBME 冲刊文档
-- [TBME_GAP_AND_ACTION_PLAN_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_GAP_AND_ACTION_PLAN_CN.md)
-- [TBME_COVER_LETTER_DRAFT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_COVER_LETTER_DRAFT_CN.md)
-- [RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md)
-- [REFERENCE_VERIFICATION_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/REFERENCE_VERIFICATION_TBME_CN.md)
+- [TBME_GAP_AND_ACTION_PLAN_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/TBME_GAP_AND_ACTION_PLAN_CN.md)
+- [TBME_COVER_LETTER_DRAFT_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/TBME_COVER_LETTER_DRAFT_CN.md)
+- [RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md)
+- [REFERENCE_VERIFICATION_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/REFERENCE_VERIFICATION_TBME_CN.md)
 - [FIGURE_CAPTIONS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_CAPTIONS_TBME_V1_CN.md)
 - [TABLES_TBME_READY_V3_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TABLES_TBME_READY_V3_CN.md)
 - [FORMULAS_AND_PARAMETERS_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FORMULAS_AND_PARAMETERS_TBME_V1_CN.md)
 - [FIGURE_DRAWING_STUDY_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_DRAWING_STUDY_TBME_CN.md)
-- [STYLE_REFERENCE_PAPERS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/STYLE_REFERENCE_PAPERS_TBME_CN.md)
+- [STYLE_REFERENCE_PAPERS_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/STYLE_REFERENCE_PAPERS_TBME_CN.md)
 
 ### 5. 画图 Prompt 与施工资料
 - [README_ACTIVE_PROMPTS_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/06_ai_figure_prompts/README_ACTIVE_PROMPTS_CN.md)
@@ -73,11 +77,12 @@
 - `FIG1_INTRO_CONCEPT_GEMINI_PROMPTS_V1_CN.md`
 
 ### 6. 支撑文稿写作的辅助文件
-- [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MODEL_AND_SYSTEM_BLUEPRINT.md)
-- [TASK_DEFINITION_AND_LABEL_PROTOCOL.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TASK_DEFINITION_AND_LABEL_PROTOCOL.md)
-- [TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md)
-- [RAW_SIZE_MODEL_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RAW_SIZE_MODEL_OPTIMIZATION_CN.md)
-- [RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md)
+- [supporting_notes/README.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/README.md)
+- [MODEL_AND_SYSTEM_BLUEPRINT.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/MODEL_AND_SYSTEM_BLUEPRINT.md)
+- [TASK_DEFINITION_AND_LABEL_PROTOCOL.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/TASK_DEFINITION_AND_LABEL_PROTOCOL.md)
+- [TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md)
+- [RAW_SIZE_MODEL_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/RAW_SIZE_MODEL_OPTIMIZATION_CN.md)
+- [RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md)
 
 ### 7. Overleaf 英文骨架
 - [08_overleaf_draft_v1](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/08_overleaf_draft_v1)
@@ -119,7 +124,7 @@
 
 ## 最推荐的阅读顺序
 1. `MODEL_ROLE_MAP_CN.md`
-2. `TBME_GAP_AND_ACTION_PLAN_CN.md`
+2. `supporting_notes/TBME_GAP_AND_ACTION_PLAN_CN.md`
 3. `MANUSCRIPT_DRAFT_V12_CN.md`
 4. `FIGURE_STRATEGY_RESET_TBME_V1_CN.md`
 5. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
@@ -127,14 +132,14 @@
 7. `DEEP_MODEL_ARCHITECTURE_OVERVIEW_CN.md`
 8. `NEURAL_AND_DATA_FIGURE_PROMPTS_TBME_CN.md`
 9. `GEMINI_TBME_FINAL_FIGURE_PROMPTS_CN.md`
-10. `RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
-11. `REFERENCE_VERIFICATION_TBME_CN.md`
+10. `supporting_notes/RELATED_WORK_DIRECT_CITATIONS_TBME_CN.md`
+11. `supporting_notes/REFERENCE_VERIFICATION_TBME_CN.md`
 12. `FIGURE_CAPTIONS_TBME_V1_CN.md`
 13. `TABLES_TBME_READY_V3_CN.md`
 14. `FIGURE_DRAWING_STUDY_TBME_CN.md`
 15. `FORMULAS_AND_PARAMETERS_TBME_V1_CN.md`
-16. `RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
-17. `RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
+16. `supporting_notes/RAW_SIZE_MODEL_OPTIMIZATION_CN.md`
+17. `supporting_notes/RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
 18. `03_results_core/raw_size_v2/`
 19. `03_results_core/raw_routeaware_depth_v2/`
 20. `03_results_core/latency_benchmark_v1/`

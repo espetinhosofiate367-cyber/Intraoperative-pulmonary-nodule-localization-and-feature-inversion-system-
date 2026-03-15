@@ -11,7 +11,7 @@
 - 状态：`Active`
 - 入口：`01_manuscript/README_CN_CURRENT.md`
 - 当前基线：`MANUSCRIPT_DRAFT_V12_CN.md`
-- 说明：文稿已按 `mechanism -> XGBoost -> raw scientific line -> deployment enhancement` 重组。
+- 说明：文稿已按 `mechanism -> XGBoost -> raw scientific line -> deployment enhancement` 重组；支撑性写作资料已移入 `01_manuscript/supporting_notes/`。
 
 ### 2. 图表主线
 - 状态：`Active`

@@ -15,6 +15,7 @@ Contains the active status board, deliverable register, and archive rules for ma
 ## 01_manuscript
 Current paper draft, figure/table plan, model-role notes, and protocol-level writing materials.
 Use `01_manuscript/README_CN_CURRENT.md` as the entry point.
+Less frequently used drafting references are now grouped under `01_manuscript/supporting_notes/`.
 
 ## 02_figures_final
 Final or near-final figures intended for TBME manuscript use.
