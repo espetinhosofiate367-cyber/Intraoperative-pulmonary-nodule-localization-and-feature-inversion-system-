@@ -35,6 +35,8 @@
   cover letter 中文工作稿
 - `TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md`
   XGBoost explainability 写作材料
+- `STRUCTURED_FEATURE_ENGINEERING_AND_XGBOOST_SHAP_CN.md`
+  结构化特征工程、XGBoost baseline 与 TreeSHAP 解释链说明
 
 ## 当前写稿入口
 如果你现在是在继续成稿，请回到：
