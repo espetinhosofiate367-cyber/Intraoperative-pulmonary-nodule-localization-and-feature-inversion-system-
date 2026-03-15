@@ -7,7 +7,7 @@
 ## 当前应优先使用的文件
 
 ### 1. 当前主稿
-- [MANUSCRIPT_DRAFT_V19_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V19_CN.md)
+- [MANUSCRIPT_DRAFT_V20_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V20_CN.md)
 
 这是目前最新、最贴近 `TBME` 投稿口径的一版中文主稿。
 当前定位是：
@@ -23,6 +23,7 @@
   - 结构重写为“为什么先做 detection、哪些内容可从前人工作迁移、乳腺/浅表触诊为何能迁移到肺、以及我们如何在 detection 之后继续推进 size 与 coarse depth”的渐进式叙事
   - 已补入更完整的硬件系统、实验平台与实验流程描述
   - 已明确写出：相似性在于共享“内部机械异质性 -> 表面时空响应变化”的物理基础；差异性在于肺部含气、塌陷、曲率变化和 CT 失配
+  - 结构进一步收紧为“解决术中定位问题”导向：系统方案是主线，算法和探索性成果是手段
   - 摘要已进一步改成更贴近真实临床流程的叙事：肺放气萎陷后术前 CT 难以直接对应术中位置，经验触诊可用但难以标准化和量化
   - 当前标题为：`基于柔性触觉感知与深度学习推理的术中肺结节定位研究`
 
@@ -136,7 +137,7 @@
 ## 最推荐的阅读顺序
 1. `MODEL_ROLE_MAP_CN.md`
 2. `supporting_notes/TBME_GAP_AND_ACTION_PLAN_CN.md`
-3. `MANUSCRIPT_DRAFT_V19_CN.md`
+3. `MANUSCRIPT_DRAFT_V20_CN.md`
 4. `FIGURE_STRATEGY_RESET_TBME_V1_CN.md`
 5. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
 6. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`

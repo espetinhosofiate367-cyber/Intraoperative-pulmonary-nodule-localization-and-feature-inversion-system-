@@ -39,4 +39,4 @@
 ## 当前写稿入口
 如果你现在是在继续成稿，请回到：
 - `../README_CN_CURRENT.md`
-- `../MANUSCRIPT_DRAFT_V19_CN.md`
+- `../MANUSCRIPT_DRAFT_V20_CN.md`
