@@ -40,7 +40,7 @@
 正文角色：scientific line 的核心结果，证明 depth 不是不可学，而是必须 size-aware。
 
 ### Fig. 7 Raw-input explainability 主图
-建议内容：latent probe、hard-pair、phase occlusion 三联图。
+建议内容：latent probe、phase occlusion、Integrated Gradients 类均值空间归因图，以及 hard-pair inset。
 正文角色：证明 raw-input 神经网络自动编码了部分与大小和深度相关的物理结构。
 
 ### Fig. 8 Deployment enhancement 图

@@ -1,4 +1,4 @@
-# Gemini 生图 Prompt（TBME 定稿版）
+﻿# Gemini 生图 Prompt（TBME 定稿版）
 
 ## 这份文件怎么用
 这套 prompt 专门给 `Gemini` 用，目标不是“随便生成好看图片”，而是：
@@ -229,25 +229,28 @@ Use separate visual color families for the raw scientific line and the deploymen
 ### 用途
 展示：
 - latent probe
-- hard-pair
 - phase occlusion
+- Integrated Gradients
+- hard-pair
 
 ### Gemini Prompt
 ```text
-Create an IEEE TBME-style explainability summary figure for the raw-input neural pipeline. Use three panels.
+Create an IEEE TBME-style explainability summary figure for the raw-input neural pipeline. Use a 2×2 panel layout.
 
 Panel A: latent probe family comparison across concept families such as distribution complexity, temporal phase, and deformation position.
-Panel B: hard-pair examples in which deep and shallow cases have similar peak amplitude but different broader spatial structure.
-Panel C: phase occlusion summary across loading early, peak neighborhood, and release.
+Panel B: phase occlusion summary across loading early, peak neighborhood, and release.
+Panel C: class-wise mean Integrated Gradients maps for shallow, middle, and deep depth groups, shown as three compact pseudo-color attribution maps within the panel.
+Panel D: hard-pair examples in which deep and shallow cases have similar peak amplitude but different broader spatial structure.
 
 Do not include t-SNE, UMAP, or PCA. The visual message should be that the network automatically encodes part of the physically meaningful structure but still over-relies on the peak neighborhood. Keep the figure restrained, scientific, and panel-balanced.
 ```
 
 ### 你后续要填的真实数值
-- raw scientific line latent probe `R^2 = 0.3657`
+- raw scientific line latent probe `R^2 = 0.2712`
 - size-only probe `R^2 = 0.2356`
 - hard-pair success `0.7500`
-- strongest occlusion phase `peak neighborhood`
+- peak-neighborhood mean drop `0.2303`
+- IG subset size `40 / 40 / 40`
 
 ---
 
@@ -347,3 +350,4 @@ Create an IEEE TBME-style supplementary figure layout for explainability details
 - 你再把真实数值、曲线、混淆矩阵替换进去
 
 这会比让 Gemini 直接捏全部数据图更快也更稳。
+

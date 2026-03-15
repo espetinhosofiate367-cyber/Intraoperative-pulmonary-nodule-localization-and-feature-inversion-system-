@@ -1,4 +1,4 @@
-# 深度学习架构与数据图 Prompt（TBME版）
+﻿# 深度学习架构与数据图 Prompt（TBME版）
 
 ## 使用说明
 这份文件专门服务当前论文里最关键的几类图：
@@ -109,10 +109,10 @@ Create an IEEE TBME-style quantitative figure for coarse depth results under hie
 ## Prompt D-4：Explainability 主图（Fig.7）
 
 ### 中文 Prompt
-请绘制一张 IEEE TBME 风格的 explainability 总图，主题为“raw-input explainability summary”。推荐三联图。Panel A 为 latent probe family comparison，比较 probe 对 distribution complexity、temporal phase、deformation position 等特征家族的恢复能力；Panel B 为 hard-pair examples，展示几对 deep-vs-shallow 但 peak amplitude 相近的触觉案例；Panel C 为 phase occlusion summary，显示 loading early、peak neighborhood、release 不同阶段被遮挡后概率下降幅度。图中不要使用 t-SNE、UMAP、PCA。整体结论要聚焦：the network automatically encodes part of the physically meaningful structure, but still over-relies on peak neighborhood.
+请绘制一张 IEEE TBME 风格的 explainability 总图，主题为“raw-input explainability summary”。推荐 2×2 panel。Panel A 为 latent probe family comparison，比较 probe 对 distribution complexity、temporal phase、deformation position 等特征家族的恢复能力；Panel B 为 phase occlusion summary，显示 loading early、peak neighborhood、release 不同阶段被遮挡后概率下降幅度；Panel C 为 class-wise mean Integrated Gradients maps，展示 shallow、middle、deep 三类的平均空间归因热图；Panel D 为 hard-pair examples，展示几对 deep-vs-shallow 但 peak amplitude 相近的触觉案例。图中不要使用 t-SNE、UMAP、PCA。整体结论要聚焦：the network automatically encodes part of the physically meaningful structure, but still over-relies on peak neighborhood.
 
 ### English Prompt
-Create an IEEE TBME-style explainability summary figure for the raw-input neural pipeline. Use a three-panel layout. Panel A compares latent probe recovery performance across concept families such as distribution complexity, temporal phase, and deformation position. Panel B shows hard-pair examples in which deep and shallow cases have similar peak amplitude but different broader structure. Panel C summarizes phase occlusion effects across loading early, peak neighborhood, and release phases. Do not include t-SNE, UMAP, or PCA. The central message should be: the network automatically encodes part of the physically meaningful structure, but still over-relies on the peak neighborhood.
+Create an IEEE TBME-style explainability summary figure for the raw-input neural pipeline. Use a 2×2 layout. Panel A compares latent probe recovery performance across concept families such as distribution complexity, temporal phase, and deformation position. Panel B summarizes phase occlusion effects across loading early, peak neighborhood, and release phases. Panel C shows class-wise mean Integrated Gradients maps for shallow, middle, and deep groups. Panel D shows hard-pair examples in which deep and shallow cases have similar peak amplitude but different broader structure. Do not include t-SNE, UMAP, or PCA. The central message should be: the network automatically encodes part of the physically meaningful structure, but still over-relies on the peak neighborhood.
 
 ---
 
@@ -133,4 +133,5 @@ Create an IEEE TBME-style quantitative figure for deployment enhancement under p
 
 ### English Prompt
 Create an IEEE TBME-style latency benchmark figure titled “Latency under model-only and end-to-end settings.” Use two panels. Panel A compares detection-only latency for XGBoost model-only CPU, XGBoost end-to-end CPU, NN model-only CPU, NN end-to-end CPU, and NN end-to-end GPU. Panel B compares full-chain latency for the XGBoost cascade end-to-end CPU, the NN two-stage CPU pipeline, and the NN two-stage GPU pipeline. Clearly distinguish model-only from end-to-end; do not imply that neural networks are universally faster. The visual takeaway should be that explicit feature extraction makes the structured route less suitable for a detection-first online mainline.
+
 

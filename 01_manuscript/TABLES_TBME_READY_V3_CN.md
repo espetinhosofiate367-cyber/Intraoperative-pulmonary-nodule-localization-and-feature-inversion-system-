@@ -124,9 +124,11 @@
 
 | 指标 | 数值 |
 |---|---:|
-| Latent probe mean test `R^2` | **0.3657** |
+| Latent probe mean test `R^2` | **0.2712** |
 | Size-only probe mean test `R^2` | 0.2356 |
 | Hard-pair success rate | **0.7500** |
+| Peak-neighborhood mean drop | **0.2303** |
+| IG subset size (`shallow / middle / deep`) | **40 / 40 / 40** |
 | Phase with largest occlusion drop | **peak neighborhood** |
 
 ### S2B Unified deployment line
@@ -139,7 +141,7 @@
 | Hard-pair success rate | **1.0000** |
 | Peak-neighborhood mean drop | **0.0802** |
 
-**建议正文要点**：raw scientific line 负责证明“自动编码了部分物理结构”，unified line 负责证明“部署模型也确实在利用这些结构”。
+**建议正文要点**：raw scientific line 负责证明“自动编码了部分物理结构”，并建议在正文中明确说明这里使用的是 current route-aware depth v2 的 latent probe、Integrated Gradients、hard-pair 与 phase occlusion 结果；unified line 则负责证明“部署模型也确实在利用这些结构”。
 
 ---
 

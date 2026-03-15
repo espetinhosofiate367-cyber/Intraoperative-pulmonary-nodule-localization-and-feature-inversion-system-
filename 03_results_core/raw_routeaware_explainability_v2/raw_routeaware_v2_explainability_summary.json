@@ -1,0 +1,719 @@
+{
+  "checkpoint": "C:\\Users\\SWH\\Desktop\\GitHub_Docs_Package\\Code_Archive\\paper_flexible_sensor_lung_nodule_localization\\experiments\\outputs_stage3_raw_size_routed_depth_v2\\paper_stage3_raw_size_routed_depth_v2_best.pth",
+  "probe_summary": {
+    "mean_test_r2_latent": 0.27123328257696266,
+    "mean_test_r2_size_only": 0.23556492825712816,
+    "mean_test_r_latent": 0.519055973948414,
+    "mean_test_r_size_only": 0.4535922773870313
+  },
+  "hard_pair_summary": {
+    "pair_count": 8,
+    "pairwise_pdeep_success_rate": 0.75,
+    "mean_raw_max_gap": 9.809624195098877,
+    "mean_entropy_gap": -0.008201554113753548,
+    "mean_radius_gap": -0.10886117395034961
+  },
+  "phase_occlusion_summary": {
+    "overall": [
+      {
+        "index": 0,
+        "phase": "loading_early",
+        "mean_drop": 0.06623324670042273,
+        "median_drop": 0.004671199596486986,
+        "count": 399
+      },
+      {
+        "index": 1,
+        "phase": "loading_late",
+        "mean_drop": 0.024964682386675173,
+        "median_drop": 0.0013044448569417,
+        "count": 138
+      },
+      {
+        "index": 2,
+        "phase": "peak_neighborhood",
+        "mean_drop": 0.2303212406405851,
+        "median_drop": 0.0244372240267694,
+        "count": 953
+      },
+      {
+        "index": 3,
+        "phase": "release",
+        "mean_drop": 0.04460158348461546,
+        "median_drop": 0.0012981891632080078,
+        "count": 97
+      }
+    ],
+    "by_depth": [
+      {
+        "depth_label": "deep",
+        "phase": "loading_early",
+        "mean_drop": 0.10812635046911762
+      },
+      {
+        "depth_label": "deep",
+        "phase": "loading_late",
+        "mean_drop": 0.019536759470843948
+      },
+      {
+        "depth_label": "deep",
+        "phase": "peak_neighborhood",
+        "mean_drop": 0.25020649917585214
+      },
+      {
+        "depth_label": "deep",
+        "phase": "release",
+        "mean_drop": 0.07183778608768163
+      },
+      {
+        "depth_label": "middle",
+        "phase": "loading_early",
+        "mean_drop": -0.09364536495498517
+      },
+      {
+        "depth_label": "middle",
+        "phase": "loading_late",
+        "mean_drop": -0.012726083986219201
+      },
+      {
+        "depth_label": "middle",
+        "phase": "peak_neighborhood",
+        "mean_drop": 0.14351750361715104
+      },
+      {
+        "depth_label": "middle",
+        "phase": "release",
+        "mean_drop": -0.07846097513764358
+      },
+      {
+        "depth_label": "shallow",
+        "phase": "loading_early",
+        "mean_drop": 0.1920704226960669
+      },
+      {
+        "depth_label": "shallow",
+        "phase": "loading_late",
+        "mean_drop": 0.0739562680775469
+      },
+      {
+        "depth_label": "shallow",
+        "phase": "peak_neighborhood",
+        "mean_drop": 0.30314951311574195
+      },
+      {
+        "depth_label": "shallow",
+        "phase": "release",
+        "mean_drop": 0.14336913704755716
+      }
+    ]
+  },
+  "ig_summary": {
+    "count_per_class": {
+      "shallow": 40,
+      "middle": 40,
+      "deep": 40
+    },
+    "selected_rows": [
+      {
+        "sample_index": 334,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 335,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 336,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 333,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 331,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 337,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 332,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 450,
+        "depth_label": "shallow",
+        "group_key": "1.25cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 342,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 445,
+        "depth_label": "shallow",
+        "group_key": "1.25cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 443,
+        "depth_label": "shallow",
+        "group_key": "1.25cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 134,
+        "depth_label": "shallow",
+        "group_key": "0.5cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 444,
+        "depth_label": "shallow",
+        "group_key": "1.25cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 364,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|1.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 172,
+        "depth_label": "shallow",
+        "group_key": "0.5cm大|1.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 152,
+        "depth_label": "shallow",
+        "group_key": "0.5cm大|1.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 442,
+        "depth_label": "shallow",
+        "group_key": "1.25cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 338,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 319,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 320,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 564,
+        "depth_label": "shallow",
+        "group_key": "1.5cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 745,
+        "depth_label": "shallow",
+        "group_key": "1.75cm大|1cm深|3.CSV"
+      },
+      {
+        "sample_index": 746,
+        "depth_label": "shallow",
+        "group_key": "1.75cm大|1cm深|3.CSV"
+      },
+      {
+        "sample_index": 330,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 329,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 339,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 321,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 744,
+        "depth_label": "shallow",
+        "group_key": "1.75cm大|1cm深|3.CSV"
+      },
+      {
+        "sample_index": 341,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 747,
+        "depth_label": "shallow",
+        "group_key": "1.75cm大|1cm深|3.CSV"
+      },
+      {
+        "sample_index": 348,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|1.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 117,
+        "depth_label": "shallow",
+        "group_key": "0.5cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 446,
+        "depth_label": "shallow",
+        "group_key": "1.25cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 565,
+        "depth_label": "shallow",
+        "group_key": "1.5cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 328,
+        "depth_label": "shallow",
+        "group_key": "0.75cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 754,
+        "depth_label": "shallow",
+        "group_key": "1.75cm大|1cm深|3.CSV"
+      },
+      {
+        "sample_index": 755,
+        "depth_label": "shallow",
+        "group_key": "1.75cm大|1cm深|3.CSV"
+      },
+      {
+        "sample_index": 441,
+        "depth_label": "shallow",
+        "group_key": "1.25cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 437,
+        "depth_label": "shallow",
+        "group_key": "1.25cm大|0.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 153,
+        "depth_label": "shallow",
+        "group_key": "0.5cm大|1.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 71,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 70,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 72,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 56,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 59,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 58,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 57,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 55,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 73,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 60,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 194,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 54,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 52,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 197,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 193,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 198,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 53,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 196,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 46,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 43,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 74,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 61,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 42,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 199,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 44,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 45,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 79,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 195,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 47,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 78,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 76,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 75,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 41,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 200,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 77,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 66,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 201,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 202,
+        "depth_label": "middle",
+        "group_key": "0.5cm大|1.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 69,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 67,
+        "depth_label": "middle",
+        "group_key": "0.25cm大|2.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 679,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 678,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 680,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 677,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 676,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 681,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 785,
+        "depth_label": "deep",
+        "group_key": "1.75cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 784,
+        "depth_label": "deep",
+        "group_key": "1.75cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 682,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 675,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 667,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 786,
+        "depth_label": "deep",
+        "group_key": "1.75cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 783,
+        "depth_label": "deep",
+        "group_key": "1.75cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 788,
+        "depth_label": "deep",
+        "group_key": "1.75cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 683,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 650,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 787,
+        "depth_label": "deep",
+        "group_key": "1.75cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 668,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 664,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 420,
+        "depth_label": "deep",
+        "group_key": "0.75cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 669,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 651,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 663,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 671,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 672,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 670,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 660,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 649,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 684,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 652,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 429,
+        "depth_label": "deep",
+        "group_key": "0.75cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 430,
+        "depth_label": "deep",
+        "group_key": "0.75cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 419,
+        "depth_label": "deep",
+        "group_key": "0.75cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 653,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 654,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|2.5cm深|3.CSV"
+      },
+      {
+        "sample_index": 661,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 665,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 662,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 666,
+        "depth_label": "deep",
+        "group_key": "1.5cm大|3.0cm深|3.CSV"
+      },
+      {
+        "sample_index": 775,
+        "depth_label": "deep",
+        "group_key": "1.75cm大|2.5cm深|3.CSV"
+      }
+    ]
+  }
+}

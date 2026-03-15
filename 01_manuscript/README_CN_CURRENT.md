@@ -142,5 +142,6 @@
 17. `supporting_notes/RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md`
 18. `03_results_core/raw_size_v2/`
 19. `03_results_core/raw_routeaware_depth_v2/`
-20. `03_results_core/latency_benchmark_v1/`
-21. `08_overleaf_draft_v1/`
+20. `03_results_core/raw_routeaware_explainability_v2/`
+21. `03_results_core/latency_benchmark_v1/`
+22. `08_overleaf_draft_v1/`

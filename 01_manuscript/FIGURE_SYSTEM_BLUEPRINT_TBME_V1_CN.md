@@ -183,8 +183,9 @@ raw-input scientific main model 是否自动编码了与大小和深度相关的
 
 ### 推荐 panel
 - `A` latent probe family comparison
-- `B` hard-pair examples
-- `C` phase occlusion summary
+- `B` phase occlusion summary
+- `C` mean Integrated Gradients maps by depth
+- `D` hard-pair examples or inset strip
 
 ### 当前明确不使用的 panel
 - t-SNE / UMAP / PCA
@@ -193,6 +194,7 @@ raw-input scientific main model 是否自动编码了与大小和深度相关的
 ### 图要传达的结论
 - latent representation 超出 size identity
 - 模型并非只看单点峰值
+- 模型在空间上形成了与深度类别相关的归因结构
 - 时间策略仍偏向 peak neighborhood
 
 ---

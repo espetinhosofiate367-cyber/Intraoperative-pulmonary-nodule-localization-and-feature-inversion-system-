@@ -19,7 +19,7 @@ raw-input 时空神经网络在结节探测任务上的 ROC、PR 或综合指标
 粗深度分类结果比较，包括 majority baseline、XGBoost、普通 raw-input depth 头、旧版 size-routed raw-input depth、以及新版 `route-aware raw depth v2`。该图用于说明：深度不是不可学，而是必须在 `size-aware + route-aware` 架构下建模。建议同时展示 `GT-route bAcc = 0.6066` 和 `predicted-route bAcc = 0.5240`，并与 XGBoost 的 `0.5138` 形成清晰对比。
 
 ## Fig. 7 Raw-input explainability 主图
-raw-input size-routed depth 模型的 explainability 结果，包括 latent probe、hard-pair analysis 和 phase occlusion。该图用于证明神经网络内部自动编码了部分与大小和深度相关的物理结构，同时也显示其时间策略仍偏向 peak neighborhood。
+current route-aware raw depth v2 模型的 explainability 结果，包括 latent probe、phase occlusion、Integrated Gradients 类均值空间归因图和 hard-pair analysis。该图用于证明神经网络内部自动编码了部分与大小和深度相关的物理结构，同时也显示其时间策略仍偏向 peak neighborhood。
 
 ## Fig. 8 Deployment enhancement 图
 统一层级反演器在真实 predicted-route 条件下的结果比较。该图强调：pure raw route-aware model 已经在 predicted-route depth 上超过 XGBoost，而 unified model 的角色是在此基础上进一步提升 route-aware robustness（`0.5337`），用于 deployment enhancement，而不是再次证明 raw-input 自动学习能力。

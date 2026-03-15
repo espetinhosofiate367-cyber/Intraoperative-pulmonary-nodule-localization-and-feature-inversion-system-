@@ -1,0 +1,13 @@
+﻿depth_label,phase,mean_drop
+deep,loading_early,0.10812635046911762
+deep,loading_late,0.019536759470843948
+deep,peak_neighborhood,0.25020649917585214
+deep,release,0.07183778608768163
+middle,loading_early,-0.09364536495498517
+middle,loading_late,-0.012726083986219201
+middle,peak_neighborhood,0.14351750361715104
+middle,release,-0.07846097513764358
+shallow,loading_early,0.1920704226960669
+shallow,loading_late,0.0739562680775469
+shallow,peak_neighborhood,0.30314951311574195
+shallow,release,0.14336913704755716
