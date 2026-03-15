@@ -4,17 +4,15 @@
 这份版本只服务一个目的：把主文图表收缩成最有说服力的证据链，去掉所有视觉上不稳、证据力不足或容易分散主线的可视化。
 
 ## 当前明确不使用的图
-1. t-SNE
-2. UMAP
-3. PCA
-4. 各种全局 embedding 对照图
-5. 任何不能直接支撑正文主论点的探索性拼图
+1. 各种弱证据表征空间图
+2. 不能直接回答正文主问题的探索性拼图
+3. 任何只提供视觉印象、不能稳定支撑结论的辅助图
 
 ## 主文图组织原则
 1. 主文图优先回答 biomedical engineering 核心问题。
 2. 每张图只承担一个结论。
 3. `raw-input scientific line` 与 `deployment enhancement line` 严格分开。
-4. explainability 只保留最强的直接证据，不再用 embedding 类图辅助。
+4. explainability 只保留最强的直接证据，不再使用弱证据表征图辅助。
 
 ## 建议主文图顺序
 ### Fig. 1 引言总图
@@ -63,10 +61,8 @@
 - S5：代表性 tactile map gallery 或条件矩阵图
 
 ## 当前不再进入补充材料的图
-- embedding gallery
-- clean UMAP triptych
-- size-controlled UMAP
-- t-SNE / PCA / UMAP 比较图
+- 各类弱证据表征空间图
+- 已淘汰的探索性对照拼图
 
 ## 建议主文表格
 ### Table 1 数据协议与任务定义
@@ -78,4 +74,4 @@
 ## 当前最稳的图表主线
 主文图 = `问题提出 -> 方法组织 -> 结构化基线 -> raw scientific evidence -> deployment enhancement -> real-time prototype`
 
-当前不再使用的视觉路径 = `embedding space -> representation impression`
+当前不再使用的视觉路径 = `弱证据表征图 -> 视觉印象式论证`

@@ -242,7 +242,7 @@ Panel B: phase occlusion summary across loading early, peak neighborhood, and re
 Panel C: class-wise mean Integrated Gradients maps for shallow, middle, and deep depth groups, shown as three compact pseudo-color attribution maps within the panel.
 Panel D: hard-pair examples in which deep and shallow cases have similar peak amplitude but different broader spatial structure.
 
-Do not include t-SNE, UMAP, or PCA. The visual message should be that the network automatically encodes part of the physically meaningful structure but still over-relies on the peak neighborhood. Keep the figure restrained, scientific, and panel-balanced.
+Use only latent probe, phase occlusion, Integrated Gradients, and hard-pair evidence. The visual message should be that the network automatically encodes part of the physically meaningful structure but still over-relies on the peak neighborhood. Keep the figure restrained, scientific, and panel-balanced.
 ```
 
 ### 你后续要填的真实数值
@@ -332,7 +332,7 @@ Create an IEEE TBME-style supplementary figure layout showing route-aware breakd
 
 ### S3 Explainability补充图
 ```text
-Create an IEEE TBME-style supplementary figure layout for explainability details. Include additional hard-pair examples, finer-grained phase occlusion bars, and a compact summary of latent probe concept families. Avoid embedding maps. The figure should look like a real supplement figure for a biomedical engineering paper.
+Create an IEEE TBME-style supplementary figure layout for explainability details. Include additional hard-pair examples, finer-grained phase occlusion bars, and a compact summary of latent probe concept families. Keep the figure strictly evidence-driven and focused on probe, occlusion, attribution, and representative cases. The figure should look like a real supplement figure for a biomedical engineering paper.
 ```
 
 ---

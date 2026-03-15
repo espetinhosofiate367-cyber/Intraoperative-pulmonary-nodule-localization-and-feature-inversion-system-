@@ -8,9 +8,7 @@
 2. 对主文结论有明确补充价值的少量辅助图
 
 当前明确不采用：
-- t-SNE
-- UMAP
-- PCA 嵌入图
+- 各类弱证据表征空间图
 - 任何“看起来有趣但不能稳定支撑主论点”的探索性拼图
 
 ---
@@ -188,8 +186,8 @@ raw-input scientific main model 是否自动编码了与大小和深度相关的
 - `D` hard-pair examples or inset strip
 
 ### 当前明确不使用的 panel
-- t-SNE / UMAP / PCA
-- 全局 embedding 空间图
+- 各类弱证据表征空间图
+- 任何不能直接支持 explainability 结论的印象式面板
 
 ### 图要传达的结论
 - latent representation 超出 size identity
@@ -257,10 +255,8 @@ raw-input scientific main model 是否自动编码了与大小和深度相关的
 - 仅在确实排版整洁、信息密度合理时考虑
 
 ### 当前不纳入补充材料的图
-- t-SNE
-- UMAP
-- PCA
-- 各类 embedding 对照图
+- 各类弱证据表征空间图
+- 各类已淘汰的探索性对照图
 
 ---
 
@@ -268,4 +264,4 @@ raw-input scientific main model 是否自动编码了与大小和深度相关的
 1. 先手工重画 `Fig.1`、`Fig.2`
 2. 再按真实数据重绘 `Fig.3-8, Fig.10`
 3. `Fig.9` 保留真实截图，只做排版美化
-4. 不再为 embedding 图投入主线精力
+4. 不再为已淘汰的弱证据图投入主线精力

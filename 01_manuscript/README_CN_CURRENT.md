@@ -7,7 +7,7 @@
 ## 当前应优先使用的文件
 
 ### 1. 当前主稿
-- [MANUSCRIPT_DRAFT_V14_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V14_CN.md)
+- [MANUSCRIPT_DRAFT_V17_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V17_CN.md)
 
 这是目前最新、最贴近 `TBME` 投稿口径的一版中文主稿。
 当前定位是：
@@ -20,8 +20,10 @@
 - 最新结果已经补入：
   - pure raw size v2 全面超过 XGBoost
   - pure raw route-aware depth predicted-route 超过 XGBoost
-  - 结构重写为“为什么先做 detection、哪些内容可从前人工作迁移、以及我们如何在 detection 之后继续推进 size 与 coarse depth”的渐进式叙事
-  - 标题已调整为：`基于柔性触觉感知的术中肺结节定位探索：一条从结节探测出发的渐进式研究路径`
+  - 结构重写为“为什么先做 detection、哪些内容可从前人工作迁移、乳腺/浅表触诊为何能迁移到肺、以及我们如何在 detection 之后继续推进 size 与 coarse depth”的渐进式叙事
+  - 已补入更完整的硬件系统、实验平台与实验流程描述
+  - 已明确写出：相似性在于共享“内部机械异质性 -> 表面时空响应变化”的物理基础；差异性在于肺部含气、塌陷、曲率变化和 CT 失配
+  - 当前标题为：`基于柔性触觉感知与深度学习推理的术中肺结节定位探索`
 
 ### 2. 当前图表组织方案（TBME 目标版）
 - [FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md)
@@ -84,6 +86,8 @@
 - [TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/TBME_XGBOOST_EXPLAINABILITY_NOTES_CN.md)
 - [RAW_SIZE_MODEL_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/RAW_SIZE_MODEL_OPTIMIZATION_CN.md)
 - [RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/RAW_ROUTE_AWARE_DEPTH_OPTIMIZATION_CN.md)
+- [HARDWARE_AND_EXPERIMENTAL_FLOW_FROM_DISCLOSURE_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/HARDWARE_AND_EXPERIMENTAL_FLOW_FROM_DISCLOSURE_CN.md)
+- [BREAST_TO_LUNG_TRANSFER_RATIONALE_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/supporting_notes/BREAST_TO_LUNG_TRANSFER_RATIONALE_CN.md)
 
 ### 7. Overleaf 英文骨架
 - [08_overleaf_draft_v1](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/08_overleaf_draft_v1)
@@ -102,11 +106,16 @@
 ## 已归档的探索性可视化
 以下图组已经明确退出当前论文主线：
 - [rejected_visualization_gallery_v1_20260314_133856](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/90_archive_unused/rejected_visualization_gallery_v1_20260314_133856)
+- [deprecated_visualization_pipeline_20260315](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/90_archive_unused/deprecated_visualization_pipeline_20260315)
 
 归档原因：
 - 视觉说服力不稳定
 - 对主文论证帮助有限
 - 容易分散审稿人注意力
+
+其中已进一步归档的内容包括：
+- 已淘汰的弱证据可视化脚本
+- 已淘汰的探索性表征空间图产物
 
 说明：
 - 由于个别文件正在被本地程序占用，原目录下可能还残留少量同组图片。
@@ -126,7 +135,7 @@
 ## 最推荐的阅读顺序
 1. `MODEL_ROLE_MAP_CN.md`
 2. `supporting_notes/TBME_GAP_AND_ACTION_PLAN_CN.md`
-3. `MANUSCRIPT_DRAFT_V14_CN.md`
+3. `MANUSCRIPT_DRAFT_V17_CN.md`
 4. `FIGURE_STRATEGY_RESET_TBME_V1_CN.md`
 5. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
 6. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`

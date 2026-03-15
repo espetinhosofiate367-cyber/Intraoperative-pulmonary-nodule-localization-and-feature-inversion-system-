@@ -16,7 +16,7 @@
 ### 2. 图表主线
 - 状态：`Active`
 - 入口：`01_manuscript/FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`
-- 说明：当前只保留能直接支撑主张的强证据图；embedding 等弱图已退出主线。
+- 说明：当前只保留能直接支撑主张的强证据图；已淘汰的弱可视化已统一归档。
 
 ### 3. 结果证据
 - 状态：`Active`

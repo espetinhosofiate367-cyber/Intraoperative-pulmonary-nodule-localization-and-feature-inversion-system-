@@ -21,7 +21,7 @@
 
 ### 不建议
 - 画太多 SHAP 小点云
-- 画 embedding 图
+- 画弱证据表征空间图
 
 ---
 
@@ -89,9 +89,7 @@
 3. phase occlusion summary
 
 ### 不建议
-- t-SNE
-- UMAP
-- PCA
+- 各类弱证据表征空间图
 - 任何“看上去很像结果、但实际上只是一种视觉 impression”的图
 
 ---

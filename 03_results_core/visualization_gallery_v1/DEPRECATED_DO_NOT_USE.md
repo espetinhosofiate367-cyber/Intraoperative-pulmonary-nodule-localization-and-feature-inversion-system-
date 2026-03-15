@@ -1,12 +1,9 @@
-# 已弃用说明
+﻿# 已弃用说明
 
-这个目录中的残留文件不再属于当前论文图组。
+本目录残留文件已退出当前论文主线。
 
-原因：
-1. 这批图的视觉说服力不稳定；
-2. 嵌入类图和探索性拼图不再服务当前 TBME 主线；
-3. 正式图组已经切换到“只保留强证据图”的新策略。
+- 这批图属于已淘汰的弱证据可视化。
+- 当前论文主线不再使用它们。
+- 正式归档位置：`90_archive_unused/deprecated_visualization_pipeline_20260315/`
 
-当前请改为查看：
-- [FIGURE_STRATEGY_RESET_TBME_V1_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_STRATEGY_RESET_TBME_V1_CN.md)
-- [FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md)
+如果本地程序仍占用个别旧文件，请直接忽略，不要将其重新带回主文或补充材料。
