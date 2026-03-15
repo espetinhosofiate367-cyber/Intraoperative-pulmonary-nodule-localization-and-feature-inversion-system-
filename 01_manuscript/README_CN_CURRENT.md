@@ -7,7 +7,7 @@
 ## 当前应优先使用的文件
 
 ### 1. 当前主稿
-- [MANUSCRIPT_DRAFT_V13_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V13_CN.md)
+- [MANUSCRIPT_DRAFT_V14_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/MANUSCRIPT_DRAFT_V14_CN.md)
 
 这是目前最新、最贴近 `TBME` 投稿口径的一版中文主稿。
 当前定位是：
@@ -20,8 +20,8 @@
 - 最新结果已经补入：
   - pure raw size v2 全面超过 XGBoost
   - pure raw route-aware depth predicted-route 超过 XGBoost
-  - 结构重写为“从探测出发，逐步发现大小与粗深度问题”的渐进式叙事
-  - 标题已调整为：`基于柔性触觉感知的术中肺结节定位探索：从结节探测到大小反演与粗深度辨别`
+  - 结构重写为“为什么先做 detection、哪些内容可从前人工作迁移、以及我们如何在 detection 之后继续推进 size 与 coarse depth”的渐进式叙事
+  - 标题已调整为：`基于柔性触觉感知的术中肺结节定位探索：一条从结节探测出发的渐进式研究路径`
 
 ### 2. 当前图表组织方案（TBME 目标版）
 - [FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md](/C:/Users/SWH/Desktop/GitHub_Docs_Package/Code_Archive/paper_flexible_sensor_lung_nodule_localization/tbme_submission_release_v1/01_manuscript/FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md)
@@ -126,7 +126,7 @@
 ## 最推荐的阅读顺序
 1. `MODEL_ROLE_MAP_CN.md`
 2. `supporting_notes/TBME_GAP_AND_ACTION_PLAN_CN.md`
-3. `MANUSCRIPT_DRAFT_V13_CN.md`
+3. `MANUSCRIPT_DRAFT_V14_CN.md`
 4. `FIGURE_STRATEGY_RESET_TBME_V1_CN.md`
 5. `FIGURE_AND_TABLE_DRAFT_V3_TBME_CN.md`
 6. `FIGURE_SYSTEM_BLUEPRINT_TBME_V1_CN.md`
